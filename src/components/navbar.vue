@@ -33,7 +33,6 @@
                             <b-dropdown-item to="/program">Программа поставок ЭКБ и КИ</b-dropdown-item>
                         </b-dropdown>
                     </b-nav-item>
-                    <b-nav-item>Каталог</b-nav-item>
                     <b-nav-item>
                         <b-dropdown text="ИТ-Решения">
                             <b-dropdown-item to="selection_and_supply_it">Подбор и поставка IT-оборудования</b-dropdown-item>
@@ -43,7 +42,7 @@
                         </b-dropdown>
                     </b-nav-item>
                     <b-nav-item>
-                        <b-dropdown text="СМК">
+                        <b-dropdown text="Система менеджмента качества">
                             <b-dropdown-item>Основные принципы СМК</b-dropdown-item>
                             <b-dropdown-item>Применение СМК</b-dropdown-item>
                             <b-dropdown-item>Мероприятия по улучшению СМК</b-dropdown-item>
@@ -76,7 +75,7 @@
     }
     .nav-link{
         color: white !important;
-        padding: 0.5rem 0.8rem !important;
+        padding: 0.5rem 0.45rem !important;
         font-weight: 600;
         font-size: 1.15rem ;
         font-family: 'Tenor Sans', sans-serif;
@@ -147,10 +146,10 @@
         padding: 0 !important;
     }
     .name_company{
-        margin-left: 31%;
+        margin-left: 29%;
         margin-top: -19%;
         padding-bottom: 12%;
-        font-size: 1.15rem;
+        font-size: 1rem;
         color: #ffffff;
         font-family: 'Times New Roman';
         transform:scaleY(1.4);
@@ -165,7 +164,7 @@
         text-shadow: 1px 1px 2px #212529;
     }
     .navbar-nav{
-        margin-left: -15%;
+        margin-left: -12%;
     }
     .navbar-brand {
         padding-right: 5% !important;
