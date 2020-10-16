@@ -26,7 +26,6 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="smk.html">Каталог</a></li>
                         <li><a href="it-resheniya.html"  id="it">ИТ-Решения</a></li>
                         <li><a href="it-resheniya.html#range_services">Подбор и поставка IT-оборудования</a></li>
                         <li><a href="it-resheniya.html#range_services">Комплекс услуг</a></li>
