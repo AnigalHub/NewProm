@@ -43,9 +43,9 @@
                     </b-nav-item>
                     <b-nav-item>
                         <b-dropdown text="Система менеджмента качества">
-                            <b-dropdown-item>Основные принципы СМК</b-dropdown-item>
-                            <b-dropdown-item>Применение СМК</b-dropdown-item>
-                            <b-dropdown-item>Мероприятия по улучшению СМК</b-dropdown-item>
+                            <b-dropdown-item to="/smk">Основные принципы СМК</b-dropdown-item>
+                            <b-dropdown-item to="/use_smk">Применение СМК</b-dropdown-item>
+                            <b-dropdown-item to="/events_smk">Мероприятия по улучшению СМК</b-dropdown-item>
                         </b-dropdown>
                     </b-nav-item>
                     <b-nav-item>Новости</b-nav-item>
@@ -75,7 +75,7 @@
     }
     .nav-link{
         color: white !important;
-        padding: 0.5rem 0.45rem !important;
+        padding: 0.55rem 0.55rem !important;
         font-weight: 600;
         font-size: 1.15rem ;
         font-family: 'Tenor Sans', sans-serif;
@@ -164,7 +164,7 @@
         text-shadow: 1px 1px 2px #212529;
     }
     .navbar-nav{
-        margin-left: -12%;
+        margin-left: -8%;
     }
     .navbar-brand {
         padding-right: 5% !important;
