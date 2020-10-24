@@ -70,8 +70,28 @@ export  default [
         component: () => import("../components/it-resheniy/guarantee.vue")
     },
     {
+        path: '/smk',
+        name: 'Smk',
+        component: () => import("./../components/smk.vue")
+    },
+    {
+        path: '/use_smk',
+        name: 'Use_smk',
+        component: () => import("./../components/smk/use_smk.vue")
+    },
+    {
+        path: '/events_smk',
+        name: 'Events_smk',
+        component: () => import("./../components/smk/events_smk.vue")
+    },
+    {
         path: '/contacts',
         name: 'Contacts',
         component: () => import("./../components/contacts.vue")
+    },
+    {
+        path: '/example',
+        name: 'Example',
+        component: () => import("./../components/example.vue")
     },
 ]
