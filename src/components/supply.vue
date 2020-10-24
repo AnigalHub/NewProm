@@ -69,12 +69,6 @@
         background-size: 100% 100%;
         padding: 1% 0 2.5% 0;
     }
-    .text,h6{
-        color: #183018 !important;
-    }
-    h2{
-        color: rgba(26, 78, 26, 0.79);
-    }
     h6{
         text-align: center;
         height: 40px;
