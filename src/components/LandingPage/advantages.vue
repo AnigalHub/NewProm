@@ -123,7 +123,7 @@
 
 <style scoped lang="scss">
     #advantages{
-        background: url("../../../public/4.jpg");
+        background: url("../../../public/фон.jpg");
         background-size: 100% 100%;
         padding: 1% 0;
         margin-top: -0.5%;
