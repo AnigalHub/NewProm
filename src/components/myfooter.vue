@@ -35,9 +35,10 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="smk.html">Система менеджмента качества</a></li>
-                        <li><a href="smk.html#application_smk">Применение системы менеджмента качества</a></li>
-                        <li><a href="smk.html#events_smk">Мероприятия по улучшению системы менеджмента качества</a></li>
+                        <li><a href="smk.html">СМК</a></li>
+                        <li><a href="smk.html#application_smk">Основные принципы СМК</a></li>
+                        <li><a href="smk.html#application_smk">Применение СМК</a></li>
+                        <li><a href="smk.html#events_smk">Мероприятия по улучшению СМК</a></li>
                     </ul>
                 </div>
                 <div>
