@@ -253,7 +253,7 @@
     #mess {
         height: 140px;
         box-shadow: 0 0 8px hsl(120, 33%, 14%);
-        background: rgba(218, 218, 218, 0.7);
+        background: rgba(249, 249, 249, 0.78);
         font-family: "Open Sans",Arial,sans-serif;
         color: #121224;
         line-height: 45px;
