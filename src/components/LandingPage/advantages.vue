@@ -2,24 +2,16 @@
     <div id="advantages">
         <b-container>
             <h2>Наши преимущества</h2>
+
             <b-row class="adv_row">
-                <b-col class="adv">
-                    <img src="../../../public/images/3.jpg">
-                    Собственная аккредитованная лаборатория по сертификации ЭКБ и КИ
-                </b-col>
-                <b-col class="adv">
-                    <img src="../../../public/images/56.jpg">
-                    Квалифицированная поставка ЭКБ и КИ в любую точку России
-                </b-col>
-                <b-col class="adv">
-                    <img src="../../../public/images/images.jpg">
-                    Сертифицированная система менеджмента качества и гарантия на ЭКБ и КИ
-                </b-col>
-                <b-col class="adv">
-                    <img src="../../../public/images/55.jpg">
-                    Реализация современной IT-инфраструктуры
+                <b-col class="adv" v-for="(advantage, index) in advantages" :key="index">
+                    <router-link :to="advantage.link">
+                        <img :src="advantage.src" :alt="advantage.alt"/>
+                        <div> {{advantage.descr}}</div>
+                    </router-link>
                 </b-col>
             </b-row>
+            
             <b-row class="number_row">
                 <b-col>
                     <div class="number">
@@ -117,10 +109,45 @@
 
 <script>
     export default {
-        name: "advantages"
+        name: "advantages",
+        data(){
+            return{
+                advantages:[
+                    {
+                        link: "../processing_on_a_cnc_milling_machine",
+                        src: "./images/3.jpg",
+                        descr: "Собственная аккредитованная лаборатория по сертификации ЭКБ и КИ",
+                        alt: "Собственная_аккредитованная_лаборатория_по_сертификации_ЭКБ_и_КИ",
+                    },
+                    {
+                        link: "../design_and_modeling",
+                        src: "./images/56.jpg",
+                        alt: "Квалифицированная_поставка_ЭКБ_и_КИ_в_любую_точку_России",
+                        descr: "Квалифицированная поставка ЭКБ и КИ в любую точку России",
+                    },
+                    {
+                        link: "../chrome_plating",
+                        src: "./images/images.jpg",
+                        descr: "Сертифицированная система менеджмента качества и гарантия на ЭКБ и КИ",
+                        alt: "Сертифицированная_система_менеджмента_качества_и_гарантия_на_ЭКБ_и_КИ",
+                    },
+                    {
+                        link: "../aquaprint",
+                        src: "./images/55.jpg",
+                        descr: "Реализация современной IT-инфраструктуры",
+                        alt: "Реализация_современной_IT-инфраструктуры",
+                    },
+                ]
+            }
+        }
     }
 </script>
-
+<style>
+    a{
+        color: white !important;
+        text-decoration: none !important;
+    }
+</style>
 <style scoped lang="scss">
     #advantages{
         background: url("../../../public/фон.jpg");
@@ -128,6 +155,7 @@
         padding: 1% 0;
         margin-top: -0.5%;
     }
+
     h2 {
         color: #121224;
         text-align: center !important;
@@ -153,6 +181,9 @@
     }
     .adv_row{
         padding-bottom: 1%;
+        .text{
+            color: white;
+        }
     }
     .number_row{
         margin-left: 15% !important;
