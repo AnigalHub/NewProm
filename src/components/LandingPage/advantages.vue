@@ -142,13 +142,11 @@
         }
     }
 </script>
-<style>
+<style scoped lang="scss">
     a{
         color: white !important;
         text-decoration: none !important;
     }
-</style>
-<style scoped lang="scss">
     #advantages{
         background: url("../../../public/фон.jpg");
         background-size: 100% 100%;
