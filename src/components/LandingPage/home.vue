@@ -9,7 +9,7 @@
                 <div class="slogan">
                     «Успех создают детали»
                 </div>
-               <b-button type="submit">Подробнее о компании...</b-button>
+               <b-button type="submit" to="/company">Подробнее о компании...</b-button>
             </div>
         </div>
     </div>
@@ -23,12 +23,21 @@
 
 <style scoped lang="scss">
     video
-    {   height: 400px !important;
+    {   height: 410px !important;
         position: relative;
         filter: brightness(45%);
         object-fit: cover;
         z-index: -10000;
         width: 100%;
+    }
+    .btn-secondary {
+        border: 2px solid white !important;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 7px;
+        font-size: 1rem;
+        background: rgba(0, 0, 0, 0.1) !important;
+        padding: 0.5% !important;
     }
     .inscription{
         font-family: 'Istok Web', sans-serif;
@@ -47,13 +56,4 @@
         text-shadow: 1.5px 1.5px 3.5px #080909;
     }
 
-    button{
-        border: 2px solid white !important;
-        font-weight: 700;
-        color: #ffffff;
-        border-radius: 7px;
-        font-size: 1rem;
-        background: rgba(0, 0, 0, 0.1) !important;
-        padding: 0.5% !important;
-    }
 </style>
