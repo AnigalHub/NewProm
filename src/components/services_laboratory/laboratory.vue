@@ -15,66 +15,24 @@
                 а также с соблюдением правил защиты конфиденциальной информации.
             </p>
             <div class="flex-container">
-                <div>
-                    <a href="ispytatelnaya-laboratoriay.html#control_tests">
-                        <img src="../../public/images/vhod.jpg" alt="входной контроль">
-                        <h6><b>Входной контроль</b></h6>
-                    </a>
-                </div>
-                <div>
-                    <a href="ispytatelnaya-laboratoriay.html#additional_tests">
-                        <img src="../../public/images/dop.jpg" alt="входной контроль">
-                        <h6><b>Дополнительные испытания</b></h6>
-                    </a>
-                </div>
-                <div>
-                    <a href="ispytatelnaya-laboratoriay.html#certification_tests">
-                        <img src="../../public/images/sertific.jpg" alt="входной контроль">
-                        <h6><b>Сертификационные испытания</b></h6>
-                    </a>
-                </div>
-                <div>
-                    <a href="ispytatelnaya-laboratoriay.html#climate_tests">
-                        <img src="../../public/images/klimat.jpg" alt="входной контроль">
-                        <h6><b>Климатические испытания</b></h6>
-                    </a>
-                </div>
-                <div>
-                    <a href="ispytatelnaya-laboratoriay.html#mechanical_tests">
-                        <img src="../../public/images/mehanic_2.jpg" alt="входной контроль">
-                        <h6><b>Механические испытания</b></h6>
-                    </a>
+                <div class="adv" v-for="(test, index) in tests_laboratory" :key="index">
+                    <router-link :to="test.link">
+                        <img :src="test.src" :alt="test.alt"/>
+                        <h6><b> {{test.name}}</b></h6>
+                    </router-link>
                 </div>
             </div>
             <b-row>
-                <b-col cols="6">
-                    <div class="row row_list text">
-                        <div class="col">
-                            <ul>
-                                <li>Входной контроль ЭКБ и КИ.</li>
-                                <li>Дополнительные испытания ЭКБ и КИ.</li>
-                                <li>Сертификационные испытания ЭКБ ИП.</li>
-                                <li>Испытания ЭКБ и КИ на безотказность и сохраняемость.</li>
-                                <li>Климатические испытания ЭКБ, КИ и РЭА.</li>
-                                <li>Механические испытания ЭКБ, КИ и РЭА.</li>
-                                <li>Проведение выборочного разрушающего физического анализа.</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                <b-col class=" row_list text">
+                    <ul>
+                            <li v-for="( test, index) in  list_tests" :key="index">{{test}}</li>
+                    </ul>
                 </b-col>
-                <b-col>
-                    <div class="text">
+                <b-col class="text">
                         <u><b>Испытательная лаборатория также осуществляет следующие услуги:</b></u>
-                        <div class="text list">
-                            <ul>
-                                <li>Разработку и изготовление технической оснастки.</li>
-                                <li>Метрологическое обеспечение применяемых методов контроля и испытаний.</li>
-                                <li>Разработку информационно-технических материалов на электронные компоненты иностранного
-                                    производства.</li>
-                            </ul>
-                        </div>
-                    </div>
+                        <ul class="text list">
+                            <li v-for="( test, index) in  dop_list_tests" :key="index">{{test}}</li>
+                        </ul>
                 </b-col>
             </b-row>
         </b-container>
@@ -83,7 +41,58 @@
 
 <script>
     export default {
-        name: "laboratory"
+        name: "laboratory",
+        data(){
+            return{
+                tests_laboratory:[
+                    {
+                        link: "../vhodnoi_control",
+                        src: "./images/vhod.jpg",
+                        alt: "Входной_контроль",
+                        name: "Входной контроль",
+                    },
+                    {
+                        link: "../dop_trials",
+                        src: "./images/dop.jpg",
+                        alt: "Дополнительные_испытания",
+                        name: "Дополнительные испытания",
+                    },
+                    {
+                        link: "../dop_trials",
+                        src: "./images/sertific.jpg",
+                        alt: "Сертификационные_испытания",
+                        name: "Сертификационные испытания",
+                    },
+                    {
+                        link: "../climatic_trials",
+                        src: "./images/klimat.jpg",
+                        alt: "Климатические_испытания",
+                        name: "Климатические испытания",
+                    },
+                    {
+                        link: "../mehanic_trials",
+                        src: "./images/mehanic_2.jpg",
+                        alt: "Механические_испытания",
+                        name: "Механические испытания",
+                    },
+                ],
+                list_tests:[
+                    'Входной контроль ЭКБ и КИ.',
+                    'Дополнительные испытания ЭКБ и КИ.',
+                    'Сертификационные испытания ЭКБ ИП.',
+                    'Испытания ЭКБ и КИ на безотказность и сохраняемость.',
+                    'Климатические испытания ЭКБ, КИ и РЭА.',
+                    'Механические испытания ЭКБ, КИ и РЭА.',
+                    'Проведение выборочного разрушающего физического анализа.',
+                ],
+                dop_list_tests:[
+                    'Разработку и изготовление технической оснастки.',
+                    'Метрологическое обеспечение применяемых методов контроля и испытаний.',
+                    'Разработку информационно-технических материалов на электронные компоненты иностранного\n' +
+                    ' производства.',
+                ]
+            }
+        }
     }
 </script>
 <style>
