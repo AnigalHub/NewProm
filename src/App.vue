@@ -93,7 +93,7 @@ export default {
     line-height: 1.9rem;
     font-weight: 600;
   }
-  tr,th{
+    tr,th{
       font-family: "Open Sans",Arial,sans-serif;
       color: #161640 !important;
       font-size: 1rem !important;
