@@ -9,95 +9,8 @@
                 Срок гарантии на большую часть оборудования – от 24 месяцев. Также мы предлагаем постгарантийное обслуживание. Вы можете быть уверены в долгой эксплуатации поставляемого нами ИТ-оборудования и быстром решении любых возникших с ним проблем.
             </p>
             <div class="flex-container">
-                <div>
-                    <img src="../../../public/images/guarantees/cisco.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/kingston.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/kramer.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/lenovo.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/logitech.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/microsoft.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/msi.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/nvidia.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/hp.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/philips.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/samsung.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/sigur.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/sony.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/supermicro.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/view_sonic.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/western_digital.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/xerox.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/yealink.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/zyxel.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/крипто_про.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/asus.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/adobe.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/amd.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/benq.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/hikvision.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/dell.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/huawei.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/sanDisk.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/gigabyte.png">
-                </div>
-                <div>
-                    <img src="../../../public/images/guarantees/русбитех.png">
+                <div  v-for="(producer, index) in list_producers" :key="index">
+                    <img :src="producer.src" :alt="producer.alt"/>
                 </div>
             </div>
         </b-container>
@@ -106,7 +19,133 @@
 
 <script>
     export default {
-        name: "guarantee"
+        name: "guarantee",
+        data(){
+            return{
+                list_producers:[
+                    {
+                        src: "./images/guarantees/cisco.png",
+                        alt: "Cisco",
+                    },
+                    {
+                        src: "./images/guarantees/kingston.png",
+                        alt: "Kingston",
+                    },
+                    {
+                        src: "./images/guarantees/kramer.png",
+                        alt: "Kramer",
+                    },
+                    {
+                        src: "./images/guarantees/lenovo.png",
+                        alt: "Lenovo",
+                    },
+                    {
+                        src: "./images/guarantees/logitech.png",
+                        alt: "Logitech",
+                    },
+                    {
+                        src: "./images/guarantees/microsoft.png",
+                        alt: "Microsoft.png",
+                    },
+                    {
+                        src: "./images/guarantees/msi.png",
+                        alt: "Msi",
+                    },
+                    {
+                        src: "./images/guarantees/nvidia.png",
+                        alt: "Nvidia",
+                    },
+                    {
+                        src: "./images/guarantees/hp.png",
+                        alt: "HP",
+                    },
+                    {
+                        src: "./images/guarantees/philips.png",
+                        alt: "Philips",
+                    },
+                    {
+                        src: "./images/guarantees/samsung.png",
+                        alt: "Samsung",
+                    },
+                    {
+                        src: "./images/guarantees/sigur.png",
+                        alt: "Sigur",
+                    },
+                    {
+                        src: "./images/guarantees/sony.png",
+                        alt: "Sony",
+                    },
+                    {
+                        src: "./images/guarantees/supermicro.png",
+                        alt: "Supermicro",
+                    },
+                    {
+                        src: "./images/guarantees/view_sonic.png",
+                        alt: "View_sonic",
+                    },
+                    {
+                        src: "./images/guarantees/western_digital.png",
+                        alt: "Western_digital",
+                    },
+                    {
+                        src: "./images/guarantees/xerox.png",
+                        alt: "Xerox",
+                    },
+                    {
+                        src: "./images/guarantees/yealink.png",
+                        alt: "Yealink",
+                    },
+                    {
+                        src: "./images/guarantees/zyxel.png",
+                        alt: "Zyxel",
+                    },
+                    {
+                        src: "./images/guarantees/крипто_про.png",
+                        alt: "Крипто_про",
+                    },
+                    {
+                        src: "./images/guarantees/asus.png",
+                        alt: "Asus",
+                    },
+                    {
+                        src: "./images/guarantees/adobe.png",
+                        alt: "Adobe",
+                    },
+                    {
+                        src: "./images/guarantees/amd.png",
+                        alt: "Amd",
+                    },
+                    {
+                        src: "./images/guarantees/benq.png",
+                        alt: "Benq",
+                    },
+                    {
+                        src: "./images/guarantees/hikvision.png",
+                        alt: "Hikvision",
+                    },
+                    {
+                        src: "./images/guarantees/dell.png",
+                        alt: "Dell",
+                    },
+                    {
+                        src: "./images/guarantees/huawei.png",
+                        alt: "Huawei",
+                    },
+                    {
+                        src: "./images/guarantees/sanDisk.png",
+                        alt: "SanDisk",
+                    },
+                    {
+                        src: "./images/guarantees/gigabyte.png",
+                        alt: "Gigabyte",
+                    },
+                    {
+                        src: "./images/guarantees/русбитех.png",
+                        alt: "Русбитех",
+                    },
+                ]
+            }
+        }
     }
 </script>
 
