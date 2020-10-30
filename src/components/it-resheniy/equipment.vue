@@ -1,9 +1,7 @@
 <template>
     <div id="equipment">
         <b-container>
-            <h2>
-                Перечень поставляемого оборудования
-            </h2>
+            <h2>Перечень поставляемого оборудования</h2>
             <div class="place_for_table">
                 <b-table sticky-header hover :items="it"></b-table>
             </div>
@@ -42,7 +40,7 @@
         text-shadow: 0.25px 0.25px .5px rgba(18, 23, 37, 0.71);
     }
     .b-table-sticky-header {
-        max-height: 75vh !important;
+        max-height: 70vh !important;
     }
     tr:hover{
         background: rgb(91, 114, 131) !important;
