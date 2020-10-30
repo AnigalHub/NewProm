@@ -46,12 +46,12 @@
 </template>
 
 <script>
-    import PricePolicySVG from './it-resheniy/supply_svg/price_policy_svg';
-    import AccreditationSVG from './it-resheniy/supply_svg/accreditation_svg';
-    import WideChooseSVG from './it-resheniy/supply_svg/wide_choose_svg';
-    import IntegrationSVG from './it-resheniy/supply_svg/integration_svg';
-    import ElectronicPlatformSVG from './it-resheniy/supply_svg/electronic_platform_svg';
-    import WarrantySupportSVG from './it-resheniy/supply_svg/warranty_support_svg';
+    import PricePolicySVG from './it_svg/price_policy_svg';
+    import AccreditationSVG from './it_svg/accreditation_svg';
+    import WideChooseSVG from './it_svg/wide_choose_svg';
+    import IntegrationSVG from './it_svg/integration_svg';
+    import ElectronicPlatformSVG from './it_svg/electronic_platform_svg';
+    import WarrantySupportSVG from './it_svg/warranty_support_svg';
     export default {
         name: "selection_and_supply_it",
         components: {PricePolicySVG,AccreditationSVG,WideChooseSVG,IntegrationSVG,ElectronicPlatformSVG,WarrantySupportSVG},
@@ -94,7 +94,7 @@
 
 <style scoped lang="scss">
     #selection_and_supply_it{
-        background: url("../../public/фон.jpg");
+        background: url("../../../public/фон.jpg");
         background-size: 100% 100%;
         padding: 1% 0 2.5% 0;
     }
