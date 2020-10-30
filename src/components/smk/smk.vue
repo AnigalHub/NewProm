@@ -10,21 +10,21 @@
                     <b-table  hover :items="smk"></b-table>
                     <b-row>
                         <b-col>
-                            <img src="../../public/images/iso17025.png">
+                            <img src="../../../public/images/iso17025.png">
                             <p class="text">ГОСТ Р ИСО 9001-2015</p>
                         </b-col>
                         <b-col>
-                            <img src="../../public/images/ввт.png">
+                            <img src="../../../public/images/ввт.png">
                             <p class="text">ГОСТ РВ 0015-002-2012</p>
                         </b-col>
                         <b-col>
-                            <img src="../../public/images/эс.png">
+                            <img src="../../../public/images/эс.png">
                             <p class="text">СДС "Электронсерт"</p>
                         </b-col>
                     </b-row>
                 </b-col>
                 <b-col>
-                    <img src="../../public/images/smk.jpg" >
+                    <img src="../../../public/images/smk.jpg" >
                 </b-col>
             </b-row>
         </b-container>
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-    import  smk from '../../public/documents/smk';
+    import  smk from '../../../public/documents/smk';
     export default {
         name: "smk",
         data() {
@@ -64,7 +64,7 @@
 </style>
 <style scoped lang="scss">
     #smk{
-        background: url("../../public/фон.jpg");
+        background: url("../../../public/фон.jpg");
         background-size: 100% 100%;
         padding: 1% 0 2.5% 0;
     }
