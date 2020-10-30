@@ -3,17 +3,8 @@
         <b-container>
             <h2>Программа поставок ЭКБ и КИ</h2>
             <b-tabs  pills fill>
-                <b-tab title="Активные компоненты" active>
-                    <b-table sticky-header hover :items="active_components"></b-table>
-                </b-tab>
-                <b-tab title="Пассивные компоненты">
-                    <b-table sticky-header hover :items="passive_components"></b-table>
-                </b-tab>
-                <b-tab title="Соединители и Разъемы">
-                    <b-table sticky-header hover :items="connectors"></b-table>
-                </b-tab>
-                <b-tab title="Дисплеи и Светодиоды">
-                    <b-table sticky-header hover :items="displays"></b-table>
+                <b-tab v-for="(table, index) in Row_tables" :key="index" :title=table.name_table>
+                    <b-table sticky-header hover :items="table.table_itself"></b-table>
                 </b-tab>
             </b-tabs>
         </b-container>
@@ -33,6 +24,24 @@
                 passive_components:passive_components,
                 connectors:connectors,
                 displays:displays,
+                Row_tables:[
+                    {
+                        name_table:"Активные компоненты",
+                        table_itself:active_components,
+                    },
+                    {
+                        name_table:"Пассивные компоненты",
+                        table_itself: passive_components,
+                    },
+                    {
+                        name_table:"Соединители и Разъемы",
+                        table_itself: connectors,
+                    },
+                    {
+                        name_table:"Дисплеи и Светодиоды",
+                        table_itself:displays,
+                    },
+                ]
             }
         }
     }
