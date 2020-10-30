@@ -12,7 +12,7 @@ export  default [
     {
         path: '/laboratory',
         name: 'Laboratory',
-        component: () => import("./../components/laboratory.vue")
+        component: () => import("../components/services_laboratory/laboratory.vue")
     },
     {
         path: '/vhodnoi_control',
@@ -37,7 +37,7 @@ export  default [
     {
         path: '/supply',
         name: 'Supply',
-        component: () => import("./../components/supply.vue")
+        component: () => import("../components/supply/supply.vue")
     },
     {
         path: '/pcb_materials',
@@ -57,7 +57,7 @@ export  default [
     {
         path: '/selection_and_supply_it',
         name: 'Selection_and_supply_it',
-        component: () => import("../components/selection_and_supply_it.vue")
+        component: () => import("../components/it-resheniy/selection_and_supply_it.vue")
     },
     {
         path: '/equipment',
@@ -72,7 +72,7 @@ export  default [
     {
         path: '/smk',
         name: 'Smk',
-        component: () => import("./../components/smk.vue")
+        component: () => import("../components/smk/smk.vue")
     },
     {
         path: '/use_smk',
