@@ -27,7 +27,7 @@
                     </b-nav-item>
                     <b-nav-item>
                         <b-dropdown text="Поставка ЭКБ и КИ">
-                            <b-dropdown-item  to="/supply">Комплексные поставки</b-dropdown-item>
+                            <b-dropdown-item to="/supply">Комплексные поставки</b-dropdown-item>
                             <b-dropdown-item to="/pcb_materials">Материалы для печатных плат</b-dropdown-item>
                             <b-dropdown-item to="/manufacturers">Производители</b-dropdown-item>
                             <b-dropdown-item to="/program">Программа поставок ЭКБ и КИ</b-dropdown-item>
@@ -35,7 +35,7 @@
                     </b-nav-item>
                     <b-nav-item>
                         <b-dropdown text="ИТ-Решения">
-                            <b-dropdown-item to="selection_and_supply_it">Подбор и поставка IT-оборудования</b-dropdown-item>
+                            <b-dropdown-item to="/selection_and_supply_it">Подбор и поставка IT-оборудования</b-dropdown-item>
                             <b-dropdown-item>Комплекс услуг</b-dropdown-item>
                             <b-dropdown-item to="/equipment">Поставляемое оборудование</b-dropdown-item>
                             <b-dropdown-item to="/guarantee">Гарантии</b-dropdown-item>
