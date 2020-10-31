@@ -36,7 +36,7 @@
                     <br>
                     <router-link to="/selection_and_supply_it">Подбор и поставка IT-оборудования</router-link>
                     <br>
-                    <router-link to="/equipment">Комплекс услуг</router-link>
+                    <router-link to="/package_services">Комплекс услуг</router-link>
                     <br>
                     <router-link to="/equipment">Поставляемое оборудование</router-link>
                     <br>
