@@ -60,6 +60,11 @@ export  default [
         component: () => import("../components/it-resheniy/selection_and_supply_it.vue")
     },
     {
+        path: '/package_services',
+        name: 'Package_services',
+        component: () => import("../components/it-resheniy/package_services.vue")
+    },
+    {
         path: '/equipment',
         name: 'Equipment',
         component: () => import("../components/it-resheniy/equipment.vue")
