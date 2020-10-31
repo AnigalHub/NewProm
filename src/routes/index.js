@@ -95,6 +95,11 @@ export  default [
         component: () => import("./../components/contacts.vue")
     },
     {
+        path: '/news',
+        name: 'News',
+        component: () => import("./../components/news.vue")
+    },
+    {
         path: '/example',
         name: 'Example',
         component: () => import("./../components/example.vue")
