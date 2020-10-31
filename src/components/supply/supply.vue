@@ -46,7 +46,7 @@
                     },
                     {
                         link: "../manufacturers",
-                        src: "./images/supply/production.jpg",
+                        src: "./images/supply/producers.jpg",
                         alt: "Производители_ЭКБ _и_КИ",
                         name: "Производители ЭКБ и КИ",
                     },
@@ -71,7 +71,7 @@
 
 <style scoped lang="scss">
     #supply{
-        background: url("../../public/фон.jpg");
+        background: url("../../../public/фон.jpg");
         background-size: 100% 100%;
         padding: 1% 0 2.5% 0;
     }
