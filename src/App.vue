@@ -75,6 +75,7 @@ export default {
   h3{
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1.3rem !important;
+    color: rgba(5, 35, 71, 0.75);
     text-decoration: underline;
     padding-bottom: 0.8%;
     padding-top: 0.8%;
