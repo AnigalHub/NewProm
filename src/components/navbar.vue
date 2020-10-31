@@ -2,7 +2,7 @@
     <b-navbar class="navbar-expand-xl sticky-top " toggleable>
         <b-container>
             <b-navbar-brand to="/" @click="GoToLanding()">
-                <img src="../../public/images/brand.jpg">
+                <img src="../../public/logo3.png">
                 <div class="name_company">Промэлекстронсервис</div>
                 <div class="name_company_2">COMPANY</div>
             </b-navbar-brand>
@@ -36,7 +36,7 @@
                     <b-nav-item>
                         <b-dropdown text="ИТ-Решения">
                             <b-dropdown-item to="/selection_and_supply_it">Подбор и поставка IT-оборудования</b-dropdown-item>
-                            <b-dropdown-item>Комплекс услуг</b-dropdown-item>
+                            <b-dropdown-item to="/package_services" >Комплекс услуг</b-dropdown-item>
                             <b-dropdown-item to="/equipment">Поставляемое оборудование</b-dropdown-item>
                             <b-dropdown-item to="/guarantee">Гарантии</b-dropdown-item>
                         </b-dropdown>
@@ -146,20 +146,21 @@
         padding: 0 !important;
     }
     .name_company{
-        margin-left: 29%;
-        margin-top: -19%;
+        margin-left: 15%;
+        margin-top: -16.5%;
         padding-bottom: 12%;
-        font-size: 1rem;
+        font-size: 0.78rem;
         color: #ffffff;
+        font-weight: 800;
         font-family: 'Times New Roman';
         transform:scaleY(1.4);
         text-shadow: 1px 1px 2px #212529;
     }
     .name_company_2{
-        margin-left: 42%;
-        margin-top: -16.9%;
-        font-size: 1rem;
-        color: #ffffff;
+        margin-left: 32.5%;
+        margin-top: -15.5%;
+        font-size: 0.68rem;
+        color: #ffffff; font-weight: 700;
         font-family: "Open Sans",Arial,sans-serif;
         text-shadow: 1px 1px 2px #212529;
     }
@@ -175,15 +176,12 @@
         font-weight: 700;
     }
 
-    .name_company{
-        font-size: 1rem;
-        color: #ffffff;
-    }
 
     img{
-        width: 200px !important;
+        width: 195px !important;
         margin-right: 4px;
         border-radius: 7px;
+        margin-top: -5%;
     }
     @media screen and (max-width: 500px) {
         .name_company{
