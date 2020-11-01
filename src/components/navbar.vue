@@ -48,7 +48,7 @@
                             <b-dropdown-item to="/events_smk">Мероприятия по улучшению СМК</b-dropdown-item>
                         </b-dropdown>
                     </b-nav-item>
-                    <b-nav-item>Новости</b-nav-item>
+                    <b-nav-item to="/news">Новости</b-nav-item>
                     <b-nav-item to="/contacts">Контакты</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
