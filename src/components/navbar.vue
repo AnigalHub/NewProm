@@ -20,7 +20,7 @@
                             <b-dropdown-item to="/laboratory">Услуги лаборатории</b-dropdown-item>
                             <b-dropdown-item to="/vhodnoi_control">Входной контроль</b-dropdown-item>
                             <b-dropdown-item to="/dop_trials">Дополнительные испытания</b-dropdown-item>
-                            <b-dropdown-item >Сертификационные испытания</b-dropdown-item>
+                            <b-dropdown-item to="/certification_trials">Сертификационные испытания</b-dropdown-item>
                             <b-dropdown-item to="/climatic_trials">Климатические испытания</b-dropdown-item>
                             <b-dropdown-item to="/mehanic_trials">Механические испытания</b-dropdown-item>
                         </b-dropdown>
