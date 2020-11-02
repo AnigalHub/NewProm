@@ -25,6 +25,11 @@ export  default [
         component: () => import("./../components/services_laboratory/dop_trials.vue")
     },
     {
+        path: '/certification_trials',
+        name: 'Certification_trials',
+        component: () => import("./../components/services_laboratory/certification_trials.vue")
+    },
+    {
         path: '/climatic_trials',
         name: 'Climatic_trials',
         component: () => import("./../components/services_laboratory/climatic_trials.vue")
