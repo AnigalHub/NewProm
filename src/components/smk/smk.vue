@@ -9,17 +9,9 @@
                     </p>
                     <b-table  hover :items="smk"></b-table>
                     <b-row>
-                        <b-col>
-                            <img src="../../../public/images/iso17025.png">
-                            <p class="text">ГОСТ Р ИСО 9001-2015</p>
-                        </b-col>
-                        <b-col>
-                            <img src="../../../public/images/ввт.png">
-                            <p class="text">ГОСТ РВ 0015-002-2012</p>
-                        </b-col>
-                        <b-col>
-                            <img src="../../../public/images/эс.png">
-                            <p class="text">СДС "Электронсерт"</p>
+                        <b-col  v-for="(guest, index) in guests" :key="index">
+                            <img :src="guest.src" :alt="guest.alt"/>
+                            <p class="text">{{guest.name}}</p>
                         </b-col>
                     </b-row>
                 </b-col>
@@ -35,12 +27,31 @@
     import  smk from '../../../public/documents/smk';
     export default {
         name: "smk",
-        data() {
-            return {
-                smk: smk,
+        data(){
+            return{
+                smk:smk,
+                guests:[
+                    {
+                        src: "./images/iso17025.png",
+                        alt: "ГОСТ_Р_ИСО_9001-2015",
+                        name:'ГОСТ Р ИСО 9001-2015',
+                    },
+                    {
+                        src: "./images/vvt.png",
+                        alt: "ГОСТ_РВ_0015-002-2012",
+                        name:'ГОСТ РВ 0015-002-2012',
+                    },
+                    {
+                        src: "./images/es.png",
+                        alt: "СДС_Электронсерт",
+                        name:'СДС "Электронсерт"',
+                    },
+
+                ]
             }
         }
     }
+
 </script>
 
 <style>
