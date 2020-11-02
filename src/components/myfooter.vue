@@ -13,7 +13,7 @@
                         <br>
                         <router-link to="/dop_trials">Дополнительные испытания</router-link>
                         <br>
-                        <router-link to="/dop_trials">Сертификационные испытания</router-link>
+                        <router-link to="/certification_trials">Сертификационные испытания</router-link>
                         <br>
                         <router-link to="/climatic_trials">Климатические испытания</router-link>
                         <br>
