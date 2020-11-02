@@ -58,7 +58,7 @@
                         name: "Дополнительные испытания",
                     },
                     {
-                        link: "../dop_trials",
+                        link: "../certification_trials",
                         src: "./images/sertific.jpg",
                         alt: "Сертификационные_испытания",
                         name: "Сертификационные испытания",
