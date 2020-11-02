@@ -1,5 +1,40 @@
 <template>
-    
+    <div id="certification_trials">
+        <b-container>
+            <h2>Сертификационные испытания</h2>
+            <b-row>
+                <b-col cols="3">
+                    <video autoplay muted loop playsinline webkit-playingline width="100%" poster="video/video.png">
+                        <source src="video/certificate.mp4" type="video/mp4" >
+                    </video>
+                </b-col>
+                <b-col>
+                    <p class="text descr">
+                        Испытания выполняются в объеме и значениях, соответствующих конкретному изделию и условиям его дальнейшей эксплуатации, соответственно позволяют существенно сократить число отказов конечного изделия в процессе эксплуатации. Финальным этапом сертификационных испытаний, проводимых в испытательной лаборатории ООО «Компания Промэлектронсервис» является оформление и предоставление заказчику отчетной документации.
+                    </p>
+                </b-col>
+            </b-row>
+            <b-row class="row_step">
+                <b-col>
+                  <ul>
+                      <li>Разработка и согласование программ и методик сертификационных испытаний.</li>
+                      <li>Разработка и изготовление вспомогательной технологической оснастки.</li>
+                      <li>Входной контроль с целью определения качества испытываемых ЭКБ ИП.</li>
+                      <li>Непосредственно проведение сертификационных испытаний, включающие испытание воздействия климатических и механических факторов.</li>
+                  </ul>
+                </b-col>
+                <b-col cols="5">
+                    <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" animation indicators>
+                        <b-carousel-slide img-src="./images/certificate_trials/climatic_factors.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/certificate_trials/inspected_parts.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/certificate_trials/mechanical_factors.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/certificate_trials/program_coordination.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/certificate_trials/quality_definition.jpg"></b-carousel-slide>
+                    </b-carousel>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
 </template>
 
 <script>
@@ -7,7 +42,51 @@
         name: "certification_trials"
     }
 </script>
-
-<style scoped>
-
+<style>
+    ul{
+        margin-block-start: 0 !important;
+        padding-inline-start: 5px !important;
+    }
+</style>
+<style scoped lang="scss">
+    #certification_trials{
+        background: url("../../../public/фон.jpg");
+        background-size: 100% 100%;
+        padding: 1% 0 2.5% 0;
+    }
+    .col-3{
+        padding: 0 !important;
+        flex: 0 0 30% !important;
+        max-width: 30% !important;
+    }
+    video,.carousel{
+        padding: 2.5% !important;
+        background: rgba(255, 255, 255, 0.26) !important;
+        box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
+    }
+    .descr{
+        margin-top: 5%;
+    }
+    .row_step{
+        padding-bottom: 2%;
+    }
+    .row_step .col{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    li {
+        cursor: default;
+        list-style-type: none;
+        padding-top: 1%;
+        border-bottom: 1px solid rgba(148, 175, 193, 0.7);
+    }
+    ul{
+        padding-top: 7% !important;
+    }
+    .col li{
+        padding-bottom: 2.5%;
+    }
+    li:before {
+        content: "";
+    }
 </style>
