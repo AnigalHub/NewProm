@@ -188,20 +188,20 @@
                 slide: 0,
                 myArray: [
                     {id:1,
-                        src: "./images/77.jpg",
-                        alt: "Материалы печатных_плат",
+                        src: "./images/company/test1.jpg",
+                        alt: "Тест_номер_1",
                         style: false},
                     {id:2,
-                        src: "./images/76.jpg",
-                        alt: "Материалы печатных_плат",
+                        src: "./images/company/test2.jpg",
+                        alt: "Тест_номер_2",
                         style: false},
                     {id:3,
-                        src: "./images/75.jpg",
-                        alt: "Материалы печатных_плат",
+                        src: "./images/company/test3.jpg",
+                        alt: "Тест_номер_3",
                         style: false},
                     {id:4,
-                        src: "./images/74.jpg",
-                        alt: "Материалы печатных_плат",
+                        src: "./images/company/test4.jpg",
+                        alt: "Тест_номер_4",
                         style: true},
                 ]
             }
@@ -217,7 +217,9 @@
         bottom: auto;
         padding: 0 !important;
     }
-
+    .w-50 {
+        width: 55% !important;
+    }
 
     .tab-content{
         /*background-color: rgba(36, 94, 38, 0.25) !important; */
