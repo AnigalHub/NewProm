@@ -38,7 +38,7 @@
                 </b-col>
                 <b-col>
                     <ul>
-                        <li v-for="(direction,index) in list_activity" :key="index">{{direction}}</li>
+                        <li class="text" v-for="(direction,index) in list_activity" :key="index">{{direction}}</li>
                     </ul>
                 </b-col>
             </b-row>
@@ -299,7 +299,6 @@
         font-size: 2.5rem;
         text-align: center;
     }
-
     .year{
         font-family: 'Raleway', sans-serif;
         font-size: 1rem;
@@ -328,4 +327,95 @@
         }
     }
 
+    @media screen and (max-width: 500px) {
+        .row_history{
+            .row p{
+                margin-left: 1%;
+            }
+            .col-3{
+                display: none;
+            }
+        }
+        .row_activity{
+            flex-direction: column;
+            .col-4{
+                flex: 0 0 45% !important;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 45%;
+                margin-bottom: 1%;
+            }
+        }
+        .yaer_number{
+            font-size: 1.3rem;
+        }
+        .year{
+            font-size: 0.8rem;
+        }
+        .circle{
+            border: 2px solid rgba(0, 0, 0, 0.16);
+        }
+    }
+    @media screen and (min-width: 500px)and (max-width: 768px) {
+        .row_history{
+            .row p{
+                margin-left: -2%;
+            }
+        }
+        .row_activity{
+            flex-direction: column;
+            .col-4{
+                flex: 0 0 45% !important;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 45%;
+                margin-bottom: 1%;
+            }
+        }
+        .yaer_number{
+            font-size: 1.3rem;
+        }
+        .year{
+            font-size: 0.8rem;
+        }
+        .circle{
+            border: 2px solid rgba(0, 0, 0, 0.16);
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .row_history{
+            .row p{
+                margin-left: 1%;
+            }
+        }
+        .row_activity{
+            flex-direction: column;
+            .col-4{
+                flex: 0 0 45% !important;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 45%;
+                margin-bottom: 1%;
+            }
+        }
+        .yaer_number{
+            font-size: 2rem;
+        }
+        .year{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        .row_history{
+            .row p{
+                margin-left: -2%;
+            }
+        }
+        .carousel{
+            margin-top: 15%;
+        }
+    }
 </style>
