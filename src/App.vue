@@ -75,7 +75,7 @@ export default {
   h3{
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1.3rem !important;
-    color: rgba(5, 35, 71, 0.75);
+    color: rgba(5, 35, 71, 0.85);
     text-decoration: underline;
     padding-bottom: 0.8%;
     padding-top: 0.8%;
@@ -108,10 +108,79 @@ export default {
   .card-body{
     font-weight: 400 !important;
   }
-
-
   img{
     width: 100%;
   }
 
+
+
+  @media screen and (max-width: 500px) {
+    h2,h3{
+      padding: 3% 0 0.2% 0;
+      font-size: 1.2rem !important;
+    }
+    h5{
+      font-size: 0.8rem !important;
+    }
+    h6{
+      font-size: 0.6rem !important;
+    }
+    h4{
+      font-size: 0.9rem !important;
+    }
+    .card-body,.text,li{
+      font-size: 0.8rem;
+      line-height: 0.95rem;
+    }
+  }
+  @media screen and (min-width: 500px)and (max-width: 768px) {
+    h2{
+      padding: 0.5% 0 0.5% 0;
+      font-size: 1.5rem !important;
+    }
+    h5{
+      font-size: 0.9rem !important;
+    }
+    h6{
+      font-size: 0.7rem !important;
+    }
+    h4{
+      font-size: 1rem !important;
+    }
+    .card-body,.text,li{
+      font-size: 0.8rem !important;
+      line-height: 1rem;
+    }
+  }
+  @media screen and (min-width: 768px)and (max-width: 992px) {
+    h5{
+      font-size: 0.9rem !important;
+    }
+    h4{
+      font-size: 1rem !important;
+    }
+    h6{
+      font-size: 0.8rem !important;
+      line-height: 1rem;
+    }
+    .card-body,.text,li{
+      font-size: 0.9rem !important;
+      line-height: 1.1rem;
+    }
+  }
+  @media screen and (min-width: 992px)and (max-width: 1200px) {
+    h6{
+      font-size: 0.9rem !important;
+    }
+    h5{
+      font-size: 1.1rem !important;
+    }
+    h4{
+      font-size: 1.2rem !important;
+    }
+    .card-body,.text,li,h6{
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
 </style>
