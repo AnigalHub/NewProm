@@ -94,6 +94,13 @@ export default {
     line-height: 1.9rem;
     font-weight: 600;
   }
+  .text_news{
+      line-height: 1.5rem;
+      font-weight: 600 !important;
+      font-family: "Open Sans",Arial,sans-serif;
+      color: rgba(5, 35, 71, 0.85);
+      font-size: 1rem !important;
+  }
     tr,th{
       font-family: "Open Sans",Arial,sans-serif;
       color: #161640 !important;
@@ -115,7 +122,7 @@ export default {
 
 
   @media screen and (max-width: 500px) {
-    h2,h3{
+    h2{
       padding: 3% 0 0.2% 0;
       font-size: 1.2rem !important;
     }
@@ -125,12 +132,15 @@ export default {
     h6{
       font-size: 0.6rem !important;
     }
+    h3{
+        font-size: 1rem !important;
+    }
     h4{
       font-size: 0.9rem !important;
     }
-    .card-body,.text,li{
-      font-size: 0.8rem;
-      line-height: 0.95rem;
+    .card-body,.text,li,.text_news,.year_news{
+      font-size: 0.85rem !important;
+      line-height: 1rem;
     }
   }
   @media screen and (min-width: 500px)and (max-width: 768px) {
@@ -144,10 +154,13 @@ export default {
     h6{
       font-size: 0.7rem !important;
     }
+    h3{
+      font-size: 1.05rem !important;
+    }
     h4{
       font-size: 1rem !important;
     }
-    .card-body,.text,li{
+    .card-body,.text,li,.text_news,.year_news{
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
@@ -163,7 +176,7 @@ export default {
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
-    .card-body,.text,li{
+    .card-body,.text,li,.text_news,.year_news{
       font-size: 0.9rem !important;
       line-height: 1.1rem;
     }
@@ -178,8 +191,8 @@ export default {
     h4{
       font-size: 1.2rem !important;
     }
-    .card-body,.text,li,h6{
-      font-size: 1rem;
+    .card-body,.text,li,h6,.text_news,.year_news{
+      font-size: 0.9rem !important;
       line-height: 1.4rem;
     }
   }
