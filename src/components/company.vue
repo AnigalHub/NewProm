@@ -88,11 +88,11 @@
                 ],
                 history_img:[
                     {
-                        src: "./images/oscilloscope.jpg",
+                        src: "./images/company/oscilloscope.jpg",
                         alt: "Осцилограф",
                     },
                     {
-                        src: "./images/voltmeter.jpg",
+                        src: "./images/company/voltmeter.jpg",
                         alt: "Вольтметр",
                     },
                 ],
