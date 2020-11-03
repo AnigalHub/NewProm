@@ -10,7 +10,7 @@
             </p>
             <h3>Наши преимущества</h3>
             <div class="place_for_benefits">
-                <div class="row">
+                <div class="row important_row">
                     <div class="col" v-for="(advantage, index) in  Row_advantages_part_1" :key="index">
                         <b-row>
                             <b-col cols="2">
@@ -20,7 +20,7 @@
                         </b-row>
                     </div>
                 </div>
-               <div class="row">
+               <div class="row important_row">
                     <div class="col" v-for="(advantage, index) in  Row_advantages_part_2" :key="index">
                         <b-row>
                             <b-col cols="2">
@@ -30,7 +30,7 @@
                         </b-row>
                     </div>
                </div>
-               <div class="row">
+               <div class="row important_row">
                     <div class="col" v-for="(advantage, index) in  Row_advantages_part_3" :key="index">
                         <b-row>
                             <b-col cols="2">
@@ -108,5 +108,54 @@
         width:95px;
         height:90px;
         padding: 5%;
+    }
+    .col{
+        padding: 0 !important;
+    }
+    @media screen and (max-width: 500px) {
+        svg{
+            width:75px;
+            height:60px;
+            padding: 5%;
+        }
+        .col-9{
+          padding-left: 10% !important;
+        }
+        .important_row{
+            flex-direction: column;
+        }
+        .place_for_benefits .row{
+            padding-bottom: 2.5%;
+        }
+    }
+    @media screen and (min-width: 500px)and (max-width: 768px) {
+        svg{
+            width:75px;
+            height:60px;
+            padding: 5%;
+        }
+        .col-9{
+            padding-left: 18% !important;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        svg{
+            width:75px;
+            height:60px;
+            padding: 5%;
+            margin-left: -100%;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        svg{
+            width:80px;
+            height:75px;
+            padding: 5%;
+            margin-left: -40%;
+        }
+        .place_for_benefits .row{
+            padding-bottom: 1.5%;
+        }
+
     }
 </style>
