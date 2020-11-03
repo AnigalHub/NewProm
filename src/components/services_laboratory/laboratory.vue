@@ -22,8 +22,8 @@
                     </router-link>
                 </div>
             </div>
-            <b-row>
-                <b-col class=" row_list text">
+            <b-row class="row_list">
+                <b-col class="text">
                     <ul>
                             <li v-for="( test, index) in  list_tests" :key="index">{{test}}</li>
                     </ul>
@@ -47,31 +47,31 @@
                 tests_laboratory:[
                     {
                         link: "../vhodnoi_control",
-                        src: "./images/vhod.jpg",
+                        src: "./images/laboratory/vhod.jpg",
                         alt: "Входной_контроль",
                         name: "Входной контроль",
                     },
                     {
                         link: "../dop_trials",
-                        src: "./images/dop.jpg",
+                        src: "./images/laboratory/dop.jpg",
                         alt: "Дополнительные_испытания",
                         name: "Дополнительные испытания",
                     },
                     {
                         link: "../certification_trials",
-                        src: "./images/sertific.jpg",
+                        src: "./images/laboratory/sertific.jpg",
                         alt: "Сертификационные_испытания",
                         name: "Сертификационные испытания",
                     },
                     {
                         link: "../climatic_trials",
-                        src: "./images/klimat.jpg",
+                        src: "./images/laboratory/klimat.jpg",
                         alt: "Климатические_испытания",
                         name: "Климатические испытания",
                     },
                     {
                         link: "../mehanic_trials",
-                        src: "./images/mehanic_2.jpg",
+                        src: "./images/laboratory/mehanic_2.jpg",
                         alt: "Механические_испытания",
                         name: "Механические испытания",
                     },
@@ -108,7 +108,7 @@
         padding: 1% 0 2.5% 0;
     }
     h6 {
-        height: 40px;
+        height: 32px;
         text-align: center;
     }
 
@@ -170,6 +170,46 @@
         flex: 0 0 auto !important;
         .photo {
             margin-left: 1.5%;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .flex-container > div {
+            width: 30%;
+            margin: 0 1% 2% 1% !important;
+        }
+        h6 {
+            height: 1.5rem;
+        }
+
+    }
+    @media screen and (min-width: 500px)and (max-width: 768px) {
+        .flex-container > div {
+            width: 30%;
+            margin: 0 0.8% 2% 0.8% !important;
+        }
+        h6 {
+            height: 1.5rem;
+        }
+        .row_list{
+            flex-direction: column;
+        }
+        .col li{
+            padding-bottom: 0.2%;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .flex-container > div {
+            width: 31%;
+            margin: 0 1% 2% 1% !important;
+        }
+        h6 {
+            height: 1.5rem;
+        }
+        .row_list{
+            flex-direction: column;
+        }
+        .col li{
+            padding-bottom: 0.2%;
         }
     }
 
