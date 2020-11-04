@@ -215,4 +215,21 @@
     .flex-container > div:hover{
         filter: contrast(200%);
     }
+    @media screen and (max-width: 768px) {
+        .flex-container > div {
+            width: 33%;
+            margin: 0 0.05% 0.05% 0.05% !important;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .flex-container > div {
+            width: 24%;
+            margin: 0 0.05% 0.05% 0.05% !important;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        .flex-container > div {
+            width: 19%;
+        }
+    }
 </style>
