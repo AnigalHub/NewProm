@@ -48,7 +48,7 @@
             </p>
             <b-card no-body>
                 <b-tabs pills card vertical nav-wrapper-class="w-50">
-                    <b-tab v-for="(certificate,index) in reputation" :key="index" :title=certificate.title >
+                    <b-tab class="text" v-for="(certificate,index) in reputation" :key="index" :title=certificate.title >
                         <b-card-text class="text">
                             <p><b>{{certificate.title}}</b></p>
                             <i><u>Выдан:</u></i>
@@ -209,6 +209,11 @@
     .w-50 {
         width: 52% !important;
     }
+    @media screen and (max-width: 992px) {
+        .w-50{
+            width: 100% !important;
+        }
+    }
 
     .tab-content{
         /*background-color: rgba(36, 94, 38, 0.25) !important; */
@@ -348,7 +353,7 @@
             }
         }
         .yaer_number{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .year{
             font-size: 0.8rem;
@@ -356,6 +361,13 @@
         .circle{
             border: 2px solid rgba(0, 0, 0, 0.16);
         }
+        .card .row{
+            flex-direction: column;
+        }
+        .card-body{
+            padding: 0.8rem !important;
+        }
+
     }
     @media screen and (min-width: 500px)and (max-width: 768px) {
         .row_history{
@@ -383,6 +395,12 @@
         .circle{
             border: 2px solid rgba(0, 0, 0, 0.16);
         }
+        .card .row{
+            flex-direction: column;
+        }
+        .card-body{
+            padding: 0.8rem !important;
+        }
     }
     @media screen and (min-width: 768px)and (max-width: 992px) {
         .row_history{
@@ -406,6 +424,12 @@
         }
         .year{
             font-size: 1rem;
+        }
+        .card .row{
+            flex-direction: column;
+        }
+        .card-body{
+            padding: 1rem !important;
         }
     }
     @media screen and (min-width: 992px)and (max-width: 1200px) {
