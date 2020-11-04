@@ -142,6 +142,9 @@ export default {
       font-size: 0.85rem !important;
       line-height: 1rem;
     }
+    a{
+       font-size: 0.9rem !important;
+    }
   }
   @media screen and (min-width: 500px)and (max-width: 768px) {
     h2{
@@ -164,6 +167,9 @@ export default {
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
+    a{
+       font-size: 0.82rem !important;
+    }
   }
   @media screen and (min-width: 768px)and (max-width: 992px) {
     h5{
@@ -180,6 +186,9 @@ export default {
       font-size: 0.9rem !important;
       line-height: 1.1rem;
     }
+    a{
+      font-size: 1rem !important;
+    }
   }
   @media screen and (min-width: 992px)and (max-width: 1200px) {
     h6{
@@ -195,5 +204,8 @@ export default {
       font-size: 0.9rem !important;
       line-height: 1.4rem;
     }
+      a{
+          font-size: 1rem !important;
+      }
   }
 </style>
