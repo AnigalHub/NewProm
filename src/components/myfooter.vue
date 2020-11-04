@@ -3,21 +3,21 @@
         <div class="container">
             <div class="flex-container">
                 <div>
-                        <router-link to="/company">О компании</router-link>
-                        <br>
-                        <router-link to="/laboratory" id="lab">Лаборатория</router-link>
-                        <br>
-                        <router-link to="/laboratory">Услуги лаборатории</router-link>
-                        <br>
-                        <router-link to="/vhodnoi_control">Входной контроль</router-link>
-                        <br>
-                        <router-link to="/dop_trials">Дополнительные испытания</router-link>
-                        <br>
-                        <router-link to="/certification_trials">Сертификационные испытания</router-link>
-                        <br>
-                        <router-link to="/climatic_trials">Климатические испытания</router-link>
-                        <br>
-                        <router-link to="/mehanic_trials">Механические испытания</router-link>
+                    <router-link to="/company">О компании</router-link>
+                    <br>
+                    <router-link to="/laboratory" id="lab">Лаборатория</router-link>
+                    <br>
+                    <router-link to="/laboratory">Услуги лаборатории</router-link>
+                    <br>
+                    <router-link to="/vhodnoi_control">Входной контроль</router-link>
+                    <br>
+                    <router-link to="/dop_trials">Дополнительные испытания</router-link>
+                    <br>
+                    <router-link to="/certification_trials">Сертификационные испытания</router-link>
+                    <br>
+                    <router-link to="/climatic_trials">Климатические испытания</router-link>
+                    <br>
+                    <router-link to="/mehanic_trials">Механические испытания</router-link>
                 </div>
                 <div>
                     <router-link to="/supply">Поставка ЭКБ и КИ</router-link>
@@ -51,9 +51,9 @@
                     <br>
                     <router-link to="/events_smk">Мероприятия по улучшению СМК</router-link>
                     <br>
-                    <router-link to="/smk" id="news">Новости</router-link>
+                    <router-link to="/news" id="news">Новости</router-link>
                     <br>
-                    <router-link to="/smk" id="contact">Контакты</router-link>
+                    <router-link to="/contacts" id="contact">Контакты</router-link>
                 </div>
                 <div>
 
@@ -94,13 +94,12 @@
     }
     .flex-container > div {
         width: 18.7%;
-        margin: 0 0.5% 0 0.55% !important;
+        margin: 0 0.5% 5% 0.55% !important;
     }
 
     #footer ul{
         text-align: left;
         padding-left: 0 !important;
-
         li{
             font-size: 1rem !important;
             font-family: "Open Sans",Arial,sans-serif;
@@ -122,65 +121,28 @@
         }
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 500px) {
+        .flex-container > div {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 500px)and (max-width: 768px) {
+        .flex-container > div {
+            width: 48%;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .flex-container > div {
+            width: 31%;
+            margin: 0 1.15% 5% 1.15% !important;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        .flex-container > div {
+            width: 17%;
+            margin: 0 1.15% 5% 1.15% !important;
+        }
+    }
 
-        #footer .col, .col-2, .col-3,.col-4{
-            flex:0 0 auto !important;
-        }
-        #footer li{
-            text-align: center;
-            font-size: 13px !important;
-        }
-        #footer .col{
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        }
-        #footer .flex_2{
-            flex-direction: column;
-            .col,.col-4{
-                flex: 0 0 auto !important;
-            }
-            .col-4{
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        #footer .flex_1{
-            flex-direction: column;
-            .col,.col-4{
-                flex: 0 0 auto !important;
-            }
-            .col-4{
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        #footer ul{
-            padding-inline-start: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        #footer{
-            padding-right: 0 !important;
-            padding-left: 0 !important;
-        }
-    }
-    @media screen and (min-width:768px) and(max-width: 1255px){
-        #footer .flex_1{
-            flex-direction: column;
-            .part_1{
-                flex: 0 0 auto !important;
-            }
-        }
-        #footer li{
-            font-size: 15px !important;
-            text-align: center;
-        }
-    }
-    @media screen and (min-width:1255px) and(max-width: 1600px){
-        #footer li{
-            font-size: 16px !important;
-        }
-
-    }
 
 </style>
