@@ -217,18 +217,19 @@
         padding-bottom: 0.1% !important;
         padding-top: 0.1% !important;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         .number{
             font-size: 2rem;
         }
     }
-    @media screen and (min-width: 500px)and (max-width: 768px) {
-
-    }
     @media screen and (min-width: 768px)and (max-width: 992px) {
-
+        .number{
+            font-size: 2.5rem;
+        }
     }
     @media screen and (min-width: 992px)and (max-width: 1200px) {
-
+        .number{
+            font-size: 3rem;
+        }
     }
 </style>
