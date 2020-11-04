@@ -110,4 +110,14 @@
         left: 50%;
         bottom: -26.5px;
     }
+    
+    @media screen and (max-width: 992px) {
+        .row{
+            flex-direction: column-reverse;
+            .col-4{
+                display: none;
+            }
+        }
+    }
+
 </style>
