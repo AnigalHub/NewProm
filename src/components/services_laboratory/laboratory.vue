@@ -172,15 +172,20 @@
             margin-left: 1.5%;
         }
     }
-    @media screen and (min-width: 768px)and (max-width: 992px) {
+    @media screen and (max-width: 500px) {
         .flex-container > div {
-            width: 30%;
-            margin: 0 1% 2% 1% !important;
+            width: 44%;
+            margin: 0 2.5% 3% 2.5% !important;
         }
         h6 {
-            height: 1.5rem;
+            height: 1rem;
         }
-
+        .row_list{
+            flex-direction: column;
+        }
+        .col li{
+            padding-bottom: 0.2%;
+        }
     }
     @media screen and (min-width: 500px)and (max-width: 768px) {
         .flex-container > div {
@@ -197,20 +202,16 @@
             padding-bottom: 0.2%;
         }
     }
-    @media screen and (max-width: 500px) {
+
+    @media screen and (min-width: 768px)and (max-width: 992px) {
         .flex-container > div {
-            width: 31%;
+            width: 30%;
             margin: 0 1% 2% 1% !important;
         }
         h6 {
             height: 1.5rem;
         }
-        .row_list{
-            flex-direction: column;
-        }
-        .col li{
-            padding-bottom: 0.2%;
-        }
+
     }
 
 </style>
