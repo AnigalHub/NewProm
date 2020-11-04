@@ -77,8 +77,8 @@
     }
     h6{
         text-align: center;
-        height: 45px;
-        padding-top: 4%;
+        height: 2.6rem;
+        padding-top: 2%;
         background: rgba(226, 238, 235, 0.53);
         margin-bottom: 0 !important;
     }
@@ -124,4 +124,41 @@
     li:before {
         content: " — ";
     }
+    @media screen and (max-width: 768px) {
+        .row{
+            flex-direction: column;
+            .col-5{
+                max-width: 100% !important;
+            }
+            .col{
+                max-width: 85% !important;
+            }
+        }
+        .flex-container > div {
+            width: 31%;
+            margin: 0 1% 2% 1% !important;
+        }
+        h6{
+            height: 2.2rem;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .row{
+            flex-direction: column;
+            .col-5{
+                max-width: 100% !important;
+            }
+            .col{
+                max-width: 75% !important;
+            }
+        }
+        .flex-container > div {
+
+            margin: 0 1.15% 2% 1.15% !important;
+        }
+        h6{
+            height: 2.3rem;
+        }
+    }
+
 </style>
