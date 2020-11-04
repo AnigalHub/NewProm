@@ -138,7 +138,7 @@ export default {
     h4{
       font-size: 0.9rem !important;
     }
-    .card-body,.text,li,.text_news,.year_news{
+    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.85rem !important;
       line-height: 1rem;
     }
@@ -163,7 +163,7 @@ export default {
     h4{
       font-size: 1rem !important;
     }
-    .card-body,.text,li,.text_news,.year_news{
+    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
@@ -182,7 +182,7 @@ export default {
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
-    .card-body,.text,li,.text_news,.year_news{
+    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.9rem !important;
       line-height: 1.1rem;
     }
@@ -200,7 +200,7 @@ export default {
     h4{
       font-size: 1.2rem !important;
     }
-    .card-body,.text,li,h6,.text_news,.year_news{
+    .card-body,.table th,.table td,.text,li,h6,.text_news,.year_news{
       font-size: 0.9rem !important;
       line-height: 1.4rem;
     }
