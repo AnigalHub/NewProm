@@ -1,9 +1,9 @@
 <template>
     <div id="smk">
         <b-container>
-            <b-row>
+            <b-row class="row_smk">
+                <h2>Система менеджмента качества организации</h2>
                 <b-col cols="7">
-                    <h2>Система менеджмента качества организации</h2>
                     <p class="text">
                         Система менеджмента качества организации разработана, задокументирована, внедрена, поддерживается в рабочем состоянии и соответствует требованиям ГОСТ Р ИСО 9001-2015, ГОСТ РВ 0015-002-2012, ЭС РД 09-2014, ЭС РД 010-2015, что подтверждается сертификатом соответствия, выданным Органом по сертификации систем менеджмента качества Автономной некоммерческой организацией "Центр испытаний и сертификации "Промтехносерт" (СДС "Электронсерт").
                     </p>
@@ -16,7 +16,10 @@
                     </b-row>
                 </b-col>
                 <b-col>
-                    <img src="../../../public/images/smk.jpg" >
+                    <img src="../../../public/images/smk.jpg" class="certificate">
+                    <a class="link">
+                        Посмотреть "Сертификат Соответствия"
+                    </a>
                 </b-col>
             </b-row>
         </b-container>
@@ -81,6 +84,31 @@
     }
     .col-7 .col{
         padding: 0 3% 0 3%;
+        text-align: center;
+    }
+    .link{
+        display: none;
+        color: #161640 !important;
+        font-weight: 600;
+    }
+
+
+    @media screen and (max-width: 992px) {
+        .row_smk{
+             flex-direction: column;
+            .col-7{
+                 max-width: 100% !important;
+            }
+        }
+        .certificate{
+            display: none;
+        }
+        .link{
+            display: block;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+
     }
 
 </style>
