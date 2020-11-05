@@ -2,18 +2,8 @@
     <div id="certification_trials">
         <b-container>
             <h2>Сертификационные испытания</h2>
-            <b-row>
-                <b-col cols="3">
-                    <video autoplay muted loop playsinline webkit-playingline width="100%" poster="video/video.png">
-                        <source src="video/certificate.mp4" type="video/mp4" >
-                    </video>
-                </b-col>
-                <b-col>
-                    <p class="text descr">
-                        Испытания выполняются в объеме и значениях, соответствующих конкретному изделию и условиям его дальнейшей эксплуатации, соответственно позволяют существенно сократить число отказов конечного изделия в процессе эксплуатации. Финальным этапом сертификационных испытаний, проводимых в испытательной лаборатории ООО «Компания Промэлектронсервис» является оформление и предоставление заказчику отчетной документации.
-                    </p>
-                </b-col>
-            </b-row>
+            <trials_video  v-for="trial in  Trials" :trials_video="trial.trials_video" :trials_description="trial.trials_description">
+            </trials_video>
             <b-row class="row_step">
                 <b-col>
                   <ul>
@@ -38,8 +28,20 @@
 </template>
 
 <script>
+    import Trials_video from "../trials_video";
     export default {
-        name: "certification_trials"
+        name: "certification_trials",
+        components: {Trials_video},
+        data() {
+            return {
+                Trials:[
+                    {
+                        trials_video: './video/certificate.mp4',
+                        trials_description: 'Испытания выполняются в объеме и значениях, соответствующих конкретному изделию и условиям его дальнейшей эксплуатации, соответственно позволяют существенно сократить число отказов конечного изделия в процессе эксплуатации. Финальным этапом сертификационных испытаний, проводимых в испытательной лаборатории ООО «Компания Промэлектронсервис» является оформление и предоставление заказчику отчетной документации.',
+                    }
+                ]
+            }
+        }
     }
 </script>
 <style>
