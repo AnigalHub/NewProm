@@ -35,7 +35,12 @@ export default {
   }
 }
 </script>
-
+<style>
+  ul{
+    margin-block-start: 0 !important;
+    padding-inline-start: 5px !important;
+  }
+</style>
 <style lang="scss">
   @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -47,7 +52,6 @@ export default {
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-
   }
   .container-fluid{
     padding-left: 0 !important;
@@ -86,6 +90,7 @@ export default {
     font-size: 1.15rem !important;
     font-weight: 700 !important;
   }
+
 
   .card-body,.text,li,h6{
     font-family: "Open Sans",Arial,sans-serif;
