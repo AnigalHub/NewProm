@@ -82,9 +82,15 @@
         background-size: 100% 100%;
         padding: 1% 0 2.5% 0;
     }
-    .col-7 .col{
-        padding: 0 3% 0 3%;
-        text-align: center;
+    .col-7{
+        padding: 0 !important;
+        .col{
+            padding: 0 3% 0 3%;
+            text-align: center;
+        }
+    }
+    img{
+        padding: 0 2.5% 0 2.5%;
     }
     .link{
         display: none;
