@@ -8,7 +8,6 @@
                     <p class="text">
                         <b> ISOLA </b>- мировая компания, которая разрабатывает и производит ламинаты с медным покрытием
                         и диэлектрические препреги, используемые для изготовления передовых многослойных печатных плат.
-
                     </p>
                 </b-col>
                 <b-col>
@@ -23,7 +22,8 @@
                 <b-tab title="Базовые материалы компании ISOLA" active>
                     <p class="text">Это базовые материалы класса FR-4 с температурой стеклования 135°C (серия DE104) и высокотемпературные с температурой стеклования 180°С (серия 370HR); условно-нетекучие препреги (серия FR406N) и полугибкие материалы для изготовления ГЖПП; материалы с высокой теплопроводностью; материалы на полиимидной основе (Серия P96 и P95); СВЧ-материалы (серии FR408HR, Astra, I-tera, Tachyon).</p>
                     <b-row>
-                        <b-col><p class="text">
+                        <b-col>
+                            <p class="text">
                                 Базовые материалы компании ISOLA (Германия) одни из первых импортных материалов, появившихся на российском рынке, завоевали неоспоримый авторитет и уважение. Отборное сырье и тщательно согласованные рецептуры являются основанием для признанного во всем мире стандарта качества.
                             </p>
                             <b-row>
@@ -54,24 +54,11 @@
                             </p>
                         </b-col>
                         <b-col cols="3">
-                            <b-carousel
-                                    id="carousel-no-animation"
-                                    style="text-shadow: 0px 0px 2px #000"
-                                    animation
-                                    indicators
-                            >
-                                <b-carousel-slide
-                                        img-src="./images/supply/lab_isola.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/shipment_isola.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/supply_isola.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/warehouse_isola.jpg"
-                                ></b-carousel-slide>
+                            <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" animation indicators>
+                                <b-carousel-slide img-src="./images/supply/lab_isola.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/shipment_isola.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/supply_isola.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/warehouse_isola.jpg"></b-carousel-slide>
                             </b-carousel>
                         </b-col>
                     </b-row>
@@ -110,24 +97,11 @@
                             </p>
                         </b-col>
                         <b-col cols="3">
-                            <b-carousel
-                                    id="carousel-no-animation"
-                                    style="text-shadow: 0px 0px 2px #000"
-                                    animation
-                                    indicators
-                            >
-                                <b-carousel-slide
-                                        img-src="./images/supply/lab_ventec.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/shipment_ventec.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/company_ventec.jpg"
-                                ></b-carousel-slide>
-                                <b-carousel-slide
-                                        img-src="./images/supply/supply_ventec.jpg"
-                                ></b-carousel-slide>
+                            <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" animation indicators>
+                                <b-carousel-slide img-src="./images/supply/lab_ventec.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/shipment_ventec.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/company_ventec.jpg"></b-carousel-slide>
+                                <b-carousel-slide img-src="./images/supply/supply_ventec.jpg"></b-carousel-slide>
                             </b-carousel>
                         </b-col>
                     </b-row>
@@ -170,10 +144,6 @@
     .col-5{
         float: left;
     }
-    .isola_ventec p{
-        line-height: 1.7rem !important;
-    }
-
     .emblem{
       width: 15% !important;
       margin-right:2% ;
