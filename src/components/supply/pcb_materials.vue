@@ -48,8 +48,6 @@
                         <b-col>
                             <p class="text">
                                 Соответствие материалов фирмы ISOLA DURAVER-E-Cu требованиям нормативно-технических документов Минобороны России и разработанным ТУ осуществлено путем проведения сертификационных испытаний.
-                            </p>
-                            <p class="text">
                                 Поставка базовых материалов ISOLA позволит обеспечить уверенность потребителей в полном соответствии требованиям нормативных документов Минобороны России (КГВС «Климат-7»), а также сократит расходы на проведения самостоятельных сертификационных испытаний каждой закупаемой партии материалов.
                             </p>
                         </b-col>
@@ -171,10 +169,41 @@
     .col{
         padding-left: 0 !important;
     }
+    @media screen and (max-width: 500px) {
+        .tab-pane .row{
+            flex-direction: column;
+        }
+        .col-4,.col-3,.col-3:last-child {
+            max-width: 65% !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .emblem{
+            width: 20% !important;
+        }
+
+    }
+    @media screen and (min-width: 500px) and (max-width: 768px) {
+        .row .row .col{
+            margin-right:-120% ;
+        }
+        .row .row .col-3{
+            flex: 0 0 60% !important;
+            max-width: 60% !important;
+        }
+        .row .col-4,.row .col-3{
+            flex: 0 0 40% !important;
+            max-width: 40% !important;
+        }
+
+    }
     @media screen and  (max-width: 992px) {
         .isola_ventec{
             flex-direction: column;
         }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
         .row .row .col{
             margin-right:-90% ;
         }
