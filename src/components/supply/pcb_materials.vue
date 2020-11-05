@@ -133,6 +133,11 @@
         background: rgba(255, 255, 255, 0.13);
         padding: 0.2rem !important;
     }
+    @media screen and (max-width: 992px) {
+        .nav-fill .nav-item {
+            width: 100% !important;
+        }
+    }
 
 </style>
 <style scoped lang="scss">
@@ -166,5 +171,23 @@
     .col{
         padding-left: 0 !important;
     }
+    @media screen and  (max-width: 992px) {
+        .isola_ventec{
+            flex-direction: column;
+        }
+        .row .row .col{
+            margin-right:-90% ;
+        }
+        .row .row .col-3{
+            flex: 0 0 42% !important;
+            max-width: 42% !important;
+        }
+        .row .col-4,.row .col-3{
+            flex: 0 0 35% !important;
+            max-width: 35% !important;
+        }
+
+    }
+
 
 </style>
