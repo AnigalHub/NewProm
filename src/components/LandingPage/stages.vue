@@ -147,11 +147,6 @@
 </script>
 
 <style scoped lang="scss">
-    #stages{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0;
-    }
     h2 {
         color: #183018;
         text-align: center !important;
