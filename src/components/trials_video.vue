@@ -39,4 +39,20 @@
     .descr{
         margin-top: 5%;
     }
+    @media screen and (max-width: 500px) {
+        .row {
+            flex-direction: column;
+            .col-3 {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                flex: 0 0 45% !important;
+                max-width: 45% !important;
+            }
+            .col{
+                padding: 0 !important;
+            }
+        }
+    }
+
 </style>
