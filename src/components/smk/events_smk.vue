@@ -50,11 +50,6 @@
 </script>
 
 <style scoped lang="scss">
-    #events_smk{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     img{
         margin-top: 5%;
     }
@@ -110,7 +105,7 @@
         left: 50%;
         bottom: -26.5px;
     }
-    
+
     @media screen and (max-width: 992px) {
         .row{
             flex-direction: column-reverse;
