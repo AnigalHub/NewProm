@@ -93,11 +93,6 @@
 </script>
 
 <style scoped lang="scss">
-    #selection_and_supply_it{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     h3{
         text-align: center;
     }
