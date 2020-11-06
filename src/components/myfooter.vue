@@ -51,9 +51,10 @@
                     <br>
                     <router-link to="/events_smk">Мероприятия по улучшению СМК</router-link>
                     <br>
-                    <router-link to="/news" id="news">Новости</router-link>
+                    <router-link to="/news" id="news_button">Новости</router-link>
                     <br>
                     <router-link to="/contacts" id="contact">Контакты</router-link>
+
                 </div>
                 <div>
 
@@ -112,7 +113,7 @@
     }
 
     #footer {
-        a:first-child, #lab,#news,#contact{
+        a:first-child, #lab,#news_button,#contact{
             color: white;
         }
         a{
