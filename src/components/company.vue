@@ -241,28 +241,17 @@
     }
 </style>
 <style scoped lang="scss">
-    #company{
-        background: url("../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     h3{
         text-align: center;
     }
     .house{
         margin-top: 15%;
     }
-
-
    .carousel,.col-3 img{
         padding: 2.5% !important;
         background: rgba(255, 255, 255, 0.26) !important;
         box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
     }
-
-
-
-
     .col-2 {
         flex: 0 0 14% !important;
         max-width: 14% !important;
@@ -321,7 +310,6 @@
         box-shadow: 0.5px 0.5px 0.5px rgba(26, 78, 26, 0.92),
         0 0 0.2em rgba(38, 93, 40, 0.67),
         0 0 0.2em rgba(26, 78, 26, 0.85) !important;
-
     }
     .row_history{
         .row p{
