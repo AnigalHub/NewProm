@@ -53,6 +53,13 @@ export default {
     margin: 0 !important;
     padding: 0 !important;
   }
+  #company,#laboratory, #vhodnoi_control,#dop_trials,#climatic_trials,#certification_trials,
+  #mehanic_trials,#supply,#pcb_materials,#manufactures,#program,#selection_and_supply_it,#package_services,
+  #equipment,#guarantee,#smk,#use_smk,#events_smk,#news,#contacts, #advantages,#stages{
+    background: url("../public/фон.jpg");
+    background-size: 100% 100%;
+    padding: 1% 0 2% 0;
+  }
   .container-fluid{
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -85,13 +92,23 @@ export default {
     padding-top: 0.8%;
     font-weight: 700 !important;
   }
+  #vhodnoi_control h3,#dop_trials h3,#climatic_trials h3,#certification_trials h3,
+  #mehanic_trials h3{
+    color: #161640 !important;
+  }
   .card-header,h5{
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1.15rem !important;
+    color: #161640 !important;
     font-weight: 700 !important;
+    padding: .25rem 0.5rem !important;
+    background: rgba(42, 74, 89, 0.27) !important;
+    border: 2px solid rgba(5, 35, 71, 0.49) !important;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0 !important;
   }
-
-
+  .card{
+    background: rgba(255, 255, 255, 0.61) !important;
+  }
   .card-body,.text,li,h6{
     font-family: "Open Sans",Arial,sans-serif;
     color: #161640 !important;
@@ -106,7 +123,7 @@ export default {
       color: rgba(5, 35, 71, 0.85);
       font-size: 1rem !important;
   }
-    tr,th{
+  tr,th{
       font-family: "Open Sans",Arial,sans-serif;
       color: #161640 !important;
       font-size: 1rem !important;
@@ -122,6 +139,22 @@ export default {
   }
   img{
     width: 100%;
+  }
+  .row_step {
+    .col-5 {
+      flex: 0 0 40% !important;
+      max-width: 40% !important;
+      padding-left: 5px !important;
+      .carousel{
+        padding: 2.5% !important;
+        background: rgba(255, 255, 255, 0.26) !important;
+        box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
+      }
+    }
+    .col {
+      padding-left: 0 !important;
+      padding-right: 15px !important;
+    }
   }
 
 
@@ -143,7 +176,7 @@ export default {
     h4{
       font-size: 0.9rem !important;
     }
-    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
+    .card-body,.card-header,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.85rem !important;
       line-height: 1rem;
     }
@@ -154,45 +187,79 @@ export default {
   @media screen and (min-width: 500px)and (max-width: 768px) {
     h2{
       padding: 0.5% 0 0.5% 0;
-      font-size: 1.5rem !important;
+      font-size: 1.2rem !important;
     }
     h5{
-      font-size: 0.9rem !important;
+      font-size: 0.85rem !important;
     }
     h6{
-      font-size: 0.7rem !important;
+      font-size: 0.8rem !important;
     }
     h3{
-      font-size: 1.05rem !important;
+      font-size: 0.95rem !important;
     }
     h4{
-      font-size: 1rem !important;
+      font-size: 0.9rem !important;
     }
-    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
+    .card-body,.card-header,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.8rem !important;
       line-height: 1rem;
     }
     a{
        font-size: 0.82rem !important;
     }
+    .row_step{
+      flex-direction: column-reverse;
+      padding: 0 !important;
+      .col-5{
+        max-width: 45% !important;
+        padding-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .col{
+        padding: 0 !important;
+      }
+    }
   }
   @media screen and (min-width: 768px)and (max-width: 992px) {
     h5{
-      font-size: 0.9rem !important;
+      font-size: 0.95rem !important;
+    }
+    h2{
+      font-size: 1.25rem !important;
+    }
+    h3{
+      font-size: 1.15rem !important;
     }
     h4{
       font-size: 1rem !important;
     }
     h6{
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
       line-height: 1rem;
     }
-    .card-body,.table th,.table td,.text,li,.text_news,.year_news{
+    .card-body,.card-header,.table th,.table td,.text,li,.text_news,.year_news{
       font-size: 0.9rem !important;
       line-height: 1.1rem;
     }
     a{
       font-size: 1rem !important;
+    }
+    .row_step{
+      flex-direction: column-reverse;
+      padding: 0 !important;
+      .col-5{
+        max-width: 45% !important;
+        padding-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .col{
+        padding: 0 !important;
+      }
     }
   }
   @media screen and (min-width: 992px)and (max-width: 1200px) {
@@ -200,12 +267,18 @@ export default {
       font-size: 0.9rem !important;
     }
     h5{
-      font-size: 1.1rem !important;
+      font-size: 0.95rem !important;
     }
     h4{
+      font-size: 1rem !important;
+    }
+    h2{
+      font-size: 1.3rem !important;
+    }
+    h3{
       font-size: 1.2rem !important;
     }
-    .card-body,.table th,.table td,.text,li,h6,.text_news,.year_news{
+    .card-body,.card-header,.table th,.table td,.text,li,h6,.text_news,.year_news{
       font-size: 0.9rem !important;
       line-height: 1.4rem;
     }
