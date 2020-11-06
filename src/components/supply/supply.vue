@@ -70,11 +70,6 @@
 </script>
 
 <style scoped lang="scss">
-    #supply{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     h6{
         text-align: center;
         height: 2.6rem;
