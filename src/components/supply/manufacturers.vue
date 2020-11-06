@@ -198,11 +198,6 @@
 </script>
 
 <style scoped lang="scss">
-    #manufacturers{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     .flex-container {
         display: flex;
         flex-wrap: wrap;

@@ -87,11 +87,6 @@
     }
 </style>
 <style scoped lang="scss">
-    #program{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     .tab-content{
         padding: 5% !important;
     }
