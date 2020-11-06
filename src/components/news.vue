@@ -219,7 +219,11 @@
     }
     @media screen and (max-width: 768px) {
         .number{
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+        .col-2{
+            flex: 0 0 15% !important;
+            max-width: 15% !important;
         }
     }
     @media screen and (min-width: 768px)and (max-width: 992px) {
