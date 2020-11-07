@@ -46,7 +46,7 @@
         top:5%;
         padding: 5% 8% 8% 14%;
         color:white !important;
-        line-height: 65px;
+        line-height: 4rem;
         text-shadow: 3.5px 3.5px 5.5px #080909;
     }
     .slogan{
@@ -55,5 +55,60 @@
         font-family: 'Istok Web', sans-serif;
         text-shadow: 1.5px 1.5px 3.5px #080909;
     }
-
+    @media screen and (max-width: 500px) {
+        .inscription{
+            font-size: 1.2rem;
+            top:8% !important;
+            line-height: 1.7rem;
+            padding: 8% 8% 8% 5%;
+        }
+        video {
+            height: 230px !important;
+        }
+        .slogan{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (min-width: 500px)and (max-width: 768px) {
+        .inscription{
+            font-size: 1.4rem;
+            top:7% !important;
+            line-height: 2.25rem;
+        }
+        video {
+            height: 260px !important;
+        }
+        .slogan{
+            font-size: 1.15rem;
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .inscription{
+            font-size: 1.7rem;
+            top:7% !important;
+            line-height: 2.8rem;
+        }
+        video {
+            height: 300px !important;
+        }
+        .slogan{
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        .inscription{
+            font-size: 2rem;
+            top:6% !important;
+            line-height: 3rem;
+        }
+        video {
+            height: 340px !important;
+        }
+    }
+    @media screen and (min-width: 1200px)and (max-width: 1600px) {
+        .inscription{
+            font-size: 2.5rem;
+            top:7.5% !important;
+        }
+    }
 </style>
