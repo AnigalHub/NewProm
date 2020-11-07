@@ -4,11 +4,16 @@
             <h2>Дополнительные испытания</h2>
             <trials_video  v-for="trial in  Trials" :trials_video="trial.trials_video" :trials_description="trial.trials_description">
             </trials_video>
-
             <h3>Дополнительные испытания включают в себя:</h3>
             <b-row class="row_step">
                 <b-col>
                     <div class="accordion" role="tablist">
+                        <!--
+                    <b-card no-body>
+                      <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
+                      </trials_stages>
+                    </b-card>
+                      -->
                         <b-card no-body>
                             <b-card-header header-tag="header" class="p-1"role="tab" v-b-toggle.accordion-1>
                                 Входной контроль
@@ -19,7 +24,6 @@
                                 </b-card-body>
                             </b-collapse>
                         </b-card>
-
                         <b-card no-body>
                             <b-card-header header-tag="header" class="p-1" role="tab" v-b-toggle.accordion-2 variant="info">
                                 Отбраковочные испытания
@@ -30,7 +34,6 @@
                                 </b-card-body>
                             </b-collapse>
                         </b-card>
-
                         <b-card no-body>
                             <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-3 variant="info">
                                 Диагностический неразрушающий контроль
@@ -54,24 +57,11 @@
                     </div>
                 </b-col>
                 <b-col cols="5">
-                    <b-carousel
-                            id="carousel-no-animation"
-                            style="text-shadow: 0px 0px 2px #000"
-                            animation
-                            indicators
-                    >
-                        <b-carousel-slide
-                                img-src="./images/dop_trials/1.jpg"
-                        ></b-carousel-slide>
-                        <b-carousel-slide
-                                img-src="./images/dop_trials/2.jpg"
-                        ></b-carousel-slide>
-                        <b-carousel-slide
-                                img-src="./images/dop_trials/3.jpg"
-                        ></b-carousel-slide>
-                        <b-carousel-slide
-                                img-src="./images/dop_trials/4.jpg"
-                        ></b-carousel-slide>
+                    <b-carousel id="carousel-no-animation" style="text-shadow: 0px 0px 2px #000" animation indicators>
+                        <b-carousel-slide img-src="./images/dop_trials/1.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/dop_trials/2.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/dop_trials/3.jpg"></b-carousel-slide>
+                        <b-carousel-slide img-src="./images/dop_trials/4.jpg"></b-carousel-slide>
                     </b-carousel>
                 </b-col>
             </b-row>
@@ -81,9 +71,10 @@
 
 <script>
     import Trials_video from "../trials_video";
+    import Trials_stages from "../trials_stages";
     export default {
         name: "dop_trials",
-        components: {Trials_video},
+        components: {Trials_video,Trials_stages},
         data() {
             return {
                 text1: `Проверка внешнего вида, массо-габаритных характеристик, качества маркировки. Дополнительно подтверждаются основные параметры - критерии и годность.`,
@@ -95,6 +86,24 @@
                         trials_video: './video/dop.mp4',
                         trials_description: 'В результате проведения  дополнительных испытаний подтверждается соответствие иделия требованиям нормативной документации (ГОСТ, ОСТ и тд.) При комплектовании высоконадежной аппаратуры, рекомендуется проводить проверку 100% изделий ЭКБ и КИ (а не только образцов), что гарантирует их дальнейшую работу в заданных условиях.',
                     }
+                ],
+                Stages_trials:[
+                    {
+                        stage_name:'Входной контроль',
+                        stage_descr:'Проверка внешнего вида, массо-габаритных характеристик, качества маркировки. Дополнительно подтверждаются основные параметры - критерии и годность.',
+                    },
+                    {
+                        stage_name:'Отбраковочные испытания',
+                        stage_descr:'Представляет собой воздействия внешних факторов (термотренировка, электротермотренировка) с целью выявления скрытых дефектов.',
+                    },
+                    {
+                        stage_name:'Диагностический неразрушающий контроль',
+                        stage_descr:'Представляет собой дополнительные проверки по наиболее критичному воздействующему фактору, которые при этом не ухудшают характеристики ЭКБ и КИ.',
+                    },
+                    {
+                        stage_name:'Выборочный разрушающий физический анализ',
+                        stage_descr:'Для его выполнения отбирают образцы из партии ЭКБ и КИ, и проводят оценку соответствия конструктивно-технологических параметров ЭКБ и КИ требованиям нормативно-технической документации.',
+                    },
                 ]
             }
         }
@@ -102,52 +111,5 @@
 </script>
 
 <style scoped lang="scss">
-    #dop_trials{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
-    h2{
-        color: rgba(5, 35, 71, 0.75);
-    }
-    h3,.text,.card-body,.card-header{
-        color: #161640 !important;
-    }
-    .col-3{
-        padding: 0 !important;
-        flex: 0 0 30% !important;
-        max-width: 30% !important;
-    }
-    .col-5{
-        flex: 0 0 40% !important;
-        max-width: 40% !important;
-        padding-left: 5px !important;
-    }
-    .row_step .col{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-
-    video , .carousel{
-        padding: 2.5% !important;
-        background: rgba(255, 255, 255, 0.26) !important;
-        box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
-    }
-    .descr{
-        margin-top: 5%;
-    }
-    .card-header {
-        padding: .25rem 0.5rem !important;
-        background: rgba(42, 74, 89, 0.27) !important;
-        border: 2px solid rgba(5, 35, 71, 0.49) !important;
-        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0 !important;
-        color: #121224;
-    }
-    .card{
-        background: rgba(255, 255, 255, 0.61) !important;
-    }
-    .card-body{
-        padding: 0.8rem !important;
-    }
 
 </style>

@@ -44,38 +44,8 @@
         }
     }
 </script>
-<style>
-    ul{
-        margin-block-start: 0 !important;
-        padding-inline-start: 5px !important;
-    }
-</style>
+
 <style scoped lang="scss">
-    #certification_trials{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
-    .col-3{
-        padding: 0 !important;
-        flex: 0 0 30% !important;
-        max-width: 30% !important;
-    }
-    video,.carousel{
-        padding: 2.5% !important;
-        background: rgba(255, 255, 255, 0.26) !important;
-        box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
-    }
-    .descr{
-        margin-top: 5%;
-    }
-    .row_step{
-        padding-bottom: 2%;
-    }
-    .row_step .col{
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
     li {
         cursor: default;
         list-style-type: none;
