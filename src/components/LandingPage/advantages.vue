@@ -3,7 +3,7 @@
         <b-container>
             <h2>Наши преимущества</h2>
             <b-row class="adv_row">
-                <b-col class="adv" v-for="(advantage, index) in advantages" :key="index">
+                <b-col class="adv text" v-for="(advantage, index) in advantages" :key="index">
                     <router-link :to="advantage.link">
                         <img :src="advantage.src" :alt="advantage.alt"/>
                         <div> {{advantage.descr}}</div>
@@ -135,18 +135,16 @@
         color: #121224;
         text-align: center !important;
     }
-    img{
-        width: auto !important;
-    }
+
     .adv{
         background: #171131;
-        margin: 0 15px !important;
-        font-size: 18px;
-        padding: 5px !important;
-        color: white;
-        font-family: "Open Sans",Arial,sans-serif;
+        margin: 0 15px 20px 15px !important;
+        padding: 10px !important;
         box-shadow: 7px 7px 7px #3e3e3e;
-
+        
+        .text{
+            color: white;
+        }
         img{
             display: block;
             margin-right: auto;
@@ -154,11 +152,14 @@
             padding-bottom: 15px;
         }
     }
+    .text{
+        font-size: 1.125rem;
+        line-height: 1.8rem;
+        font-family: "Open Sans",Arial,sans-serif;
+    }
+
     .adv_row{
         padding-bottom: 1%;
-        .text{
-            color: white;
-        }
     }
     .number_row{
         margin-left: 15% !important;
