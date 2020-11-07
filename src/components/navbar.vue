@@ -2,7 +2,7 @@
     <b-navbar class="navbar-expand-xl sticky-top " toggleable>
         <b-container>
             <b-navbar-brand to="/" @click="GoToLanding()">
-                <img src="../../public/logo3.png">
+                <img src="../../public/images/brand.png">
                 <div class="name_company">Промэлекстронсервис</div>
                 <div class="name_company_2">COMPANY</div>
             </b-navbar-brand>
@@ -146,26 +146,27 @@
         padding: 0 !important;
     }
     .name_company{
-        margin-left: 15%;
-        margin-top: -16.5%;
+        margin-left:35%;
+        margin-top: -17%;
         padding-bottom: 12%;
         font-size: 0.78rem;
-        color: #ffffff;
+        color: rgba(255, 255, 255, 0.54);
         font-weight: 800;
         font-family: 'Times New Roman';
-        transform:scaleY(1.4);
-        text-shadow: 1px 1px 2px #212529;
+        transform:scaleY(1.6);
+        text-shadow: 0.4px 0.4px #eeeeee;
     }
     .name_company_2{
-        margin-left: 32.5%;
+        margin-left: 54%;
         margin-top: -15.5%;
         font-size: 0.68rem;
-        color: #ffffff; font-weight: 700;
+        color: rgba(255, 255, 255, 0.54);
+        font-weight: 700;
         font-family: "Open Sans",Arial,sans-serif;
-        text-shadow: 1px 1px 2px #212529;
+        text-shadow: 0.4px 0.4px #eeeeee;
     }
     .navbar-nav{
-        margin-left: -8%;
+        margin-left: -10%;
     }
     .navbar-brand {
         padding-right: 5% !important;
@@ -178,10 +179,10 @@
 
 
     img{
-        width: 195px !important;
+        width: 175px !important;
         margin-right: 4px;
         border-radius: 7px;
-        margin-top: -5%;
+        margin-top: 0.25%;
     }
     @media screen and (max-width: 500px) {
         .name_company{
@@ -189,8 +190,7 @@
             letter-spacing: 3px;
         }
         img {
-            width: 28px !important;
-            height: 28px !important;
+
         }
     }
     @media screen and (min-width: 500px)and (max-width: 768px) {
