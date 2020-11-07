@@ -95,12 +95,7 @@
         }
     }
 </script>
-<style>
-    ul{
-        margin-block-start: 0 !important;
-        padding-inline-start: 5px !important;
-    }
-</style>
+
 <style scoped lang="scss">
     #laboratory{
         background: url("../../../public/фон.jpg");
