@@ -4,7 +4,7 @@
             <h2>Мероприятия организации по постоянному улучшению системы менеджмента качества</h2>
             <b-row>
                 <b-col cols="4">
-                    <img src="../../../public/images/1111.jpg" >
+                    <img src="../../../public/images/smk_events.jpg" >
                 </b-col>
                 <b-col>
                     <div class="arrow arrow-bottom text" v-for="(arrow,index) in arrow_bottom" :key="index">
