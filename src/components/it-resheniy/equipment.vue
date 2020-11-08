@@ -20,32 +20,7 @@
         }
     }
 </script>
-<style>
-    .table th, .table td {
-        padding: 0.1% !important;
-        border: 1px solid rgba(18, 23, 37, 0.71) !important;
-        text-align: center !important;
-        background: rgba(255, 255, 255, 0.72);
-    }
-    .table thead th {
-        vertical-align: middle !important;
-        max-width: 20% !important;
-        background: rgb(91, 114, 131) !important;
-    }
-    th {
-        color: white !important;
-        text-shadow: 1.5px 1.5px 2px rgba(18, 23, 37, 0.71);
-    }
-    td{
-        text-shadow: 0.25px 0.25px .5px rgba(18, 23, 37, 0.71);
-    }
-    .b-table-sticky-header {
-        max-height: 70vh !important;
-    }
-    tr:hover{
-        background: rgb(91, 114, 131) !important;
-    }
-</style>
+
 <style scoped lang="scss">
 
 </style>
