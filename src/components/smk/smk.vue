@@ -16,7 +16,7 @@
                     </b-row>
                 </b-col>
                 <b-col>
-                    <img src="../../../public/images/smk.jpg" class="certificate">
+                    <img src="../../../public/images/smk/smk.jpg" class="certificate">
                     <a class="link">
                         Посмотреть "Сертификат Соответствия"
                     </a>
@@ -35,17 +35,17 @@
                 smk:smk,
                 guests:[
                     {
-                        src: "./images/iso17025.png",
+                        src: "./images/smk/iso17025.png",
                         alt: "ГОСТ_Р_ИСО_9001-2015",
                         name:'ГОСТ Р ИСО 9001-2015',
                     },
                     {
-                        src: "./images/vvt.png",
+                        src: "./images/smk/vvt.png",
                         alt: "ГОСТ_РВ_0015-002-2012",
                         name:'ГОСТ РВ 0015-002-2012',
                     },
                     {
-                        src: "./images/es.png",
+                        src: "./images/smk/es.png",
                         alt: "СДС_Электронсерт",
                         name:'СДС "Электронсерт"',
                     },
