@@ -53,25 +53,25 @@
                 advantages:[
                     {
                         link: "../laboratory",
-                        src: "./images/3.jpg",
+                        src: "./images/advantages/laboratory.jpg",
                         descr: "Собственная аккредитованная лаборатория по сертификации ЭКБ и КИ",
                         alt: "Собственная_аккредитованная_лаборатория_по_сертификации_ЭКБ_и_КИ",
                     },
                     {
                         link: "../supply",
-                        src: "./images/56.jpg",
+                        src: "./images/advantages/delivery.jpg",
                         alt: "Квалифицированная_поставка_ЭКБ_и_КИ_в_любую_точку_России",
                         descr: "Квалифицированная поставка ЭКБ и КИ в любую точку России",
                     },
                     {
                         link: "../smk",
-                        src: "./images/images.jpg",
+                        src: "./images/advantages/smk.jpg",
                         descr: "Сертифицированная система менеджмента качества и гарантия на ЭКБ и КИ",
                         alt: "Сертифицированная_система_менеджмента_качества_и_гарантия_на_ЭКБ_и_КИ",
                     },
                     {
                         link: "../selection_and_supply_it",
-                        src: "./images/55.jpg",
+                        src: "./images/advantages/it-resheniy.jpg",
                         descr: "Реализация современной IT-инфраструктуры",
                         alt: "Реализация_современной_IT-инфраструктуры",
                     },
