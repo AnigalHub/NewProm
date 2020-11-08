@@ -97,11 +97,6 @@
 </script>
 
 <style scoped lang="scss">
-    #laboratory{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     h6 {
         height: 32px;
         text-align: center;
