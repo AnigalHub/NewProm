@@ -76,11 +76,6 @@
 </script>
 
 <style scoped lang="scss">
-    #mycontact{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0;
-    }
     h2{
         color: #121224;
         text-align: center !important;
