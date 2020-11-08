@@ -46,46 +46,7 @@
         }
     }
 </script>
-<style>
-    .tab-content {
-        border: 1.5px solid #183018  !important;
-        border-radius: 10px;
-    }
-    .nav-pills .nav-link.active {
-        background-color: #3e5262 !important;
-        color: white !important;
-    }
-    .nav-pills .nav-link {
-        color: #183018 !important;
-        border: 1.5px solid rgba(62, 82, 98, 0.65) !important;
-        background: rgba(255, 255, 255, 0.13);
-        padding: 0.2rem !important;
-    }
-    .table th, .table td {
-        padding: 0.25% !important;
-        border: 1px solid rgba(18, 23, 37, 0.71) !important;
-        text-align: center !important;
-        background: rgba(255, 255, 255, 0.72);
-    }
-    .table thead th {
-        vertical-align: middle !important;
-        max-width: 20% !important;
-        background: rgb(91, 114, 131) !important;
-    }
-    th {
-        color: white !important;
-        text-shadow: 1.5px 1.5px 2px rgba(18, 23, 37, 0.71);
-    }
-    td{
-        text-shadow: 0.25px 0.25px .5px rgba(18, 23, 37, 0.71);
-    }
-    .b-table-sticky-header {
-        max-height: 65vh !important;
-    }
-    tr:hover{
-        background: rgb(91, 114, 131) !important;
-    }
-</style>
+
 <style scoped lang="scss">
     .tab-content{
         padding: 5% !important;
