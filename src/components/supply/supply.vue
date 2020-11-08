@@ -109,13 +109,6 @@
         }
     }
 
-    ul{
-        -webkit-margin-before: 0 !important;
-        margin-block-start: 0 !important;
-        -webkit-padding-start: 5px !important;
-        padding-inline-start: 5px !important;
-    }
-
     li:before {
         content: " — ";
     }
