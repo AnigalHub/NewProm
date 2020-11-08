@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <video autoplay muted loop playsinline webkit-playingline width="100%" poster="video/video.png" data-object-fit="fill">
-            <source src="video/Kompozitsia_1i2_1__1.mp4" type="video/mp4" >
+            <source src="video/important_video.mp4" type="video/mp4" >
         </video>
         <div class="inscription" >
             <div class="container">
