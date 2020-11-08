@@ -115,21 +115,6 @@
 </script>
 
 <style>
-    .tab-content {
-        border: 1.5px solid #183018  !important;
-        padding: 1%;
-        background: rgba(255, 255, 255, 0.13);
-    }
-    .nav-pills .nav-link.active {
-        background-color: #405363 !important;
-        color: white !important;
-    }
-    .nav-pills .nav-link {
-        color: #183018 !important;
-        border: 1.5px solid #183018  !important;
-        background: rgba(255, 255, 255, 0.13);
-        padding: 0.2rem !important;
-    }
     @media screen and (max-width: 992px) {
         .nav-fill .nav-item {
             width: 100% !important;
@@ -138,11 +123,6 @@
 
 </style>
 <style scoped lang="scss">
-    #pcb_materials{
-        background: url("../../../public/фон.jpg");
-        background-size: 100% 100%;
-        padding: 1% 0 2.5% 0;
-    }
     .col-5{
         float: left;
     }
@@ -152,7 +132,6 @@
       display: block;
       float: left;
     }
-
     .col-2 {
         flex: 0 0 10% !important;
         max-width: 10% !important;
@@ -195,7 +174,6 @@
             flex: 0 0 40% !important;
             max-width: 40% !important;
         }
-
     }
     @media screen and  (max-width: 992px) {
         .isola_ventec{
