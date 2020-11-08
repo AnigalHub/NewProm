@@ -60,13 +60,13 @@
         position: relative;
     }
     .section:first-child{
-        background: url("../../../public/images/it.jpg") ;
+        background: url("../../../public/images/category/it.jpg") ;
     }
     .section:nth-child(2){
-        background: url("../../../public/images/5.jpg");
+        background: url("../../../public/images/category/lab.jpg");
     }
     .section:last-child{
-        background: url("../../../public/images/ekb2.jpg");
+        background: url("../../../public/images/category/ekb.jpg");
     }
     .section {
         a{
