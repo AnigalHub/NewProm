@@ -45,7 +45,7 @@
 
 <style scoped lang="scss">
     #feedback{
-        background: url("../../../public/images/mehanic.jpg") 100% 100%;
+        background: url("../../../public/images/background/mehanic.jpg") 100% 100%;
         background-size: 100% 100%;
         padding: 1% 0;
     }
