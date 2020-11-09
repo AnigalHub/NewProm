@@ -8,51 +8,9 @@
             <b-row class="row_step">
                 <b-col>
                     <div class="accordion" role="tablist">
-                        <!--
-                    <b-card no-body>
-                      <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
-                      </trials_stages>
-                    </b-card>
-                      -->
                         <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab" v-b-toggle.accordion-1>
-                                Входной контроль
-                            </b-card-header>
-                            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text1 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1" role="tab" v-b-toggle.accordion-2 variant="info">
-                                Отбраковочные испытания
-                            </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text2 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-3 variant="info">
-                                Диагностический неразрушающий контроль
-                            </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text3 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-4 variant="info">
-                                Выборочный разрушающий физический анализ
-                            </b-card-header>
-                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text4 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
+                              <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
+                              </trials_stages>
                         </b-card>
                     </div>
                 </b-col>

@@ -8,71 +8,9 @@
             <b-row class="row_step">
                 <b-col>
                     <div class="accordion" role="tablist">
-                        <!--
-                 <b-card no-body>
-                   <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
-                   </trials_stages>
-                 </b-card>
-                   -->
                         <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab" v-b-toggle.accordion-1>
-                                Испытание на определение критических частот в диапазоне 5-1000 Гц
-                            </b-card-header>
-                            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text1 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1" role="tab" v-b-toggle.accordion-2 variant="info">
-                                Испытание на вибропрочность и виброустойчивость
-                            </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text2 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-3 variant="info">
-                                Воздействие частотами, не вызывающими механическое разрушение оборудования
-                            </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text3 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-4 variant="info">
-                                Испытание на ударную прочность
-                            </b-card-header>
-                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text4 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-5 variant="info">
-                                Испытания на ударную устойчивость при многократном воздействии с ускорением до 100g
-                            </b-card-header>
-                            <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text5 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-6 variant="info">
-                                Испытание на влияние одиночных ударов со значительным ускорением до 5000 g
-                            </b-card-header>
-                            <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text6 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
+                             <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
+                             </trials_stages>
                         </b-card>
                     </div>
                 </b-col>
@@ -97,13 +35,6 @@
         components: {Trials_video,Trials_stages},
         data() {
             return {
-                text1: `Необходимо для определения резонансов изделия или конструкции в целом. Негативное влияние частот проявляется в виде нарушения движения механизмов, полном отказе изделия. Значительно повышается риск усталостных разрушений, трещин, трансформирования внутренней структуры материалов и поверхностных слоев (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text2: `Способность конструкции противостоять разрушительному воздействию вибраций и сохранять работоспособность в диапазоне 5-10000 Гц при ускорении до 40g. При испытании проверяют воздействие на ЭКБ и КИ максимальных амплитуд ускорения и длительной вибрационной нагрузки (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text3: `Испытания выполняются для проверки работоспособности ЭКБ и КИ под влиянием неинтенсивных длительных вибраций (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text4: `Целью испытания является установление способность ЭКБ и КИ противостоять механическим ударам при ускорении до 100g. В процессе испытания выявляют такие изменения: деформацию корпуса и крепежей, разрушение частей конструкции и отдельных элементов (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text5: `Испытания осуществляется под электрической нагрузкой, с целью установления возможности изделия сохранять свою работоспособность при воздействии ударных нагрузок (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text6: `В процессе испытания выявляют способность изделия сохранить целостность корпуса, узлов и креплений (ГОСТ 5962-004.1, ГОСТ 20.57.406, ГОСТ РВ 20.57.416).`,
-
                 Trials:[
                     {
                         trials_video: './video/mehanic.mp4',

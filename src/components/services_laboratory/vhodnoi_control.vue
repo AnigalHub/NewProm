@@ -2,58 +2,16 @@
     <div id="vhodnoi_control">
         <b-container>
             <h2>Входной контроль</h2>
-            <trials_video  v-for="trial in  Trials" :trials_video="trial.trials_video" :trials_description="trial.trials_description">
-            </trials_video>
+            <trials_video  v-for="trial in  Trials" :trials_video="trial.trials_video" :trials_description="trial.trials_description"></trials_video>
             <h3>Входной контроль ЭКБ и КИ включает следующие этапы:</h3>
             <b-row class="row_step">
                 <b-col>
                     <div class="accordion" role="tablist">
-                      <!--
                       <b-card no-body>
-                        <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
-                        </trials_stages>
+                          <trials_stages  v-for="(stage,index) in  Stages_trials" :index="index" :stage_name="stage.stage_name"
+                                            :stage_descr="stage.stage_descr">
+                          </trials_stages>
                       </b-card>
-                        -->
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab" v-b-toggle.1>
-                                Идентификация
-                            </b-card-header>
-                            <b-collapse id="1" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text1 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1" role="tab" v-b-toggle.accordion-2 variant="info">
-                                Проверка маркировки
-                            </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text2 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-3 variant="info">
-                                Визуальный контроль
-                            </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text3 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
-                        <b-card no-body>
-                            <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-4 variant="info">
-                                Параметрический и функциональный контроль
-                            </b-card-header>
-                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-card-text>{{ text4 }}</b-card-text>
-                                </b-card-body>
-                            </b-collapse>
-                        </b-card>
                     </div>
                 </b-col>
                 <b-col cols="5">
@@ -77,11 +35,6 @@
         components: {Trials_stages, Trials_video},
         data() {
             return {
-                text1: `Процедура состоит в проверке соответствия конкретного изделия требованиям, которые предъявляются к продукции данного типа или модели, указанным в нормативно-технической документации. В качестве источника информации в части требований используются документы производителя, ГОСТ, ОСТ, ТУ и т.д.`,
-                text2: `Проводится на начальном этапе работ. Маркировка сверяется с требованиями производителя и если необходимо подвергается воздействию растворителей и очищающих средств для выявления признаков контрафакта и перемаркировки (ГОСТ 5962-004.3, ГОСТ РВ 20.57.406, ГОСТ РВ 20.57.416).`,
-                text3: `Включает в себя проверку внешнего вида и массо-габаритных параметров изделия с применением высокоточных средств измерения производителей Vision Engineering и CAS (ГОСТ 5962-004.3, ГОСТ 20.57.406, ГОСТ РВ 20.57.416, ГОСТ 26246.0, ГОСТ РВ 5962-004.4).`,
-                text4: `Позволяет подтверждать функциональность изделия и его соответствие требованиям технической документации. Основные параметры-критерии годности указаны в «Программе и методике проведения сертификационных испытаний». На данном этапе не только выявляют потенциально контрафактную продукцию, но и устанавливают годность оригинальных изделий, которые могли храниться или транспортироваться с нарушением установленных правил.`,
-
                 Trials:[
                     {
                         trials_video: './video/vhod.mp4',
