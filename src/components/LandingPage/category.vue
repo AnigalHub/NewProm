@@ -1,11 +1,11 @@
 <template>
     <div class="container-inner">
-        <div  class="section">
+        <div class="section">
             <div class="content">
                 <div class="container">
-                    <h1>
+                    <h2>
                         <router-link to="/selection_and_supply_it"> ИТ-Решения </router-link>
-                    </h1>
+                    </h2>
                 </div>
             </div>
             <div class="overlay"></div>
@@ -13,9 +13,9 @@
         <div  class="section">
             <div class="content">
                 <div class="container">
-                    <h1>
+                    <h2>
                         <router-link to="/laboratory">Лаборатория</router-link>
-                    </h1>
+                    </h2>
                 </div>
             </div>
             <div class="overlay"></div>
@@ -23,9 +23,9 @@
         <div  class="section">
             <div class="content">
                 <div class="container">
-                    <h1>
+                    <h2>
                         <router-link to="/supply">Поставка ЭКБ и КИ</router-link>
-                    </h1>
+                    </h2>
                 </div>
             </div>
             <div class="overlay"></div>
