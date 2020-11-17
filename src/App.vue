@@ -154,7 +154,7 @@ export default {
   .card-body,.text,li,h6{
     font-family: "Open Sans",Arial,sans-serif;
     color: #161640 !important;
-    font-size: 1.15rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.9rem;
     font-weight: 600;
   }
@@ -221,7 +221,7 @@ export default {
       font-size: 0.9rem !important;
     }
     .card-body,.card-header,.table th,.table td,.text,li,.text_news,.year_news{
-      font-size: 0.85rem !important;
+      font-size: 0.95rem !important;
       line-height: 1rem;
     }
     a{
@@ -246,7 +246,7 @@ export default {
       font-size: 0.9rem !important;
     }
     .card-body,.card-header,.table th,.table td,.text,li,.text_news,.year_news{
-      font-size: 0.8rem !important;
+      font-size: 0.95rem !important;
       line-height: 1rem;
     }
     a{
