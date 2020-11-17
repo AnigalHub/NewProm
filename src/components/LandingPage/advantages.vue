@@ -2,14 +2,14 @@
     <div id="advantages">
         <b-container>
             <h2>Наши преимущества</h2>
-            <b-row class="adv_row">
-                <b-col class="adv text" v-for="(advantage, index) in advantages" :key="index">
+            <div class="flex-container adv">
+                <div class="text" v-for="(advantage, index) in advantages" :key="index">
                     <router-link :to="advantage.link">
                         <img :src="advantage.src" :alt="advantage.alt"/>
                         <div> {{advantage.descr}}</div>
                     </router-link>
-                </b-col>
-            </b-row>
+                </div>
+            </div>
             <b-row class="number_row">
                 <b-col v-for="(important_number, index) in important_numbers" :key="index">
                     <div class="number">{{important_number.number}}</div>
@@ -23,7 +23,7 @@
                         <b-col cols="2">
                             <component :is="principales_1.svg"/>
                         </b-col>
-                        <b-col cols="9" class="text">{{principales_1. text_svg}}</b-col>
+                        <b-col cols="9" class="text">{{principales_1.text_svg}}</b-col>
                     </b-row>
                 </b-col>
                 <b-col>
@@ -31,7 +31,7 @@
                         <b-col cols="2">
                             <component :is="principales_2.svg"/>
                         </b-col>
-                        <b-col cols="9" class="text">{{principales_2. text_svg}}</b-col>
+                        <b-col cols="9" class="text">{{principales_2.text_svg}}</b-col>
                     </b-row>
                 </b-col>
             </b-row>
@@ -100,12 +100,12 @@
                 ],
                 principales_part_1:[
                     {
-                        svg:LeaderSVG,
-                        text_svg:"Личное участие Высшего руководства компании в повышении эффективности системы менеджмента качества;",
-                    },
-                    {
                         svg:PeopleSVG,
                         text_svg:"   Ориентация каждого сотрудника на удовлетворение требований Потребителя;",
+                    },
+                    {
+                        svg:LeaderSVG,
+                        text_svg:"Личное участие Высшего руководства компании в повышении эффективности системы менеджмента качества;",
                     }
                 ],
                 principales_part_2:[
@@ -135,13 +135,17 @@
         color: #121224;
         text-align: center !important;
     }
-
-    .adv{
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-container > div {
+        width: 22%;
+        margin: 0 10px 20px 10px !important;
         background: #171131;
-        margin: 0 15px 20px 15px !important;
         padding: 10px !important;
         box-shadow: 7px 7px 7px #3e3e3e;
-        
+
         .text{
             color: white;
         }
@@ -152,13 +156,12 @@
             padding-bottom: 15px;
         }
     }
+
     .text{
-        font-size: 1.125rem;
-        line-height: 1.8rem;
         font-family: "Open Sans",Arial,sans-serif;
     }
 
-    .adv_row{
+    .adv{
         padding-bottom: 1%;
     }
     .number_row{
@@ -171,19 +174,17 @@
         text-align: center;
         text-shadow: 2px 2px 2px white;
         font-family: "Open Sans",Arial,sans-serif;
-
     }
     .principales{
-        margin-left: 3% !important;
-        margin-right: 3% !important;
-        padding-bottom: 2%;
+        margin-left: 7% !important;
+        margin-right: 7% !important;
     }
     .text{
         color: #171131;
     }
     p{
         text-align: center;
-        margin-top: -10%;
+        margin-top: -8%;
     }
     svg{
         width:100px;
@@ -195,5 +196,138 @@
         margin-right: 5%;
         margin-bottom: 5%;
     }
+    .col-9{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and  (max-width: 300px) {
+        svg{
+            width:45px !important;
+        }
+        .principales{
+            .col-9{
+                padding-right: 0 !important;
+            }
+            .row{
+                padding-bottom: 5% !important;
+            }
+        }
+    }
+    @media screen and (min-width: 300px) and  (max-width: 450px) {
+        .col:nth-child(4){
+            margin-left: 10% !important;
+        }
+        .col:last-child{
+            margin-right: 10% !important;
+        }
+    }
+    @media screen  and (max-width: 450px) {
+        .flex-container > div {
+            width: 85%;
+            display: block;
+            margin: 0 auto 20px auto !important;
+        }
+        .number_row {
+            margin: 0% !important;
 
+            .col {
+                padding-right:10px !important;
+                padding-left:10px  !important;
+
+                .number {
+                    font-size: 2.5rem !important;
+                    letter-spacing: -3px;
+                }
+            }
+        }
+        svg{
+            width:60px;
+            margin-left: -30% !important;
+        }
+        .principales{
+            margin: 0 !important;
+            flex-direction: column;
+            .col{
+                padding: 0 !important;
+            }
+            .col-9{
+                padding-left: 0 !important;
+            }
+        }
+    }
+    @media screen and (min-width: 450px) and (max-width: 768px) {
+        .flex-container > div {
+            width: 45%;
+            margin: 0 10px 20px 10px !important;
+        }
+        .number_row {
+            margin: 0% !important;
+
+            .col {
+                padding-right: 2px !important;
+                padding-left: 2px !important;
+
+                .number {
+                    font-size: 2.4rem !important;
+                    letter-spacing: -4px;
+                }
+            }
+        }
+        svg{
+            width:70px;
+        }
+        .principales{
+            margin: 0 !important;
+            flex-direction: column;
+            .col{
+                padding: 0 !important;
+            }
+            .col-9{
+                padding-left: 0 !important;
+            }
+        }
+    }
+    @media screen and (min-width: 768px)and (max-width: 992px) {
+        .flex-container > div {
+            width: 45%;
+            margin: 0 15px 20px 15px !important;
+        }
+        .number_row{
+            margin: 0% !important;
+
+            .number {
+                font-size: 3.2rem !important;
+            }
+        }
+        svg{
+            width:70px;
+        }
+        .principales{
+            margin: 0 !important;
+            .row{
+                padding-bottom: 3%;
+            }
+            .col{
+                padding: 0  !important;
+            }
+
+        }
+    }
+    @media screen and (min-width: 992px)and (max-width: 1200px) {
+        .flex-container > div {
+            width: 22.5%;
+            margin: 0 10px 20px 10px !important;
+        }
+        .number_row{
+            margin-left: 10% !important;
+            margin-right: 10% !important;
+        }
+        svg{
+            width:85px;
+        }
+        .principales{
+            margin: 0 !important;
+        }
+    }
 </style>
