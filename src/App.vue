@@ -98,7 +98,7 @@ export default {
   #company,#laboratory, #vhodnoi_control,#dop_trials,#climatic_trials,#certification_trials,
   #mehanic_trials,#supply,#pcb_materials,#manufactures,#program,#selection_and_supply_it,#package_services,
   #equipment,#guarantee,#smk,#use_smk,#events_smk,#news,#contacts, #advantages,#stages,#mycontact{
-    background: url("../public/images/background/фон.jpg");
+    background: url("../public/images/background/background_all.jpg");
     background-size: 100% 100%;
     padding: 1% 0 2% 0;
   }
