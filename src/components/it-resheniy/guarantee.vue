@@ -10,9 +10,9 @@
             </p>
             <div class="flex-container">
                 <div  v-for="(producer, index) in list_producers" :key="index">
-                    <router-link :to="producer.link">
+                    <a :href="producer.link" target="_blank">
                         <img :src="producer.src" :alt="producer.alt"/>
-                    </router-link>
+                    </a>
                 </div>
             </div>
         </b-container>
@@ -26,152 +26,152 @@
             return{
                 list_producers:[
                     {
-                        link:"www.cisco.com",
+                        link:"https://www.cisco.com",
                         src: "./images/guarantees/cisco.png",
                         alt: "Cisco",
                     },
                     {
-                        link:"",
+                        link:"https://www.kingston.com/ru",
                         src: "./images/guarantees/kingston.png",
                         alt: "Kingston",
                     },
                     {
-                        link:"",
+                        link:"https://www.kramer.ru/",
                         src: "./images/guarantees/kramer.png",
                         alt: "Kramer",
                     },
                     {
-                        link:"",
+                        link:"https://www.lenovo.com/ru/ru/",
                         src: "./images/guarantees/lenovo.png",
                         alt: "Lenovo",
                     },
                     {
-                        link:"",
+                        link:"https://www.logitech.com/ru-ru",
                         src: "./images/guarantees/logitech.png",
                         alt: "Logitech",
                     },
                     {
-                        link:"",
+                        link:"https://www.microsoft.com/ru-ru/",
                         src: "./images/guarantees/microsoft.png",
-                        alt: "Microsoft.png",
+                        alt: "Microsoft",
                     },
                     {
-                        link:"",
+                        link:"https://ru.msi.com/",
                         src: "./images/guarantees/msi.png",
                         alt: "Msi",
                     },
                     {
-                        link:"",
+                        link:"https://www.nvidia.com/en-us/",
                         src: "./images/guarantees/nvidia.png",
                         alt: "Nvidia",
                     },
                     {
-                        link:"",
+                        link:"https://www8.hp.com/us/en/home.html",
                         src: "./images/guarantees/hp.png",
                         alt: "HP",
                     },
                     {
-                        link:"",
+                        link:"https://www.philips.ru/",
                         src: "./images/guarantees/philips.png",
                         alt: "Philips",
                     },
                     {
-                        link:"",
+                        link:"https://www.samsung.com/ru/",
                         src: "./images/guarantees/samsung.png",
                         alt: "Samsung",
                     },
                     {
-                        link:"",
+                        link:"https://sigur.com/",
                         src: "./images/guarantees/sigur.png",
                         alt: "Sigur",
                     },
                     {
-                        link:"",
+                        link:"https://www.sony.ru/",
                         src: "./images/guarantees/sony.png",
                         alt: "Sony",
                     },
                     {
-                        link:"",
+                        link:"https://www.supermicro.com/en/",
                         src: "./images/guarantees/supermicro.png",
                         alt: "Supermicro",
                     },
                     {
-                        link:"",
+                        link:"https://www.viewsonic.com/ru/",
                         src: "./images/guarantees/view_sonic.png",
-                        alt: "View_sonic",
+                        alt: "ViewSonic",
                     },
                     {
-                        link:"",
+                        link:"https://www.westerndigital.com/",
                         src: "./images/guarantees/western_digital.png",
                         alt: "Western_digital",
                     },
                     {
-                        link:"",
+                        link:"https://www.xerox.com/",
                         src: "./images/guarantees/xerox.png",
                         alt: "Xerox",
                     },
                     {
-                        link:"",
+                        link:"https://www.yealink.com/",
                         src: "./images/guarantees/yealink.png",
                         alt: "Yealink",
                     },
                     {
-                        link:"",
+                        link:"https://www.zyxel.com/ru/ru/",
                         src: "./images/guarantees/zyxel.png",
                         alt: "Zyxel",
                     },
                     {
-                        link:"",
+                        link:"https://www.cryptopro.ru/",
                         src: "./images/guarantees/крипто_про.png",
                         alt: "Крипто_про",
                     },
                     {
-                        link:"",
+                        link:"https://www.asus.com/ru/",
                         src: "./images/guarantees/asus.png",
                         alt: "Asus",
                     },
                     {
-                        link:"",
+                        link:"https://www.adobe.com/",
                         src: "./images/guarantees/adobe.png",
                         alt: "Adobe",
                     },
                     {
-                        link:"",
+                        link:"https://www.amd.com/ru",
                         src: "./images/guarantees/amd.png",
                         alt: "Amd",
                     },
                     {
-                        link:"",
+                        link:"https://www.benq.com",
                         src: "./images/guarantees/benq.png",
                         alt: "Benq",
                     },
                     {
-                        link:"",
+                        link:"https://hikvision.ru/",
                         src: "./images/guarantees/hikvision.png",
                         alt: "Hikvision",
                     },
                     {
-                        link:"",
+                        link:"http://www1.euro.dell.com/content/default.aspx?c=ru&l=ru&s=&s=gen&~ck=cr",
                         src: "./images/guarantees/dell.png",
                         alt: "Dell",
                     },
                     {
-                        link:"",
+                        link:"https://huawei.ru/",
                         src: "./images/guarantees/huawei.png",
                         alt: "Huawei",
                     },
                     {
-                        link:"",
+                        link:"https://shop.westerndigital.com/ru-ru",
                         src: "./images/guarantees/sanDisk.png",
                         alt: "SanDisk",
                     },
                     {
-                        link:"",
+                        link:"https://www.gigabyte.com/",
                         src: "./images/guarantees/gigabyte.png",
                         alt: "Gigabyte",
                     },
                     {
-                        link:"",
+                        link:"https://rusbitech.ru/",
                         src: "./images/guarantees/русбитех.png",
                         alt: "Русбитех",
                     },
