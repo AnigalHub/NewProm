@@ -98,4 +98,19 @@
     {
         background:linear-gradient( to right,rgba(34, 56, 71, 0.59),rgba(34, 56, 71, 0.59));
     }
+
+    @media screen and (max-width: 500px) {
+        .container-inner{
+            display: flex;
+            height: 65vh;
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width:500px) and (max-width: 992px) {
+        .container-inner{
+            display: flex;
+            height: 30vh;
+        }
+    }
+
 </style>
