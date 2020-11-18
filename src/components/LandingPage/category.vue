@@ -1,30 +1,10 @@
 <template>
     <div class="container-inner">
-        <div class="section">
+        <div class="section" v-for="(category, index) in Categories" :key="index">
             <div class="content">
                 <div class="container">
                     <h2>
-                        <router-link to="/selection_and_supply_it"> ИТ-Решения </router-link>
-                    </h2>
-                </div>
-            </div>
-            <div class="overlay"></div>
-        </div>
-        <div  class="section">
-            <div class="content">
-                <div class="container">
-                    <h2>
-                        <router-link to="/laboratory">Лаборатория</router-link>
-                    </h2>
-                </div>
-            </div>
-            <div class="overlay"></div>
-        </div>
-        <div  class="section">
-            <div class="content">
-                <div class="container">
-                    <h2>
-                        <router-link to="/supply">Поставка ЭКБ и КИ</router-link>
+                        <router-link :to="category.link"> {{category.category}} </router-link>
                     </h2>
                 </div>
             </div>
@@ -36,7 +16,25 @@
 
 <script>
     export default {
-        name: "category"
+        name: "category",
+        data(){
+            return{
+                Categories:[
+                    {
+                        link:"/selection_and_supply_it",
+                        category:"ИТ-Решения"
+                    },
+                    {
+                        link:"/laboratory",
+                        category:"Лаборатория"
+                    },
+                    {
+                        link:"/supply",
+                        category:"Поставка ЭКБ и КИ"
+                    },
+                ]
+            }
+        }
     }
 </script>
 
@@ -102,7 +100,7 @@
     @media screen and (max-width: 500px) {
         .container-inner{
             display: flex;
-            height: 65vh;
+            height: 60vh;
             flex-direction: column;
         }
     }
