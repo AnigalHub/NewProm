@@ -184,27 +184,16 @@
         border-radius: 7px;
         margin-top: 0.25%;
     }
-    @media screen and (max-width: 500px) {
-        .name_company{
-            font-size: 1.32rem;
-            letter-spacing: 3px;
-        }
-        img {
 
+    @media screen and (max-width: 500px) {
+        img{
+            width: 165px !important;
+            margin-top: -1.8%;
         }
     }
-    @media screen and (min-width: 500px)and (max-width: 768px) {
-        .name_company{
-            font-size: 1.45rem;
-        }
-        img {
-            width: 30px !important;
-            height: 30px !important;
-        }
-    }
-    @media screen and (min-width: 768px)and (max-width: 992px) {
-        .name_company{
-            font-size: 1.5rem;
+    @media screen and (min-width: 500px)and (max-width: 992px) {
+        img{
+            margin-top: -3%;
         }
     }
 </style>
