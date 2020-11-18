@@ -9,7 +9,7 @@
                             <label class="text_night" for="name">Ваше имя:</label>
                             <input v-model="feedbackData.userName" type="text" class="form-control" placeholder="Ваше имя" id="name" name="name" required="" data-validation-required-message="Пожалуйста, введите Ваше имя">
                             <label class="text_night" for="company">Ваша компания:</label>
-                            <input type="text" class="form-control" placeholder="Название компании" id="company" name="mail" required="" data-validation-required-message="Пожалуйста, введите Название компании">
+                            <input type="text" class="form-control" placeholder="Название компании" id="name_company" name="mail" required="" data-validation-required-message="Пожалуйста, введите Название компании">
                             <label class="text_night" for="phone">Ваше телефон:</label>
                             <input type="tel" class="form-control" placeholder=" Номер телефона +7(xxx)xxx-xx-xx" pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" id="phone" name="phone" required="" data-validation-required-message="Пожалуйста, введите Номер телефона">
                             <label class="text_night" for="mail">Ваш E-mail:</label>
