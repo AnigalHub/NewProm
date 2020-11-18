@@ -3,22 +3,22 @@
         <div class="container">
             <h2>Этапы работы с клиентами</h2>
             <div class="block_step">
-                <b-row>
-                    <b-col v-for="(stage, index) in Stages" :key="index" class="animated item active" :id="index" onclick="changeMessage(this)">
+                <div class="flex-container">
+                    <div v-for="(stage, index) in Stages" :key="index" class="animated item active" :id="index" onclick="changeMessage(this)">
                        <b-row class="stage">
                            <b-col>
                                <div class="item-content">
                                    <component :is="stage.svg"/>
                                </div>
-                               <div class="item-header">{{stage.name_stage}}</div>
+                               <div class="item-header text">{{stage.name_stage}}</div>
                            </b-col>
                            <b-col v-if="index != (Stages.length-1)">
                                <arrow-step-s-v-g></arrow-step-s-v-g>
                            </b-col>
 
                        </b-row>
-                    </b-col>
-                </b-row>
+                    </div>
+                </div>
             </div>
             <div class=" place_for_message">
                 <div class=" magic-text" >
@@ -45,22 +45,18 @@
             return{
                 Stages:[
                     {
-                        index:0,
                         svg:TelephoneSVG,
                         name_stage:"Получение заявки"
                     },
                     {
-                        index:1,
                         svg:AnalysisSVG,
                         name_stage:"Анализ и обработка заказа"
                     },
                     {
-                        index:2,
                         svg:RegistrationSVG,
                         name_stage:"Оформление заказа"
                     },
                     {
-                        index:3,
                         svg:ProductSupplySVG,
                         name_stage:"Поставка продукции"
                     },
@@ -82,9 +78,16 @@
         margin-bottom: 2%;
         padding: 0 10% 0 10%;
     }
-    svg  {
-        width: 95px !important;
-        height: 90px !important;
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-container > div {
+        width: 25%;
+    }
+    svg{
+        width: 95px;
+        height: 90px;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -93,13 +96,9 @@
         padding: 2px;
         width: 100%;
         margin-top: 1.5%;
-        //margin-left: -25%;
-        font-weight: 600 !important;
         text-align: center;
-        text-shadow: 1.2px 1.2px #7c7c7c;
-        font-family: "Open Sans",Arial,sans-serif;
-        color: #102110;
-        font-size: 1.2rem;
+        text-shadow: 1.2px 1.2px #7c7c7c !important;
+        color: #102110 !important;
     }
     .stage{
         margin-right: -15px !important;
@@ -124,5 +123,84 @@
         width: 100%;
         padding: 20px;
     }
-
+    @media screen  and (max-width: 300px) {
+        .block_step{
+            padding: 0;
+        }
+        .flex-container > div {
+            width: 50%;
+            .col{
+                padding: 0 5px !important;
+            }
+        }
+        svg{
+            width: 40px ;
+            height: 40px ;
+        }
+        #arrow_step{
+            width: 35px !important;
+            margin-left: -2%;
+        }
+    }
+    @media screen   and (min-width: 300px) and (max-width: 450px) {
+        .block_step{
+            padding: 0;
+        }
+        .flex-container > div {
+            width: 50%;
+        }
+        svg{
+            width: 60px ;
+            height: 60px ;
+        }
+        #arrow_step{
+            width: 40px !important;
+            margin-left: -2%;
+        }
+    }
+    @media screen and (min-width: 450px) and (max-width: 768px) {
+        .block_step{
+            padding: 0;
+        }
+        .flex-container > div {
+            width: 40%;
+            margin-left: 5%;
+        }
+        svg{
+            width: 70px ;
+            height: 70px ;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        .block_step{
+            padding: 0;
+            .col{
+                padding: 0 5px !important;
+            }
+        }
+        svg{
+            width: 70px;
+            height: 70px;
+        }
+        #arrow_step{
+            margin-left: -1%;
+        }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        .block_step{
+            padding: 0;
+        }
+        svg{
+            width: 85px;
+            height: 80px;
+        }
+        #arrow_step{
+            margin-left: -1%;
+        }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1300px) {
+        .block_step{
+            padding: 0 7% 0 7%;
+        }
+    }
 </style>
