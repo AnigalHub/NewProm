@@ -97,17 +97,17 @@
         background:linear-gradient( to right,rgba(34, 56, 71, 0.59),rgba(34, 56, 71, 0.59));
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         .container-inner{
             display: flex;
-            height: 60vh;
+            height: 80vh;
             flex-direction: column;
         }
     }
-    @media screen and (min-width:500px) and (max-width: 992px) {
+    @media screen and (min-width:768px) and (max-width: 992px) {
         .container-inner{
             display: flex;
-            height: 30vh;
+            height: 40vh;
         }
     }
 
