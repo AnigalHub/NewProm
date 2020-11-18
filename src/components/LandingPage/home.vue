@@ -68,6 +68,9 @@
         .slogan{
             font-size: 1rem;
         }
+        #home{
+            margin-top: -1%;
+        }
     }
     @media screen and (min-width: 500px)and (max-width: 768px) {
         .inscription{
