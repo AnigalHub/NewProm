@@ -3,20 +3,29 @@
         <div class="container">
             <h2>Этапы работы с клиентами</h2>
             <div class="block_step">
-                <div class="row">
-                    <div v-for="(stage, index) in Stages" :key="index" class="animated col item active" id="stepo" onclick="changeMessage(this)">
-                        <div class="item-content">
-                            <component :is="stage.svg"/>
-                        </div>
-                        <div class="item-header">{{stage.name_stage}}</div>
-                    </div>
-                </div>
+                <b-row>
+                    <b-col v-for="(stage, index) in Stages" :key="index" class="animated item active" :id="index" onclick="changeMessage(this)">
+                       <b-row class="stage">
+                           <b-col>
+                               <div class="item-content">
+                                   <component :is="stage.svg"/>
+                               </div>
+                               <div class="item-header">{{stage.name_stage}}</div>
+                           </b-col>
+                           <b-col v-if="index != (Stages.length-1)">
+                               <arrow-step-s-v-g></arrow-step-s-v-g>
+                           </b-col>
+
+                       </b-row>
+                    </b-col>
+                </b-row>
             </div>
             <div class=" place_for_message">
                 <div class=" magic-text" >
                     <p class="step_header text"  id="currentStep"> 1 этап </p>
                     <p class="text" data-magic-text id="mess">
-                        Вы связываетесь с нами любым удобным для Вас способом. Заявка может быть направлена по факсу, на электронную почту.</p>
+                        Наличие на складе компании постоянно возобновляемый запас наиболее часто применяемых типов ЭКБ позволит сократить сроки поставки. Доставка продукции осуществляется логистическими компаниями. Весь доставляемый груз застрахован в страховой компании.
+                    </p>
                 </div>
             </div>
         </div>
@@ -36,30 +45,22 @@
             return{
                 Stages:[
                     {
+                        index:0,
                         svg:TelephoneSVG,
                         name_stage:"Получение заявки"
                     },
                     {
-                        svg:ArrowStepSVG,
-                        name_stage:""
-                    },
-                    {
+                        index:1,
                         svg:AnalysisSVG,
                         name_stage:"Анализ и обработка заказа"
                     },
                     {
-                        svg:ArrowStepSVG,
-                        name_stage:""
-                    },
-                    {
+                        index:2,
                         svg:RegistrationSVG,
                         name_stage:"Оформление заказа"
                     },
                     {
-                        svg:ArrowStepSVG,
-                        name_stage:""
-                    },
-                    {
+                        index:3,
                         svg:ProductSupplySVG,
                         name_stage:"Поставка продукции"
                     },
@@ -67,7 +68,7 @@
             }
         },
         computed:{
-            
+
         }
     }
 </script>
@@ -92,6 +93,7 @@
         padding: 2px;
         width: 100%;
         margin-top: 1.5%;
+        //margin-left: -25%;
         font-weight: 600 !important;
         text-align: center;
         text-shadow: 1.2px 1.2px #7c7c7c;
@@ -99,6 +101,14 @@
         color: #102110;
         font-size: 1.2rem;
     }
+    .stage{
+        margin-right: -15px !important;
+        margin-left: -15px !important;
+        .col:last-child{
+            padding: 0 !important;
+        }
+    }
+
     .step_header {
         text-align: center;
         font-family: "Open Sans",Arial,sans-serif;
@@ -111,7 +121,6 @@
         background: rgba(249, 249, 249, 0.78);
         font-family: "Open Sans",Arial,sans-serif;
         color: #121224;
-        line-height: 45px;
         width: 100%;
         padding: 20px;
     }
