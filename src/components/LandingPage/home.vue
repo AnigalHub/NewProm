@@ -63,7 +63,7 @@
             padding: 8% 8% 8% 5%;
         }
         video {
-            height: 230px !important;
+            height: 245px !important;
         }
         .slogan{
             font-size: 1rem;
