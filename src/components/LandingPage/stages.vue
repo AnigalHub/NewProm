@@ -4,8 +4,8 @@
             <h2>Этапы работы с клиентами</h2>
             <div class="block_step">
                 <div class="flex-container">
-                    <div v-for="(stage, index) in Stages" :key="index" class="animated item active" :id="index" onclick="changeMessage(this)">
-                       <b-row class="stage">
+                    <div v-for="(stage, index) in Stages" :key="index" class="animated item" :id="index" @click="changeMessage(index)">
+                       <b-row class="stage active">
                            <b-col>
                                <div class="item-content">
                                    <component :is="stage.svg"/>
@@ -15,16 +15,15 @@
                            <b-col v-if="index != (Stages.length-1)">
                                <arrow-step-s-v-g></arrow-step-s-v-g>
                            </b-col>
-
                        </b-row>
                     </div>
                 </div>
             </div>
             <div class=" place_for_message">
                 <div class=" magic-text" >
-                    <p class="step_header text"  id="currentStep"> 1 этап </p>
+                    <p class="step_header text"  id="currentStep"> {{current_number}} этап </p>
                     <p class="text" data-magic-text id="mess">
-                        Наличие на складе компании постоянно возобновляемый запас наиболее часто применяемых типов ЭКБ позволит сократить сроки поставки. Доставка продукции осуществляется логистическими компаниями. Весь доставляемый груз застрахован в страховой компании.
+                        {{current_step}}
                     </p>
                 </div>
             </div>
@@ -43,27 +42,48 @@
         name: "stages",
         data() {
             return{
+                current_index: 0,
                 Stages:[
                     {
                         svg:TelephoneSVG,
-                        name_stage:"Получение заявки"
+                        name_stage:"Получение заявки",
+                        number:1,
+                        descr:"Вы связываетесь с нами любым удобным для Вас способом. Заявка может быть направлена по факсу, на электронную почту."
                     },
                     {
                         svg:AnalysisSVG,
-                        name_stage:"Анализ и обработка заказа"
+                        name_stage:"Анализ и обработка заказа",
+                        number:2,
+                        descr:"Наши специалисты в кратчайшие сроки проведут анализ продукции (услуг), необходимой Заказчику, окажут техническую поддержку. Спланируют индивидуальные графики поставок (выполнение работ)."
                     },
                     {
                         svg:RegistrationSVG,
-                        name_stage:"Оформление заказа"
+                        name_stage:"Оформление заказа",
+                        number:3,
+                        descr:"Сотрудники компании оперативно подготовят договор, счет на оплату. Учтут пожелание клиента. Возможен гибкий подход к оплате, работа при неполном авансировании или постоплате."
                     },
                     {
                         svg:ProductSupplySVG,
-                        name_stage:"Поставка продукции"
+                        name_stage:"Поставка продукции",
+                        number:4,
+                        descr:"Наличие на складе компании постоянно возобновляемый запас наиболее часто применяемых типов ЭКБ позволит сократить сроки поставки. Доставка продукции осуществляется логистическими компаниями. Весь доставляемый груз застрахован в страховой компании.",
                     },
                 ]
             }
         },
+        methods:{
+            changeMessage(index){
+                this.current_index = index;
+
+            }
+        },
         computed:{
+            current_step(){
+                return this.Stages[this.current_index].descr;
+            },
+            current_number(){
+                return this.Stages[this.current_index].number;
+            }
 
         }
     }
@@ -93,12 +113,13 @@
         display: block;
     }
     .item-header {
-        padding: 2px;
+        padding: 0;
         width: 100%;
         margin-top: 1.5%;
         text-align: center;
         text-shadow: 1.2px 1.2px #7c7c7c !important;
         color: #102110 !important;
+        cursor:default;
     }
     .stage{
         margin-right: -15px !important;
@@ -106,8 +127,11 @@
         .col:last-child{
             padding: 0 !important;
         }
+        &:hover .item-header{
+            box-shadow: 2px 0 10px hsl(120, 33%, 14%);
+            background: rgba(249, 249, 249, 0.78);
+        }
     }
-
     .step_header {
         text-align: center;
         font-family: "Open Sans",Arial,sans-serif;
@@ -116,7 +140,7 @@
     }
     #mess {
         height: 140px;
-        box-shadow: 0 0 8px hsl(120, 33%, 14%);
+        box-shadow: 2px 0 10px hsl(120, 33%, 14%);
         background: rgba(249, 249, 249, 0.78);
         font-family: "Open Sans",Arial,sans-serif;
         color: #121224;
