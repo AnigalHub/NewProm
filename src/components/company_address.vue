@@ -31,7 +31,7 @@
     import mail from './../../public/documents/address/mail.json';
     export default {
         components: {LandSVG,MetroSVG,OpeningHoursSVG,TelephoneSVG,FaxSVG,ReceptionSVG,MailSVG},
-        name: "address",
+        name: "company_address",
         data(){
             return{
                 landSVG:LandSVG,
