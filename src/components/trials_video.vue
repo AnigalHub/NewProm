@@ -46,8 +46,8 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                flex: 0 0 45% !important;
-                max-width: 45% !important;
+                flex: 0 0 60% !important;
+                max-width: 60% !important;
             }
             .col{
                 padding: 0 !important;
