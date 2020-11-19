@@ -47,7 +47,7 @@
                     {
                         src: "./images/smk/es.png",
                         alt: "СДС_Электронсерт",
-                        name:'СДС "Электронсерт"',
+                        name:'СДС «ЭС»',
                     },
 
                 ]
@@ -75,6 +75,11 @@
         background: rgb(121, 147, 164) !important;
         color: white !important;
     }
+    @media screen and (max-width: 300px) {
+        .table td, .table th{
+            padding: 1%;
+        }
+    }
 </style>
 <style scoped lang="scss">
     .col-7{
@@ -88,7 +93,7 @@
         padding: 0 2.5% 0 2.5%;
     }
     .link{
-        display: none;
+        //display: none;
         color: #161640 !important;
         font-weight: 600;
     }
