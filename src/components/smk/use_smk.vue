@@ -74,16 +74,17 @@
     figure{
         margin: 0 !important;
     }
+    .col{
+        padding: 0 !important;
+    }
     .fi-chart {
         display: flex;
         flex-flow: row wrap;
         overflow: hidden;
-        //max-width: 800px;
     }
     .chart-wrap {
         min-width: 300px;
         max-width: 525px;
-        //margin: 0 auto;
         flex: 2;
     }
     .chart-container {
@@ -234,5 +235,20 @@
     .list-options li > .number {
         display: inline-block;
         line-height: 16px;
+    }
+    @media screen and (max-width: 300px) {
+        .list-options li{
+            padding: 0.4em;
+        }
+        .chart[data-v-2998d07b] {
+            width: 82%;
+            height: 82%;
+        }
+        .options-contain{
+            margin-top: -30%;
+        }
+        span.text {
+            line-height: 1rem !important;
+        }
     }
 </style>
