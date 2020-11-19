@@ -50,7 +50,7 @@
         padding: 1% 0;
     }
     form{
-        margin: 0 14%;
+        margin: 0 7%;
     }
     h2{
         color: white;
@@ -103,10 +103,17 @@
             padding: 17px 5px;
             min-height: 28px;
             height: 28px;
+            margin-bottom: 0 ;
         }
-
-        button{
-            margin-top: 2%;
+        form{
+            margin: 0;
+        }
+        label{
+            margin-bottom: 0 !important;
+        }
+        .btn{
+            margin-top: 2% !important;
+            margin-bottom: 2% !important;
             font-size: 1rem;
         }
         .row{
@@ -122,9 +129,16 @@
             }
         }
     }
-    @media screen and (min-width: 500px)and (max-width: 768px) {
+    @media screen and (min-width: 500px) and (max-width: 768px) {
         input{
             padding: 17px 5px;
+            margin-bottom: 0 ;
+        }
+        form{
+            margin: 0;
+        }
+        label{
+            margin-bottom: 0 !important;
         }
         .row{
             flex-direction: column;
@@ -138,13 +152,26 @@
                 height: 180px !important;
             }
         }
-        button{
-            margin-top: 2%;
+        .btn{
+            margin-top: 2% !important;
+            margin-bottom: 1% !important;
         }
     }
-    @media screen and (min-width: 768px)and (max-width: 992px) {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
         input{
             padding: 20px 10px;
+        }
+        form{
+            margin: 0;
+        }
+        .col-4 {
+            flex: 0 0 40% !important;
+            max-width: 40% !important;
+        }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        form{
+            margin: 0;
         }
     }
 </style>
