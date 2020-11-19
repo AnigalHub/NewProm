@@ -107,7 +107,22 @@
     .col{
         padding: 0 !important;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 300px) {
+        svg{
+            width:55px !important;
+            height:55px !important;
+        }
+        .col-9{
+            padding-left: 15% !important;
+        }
+        .important_row{
+            flex-direction: column;
+        }
+        .place_for_benefits .row{
+            padding-bottom: 2.5%;
+        }
+    }
+    @media screen and (min-width: 300px)and (max-width: 500px) {
         svg{
             width:75px;
             height:60px;
