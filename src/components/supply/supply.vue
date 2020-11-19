@@ -119,7 +119,7 @@
                 max-width: 100% !important;
             }
             .col{
-                max-width: 85% !important;
+                max-width:100% !important;
             }
         }
         .flex-container > div {
@@ -128,6 +128,7 @@
         }
         h6{
             height: 2.2rem;
+            letter-spacing: -0.5px;
         }
     }
     @media screen and (min-width: 768px)and (max-width: 992px) {
