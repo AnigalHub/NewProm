@@ -105,7 +105,14 @@
         left: 50%;
         bottom: -26.5px;
     }
-
+    @media screen and (max-width: 500px) {
+        .arrow-bottom::before{
+            left: 45%;
+        }
+        .arrow-bottom::after{
+            left: 46%;
+        }
+    }
     @media screen and (max-width: 992px) {
         .row{
             flex-direction: column-reverse;
