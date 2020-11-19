@@ -1,6 +1,6 @@
 <template>
     <div id="address">
-        <div><component :is="landSVG"/>{{address}}</div>
+        <div><component :is="landSVG"/>{{company_address}}</div>
         <div><component :is="metroSVG"/>{{metro}}</div>
         <div><component :is="opening_hoursSVG"/>{{opening_hours}}</div>
         <div>
@@ -22,7 +22,7 @@
     import FaxSVG from './address_svg/fax_svg';
     import ReceptionSVG from './address_svg/reception_svg';
     import MailSVG from './address_svg/mail_svg';
-    import address from './../../public/documents/address/address.json';
+    import company_address from './../../public/documents/address/company_address.json';
     import metro from './../../public/documents/address/metro.json';
     import opening_hours from './../../public/documents/address/opening_hours.json';
     import telephone from './../../public/documents/address/telephone.json';
@@ -41,7 +41,7 @@
                 faxSVG:FaxSVG,
                 receptionSVG:ReceptionSVG,
                 mailSVG:MailSVG,
-                address:address,
+                company_address:company_address,
                 metro:metro,
                 opening_hours:opening_hours,
                 telephone:telephone,

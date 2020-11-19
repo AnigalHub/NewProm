@@ -2,69 +2,18 @@
     <div id="footer">
         <div class="container">
             <div class="flex-container">
-                <div>
-                    <router-link to="/company">О компании</router-link>
-                    <br>
-                    <router-link to="/laboratory" id="lab">Лаборатория</router-link>
-                    <br>
-                    <router-link to="/laboratory">Услуги лаборатории</router-link>
-                    <br>
-                    <router-link to="/vhodnoi_control">Входной контроль</router-link>
-                    <br>
-                    <router-link to="/dop_trials">Дополнительные испытания</router-link>
-                    <br>
-                    <router-link to="/certification_trials">Сертификационные испытания</router-link>
-                    <br>
-                    <router-link to="/climatic_trials">Климатические испытания</router-link>
-                    <br>
-                    <router-link to="/mehanic_trials">Механические испытания</router-link>
-                </div>
-                <div>
-                    <router-link to="/supply">Поставка ЭКБ и КИ</router-link>
-                    <br>
-                    <router-link to="/supply">Комплексные поставки</router-link>
-                    <br>
-                    <router-link to="/pcb_materials">Материалы для печатных плат</router-link>
-                    <br>
-                    <router-link to="/manufacturers">Производители</router-link>
-                    <br>
-                    <router-link to="/program">Программа поставок ЭКБ и КИ</router-link>
+                <div v-for="(page_catalog,index) in catalog_pages" :key="index">
+                    <div v-for="(value, index) in page_catalog.pages" :key="index">
+                        <router-link  :to="value.link">{{value.page}}</router-link>
+                    </div>
                     <br>
                 </div>
                 <div>
-                    <router-link to="/selection_and_supply_it">ИТ-Решения</router-link>
-                    <br>
-                    <router-link to="/selection_and_supply_it">Подбор и поставка IT-оборудования</router-link>
-                    <br>
-                    <router-link to="/package_services">Комплекс услуг</router-link>
-                    <br>
-                    <router-link to="/equipment">Поставляемое оборудование</router-link>
-                    <br>
-                    <router-link to="/guarantee">Гарантии</router-link>
-                </div>
-                <div>
-                    <router-link to="/smk">СМК</router-link>
-                    <br>
-                    <router-link to="/smk">Основные принципы СМК</router-link>
-                    <br>
-                    <router-link to="/use_smk">Применение СМК</router-link>
-                    <br>
-                    <router-link to="/events_smk">Мероприятия по улучшению СМК</router-link>
-                    <br>
-                    <router-link to="/news" id="news_button">Новости</router-link>
-                    <br>
-                    <router-link to="/contacts" id="contact">Контакты</router-link>
-
-                </div>
-                <div>
-
                     <ul>
-                        <li><a href="mailto:info@promelektronservis.ru" >info@promelektronservis.ru</a></li>
-                        <li><a> Пн. – Чт.: с 9:00 до 17:00,<br> Пт.: с 9:00 до 16:00</a></li>
-                        <li><a href="tel:+74997695137">+7 (499) 769-51-37 </a></li>
-                        <li><a >
-                            Московская область, г. Котельники,
-                            Новорязанское шоссе 6, офис 1-2</a></li>
+                        <li><a :href="'mailto:'+ mail" >{{mail}}</a></li>
+                        <li>{{opening_hours}}</li>
+                        <li><a :href="'tel:'+telephone">{{telephone}}</a></li>
+                        <li>{{company_address}}</li>
                     </ul>
                 </div>
             </div>
@@ -73,8 +22,136 @@
 </template>
 
 <script>
+    import company_address from './../../public/documents/address/company_address.json';
+    import metro from './../../public/documents/address/metro.json';
+    import opening_hours from './../../public/documents/address/opening_hours.json';
+    import telephone from './../../public/documents/address/telephone.json';
+    import mail from './../../public/documents/address/mail.json';
     export default {
-        name: "myfooter"
+        name: "myfooter",
+        data(){
+            return{
+                company_address:company_address,
+                metro:metro,
+                opening_hours:opening_hours,
+                telephone:telephone,
+                mail:mail,
+                catalog_pages:[
+                    {
+                        pages:[
+                            {
+                                link: "/company",
+                                page: "О компании",
+                            },
+                            {
+                                link: "/laboratory",
+                               page: "Лаборатория",
+                            },
+                            {
+                                link: "/laboratory",
+                                page: "Услуги лаборатории",
+                            },
+                            {
+                                link: "/vhodnoi_control",
+                                page: "Входной контроль",
+                            },
+                            {
+                                link: "/dop_trials",
+                                page: "Дополнительные испытания",
+                            },
+                            {
+                                link: "/certification_trials",
+                                page: "Сертификационные испытания",
+                            },
+                            {
+                                link: "/climatic_trials",
+                                page: "Климатические испытания",
+                            },
+                            {
+                                link: "/mehanic_trials",
+                                page: "Механические испытания",
+                            },
+                        ],
+                    },
+                    {
+                        pages:[
+                            {
+                                link: "/supply",
+                                page: "Поставка ЭКБ и КИ",
+                            },
+                            {
+                                link: "/supply",
+                                page: "Комплексные поставки",
+                            },
+                            {
+                                link: "/pcb_materials",
+                                page: "Материалы для печатных плат",
+                            },
+                            {
+                                link: "/manufacturers",
+                                page: "Производители",
+                            },
+                            {
+                                link: "/program",
+                                page: "Программа поставок ЭКБ и КИ",
+                            },
+                        ],
+                    },
+                    {
+                        pages:[
+                            {
+                                link: "/selection_and_supply_it",
+                                page: "ИТ-Решения",
+                            },
+                            {
+                                link: "/selection_and_supply_it",
+                                page: "Подбор и поставка IT-оборудования",
+                            },
+                            {
+                                link: "/package_services",
+                                page: "Комплекс услуг",
+                            },
+                            {
+                                link: "/equipment",
+                                page: "Поставляемое оборудование",
+                            },
+                            {
+                                link: "/guarantee",
+                                page: "Гарантии",
+                            },
+                        ],
+                    },
+                    {
+                        pages:[
+                            {
+                                link: "/smk",
+                                page: "СМК",
+                            },
+                            {
+                                link: "/smk",
+                                page: "Основные принципы СМК",
+                            },
+                            {
+                                link: "/use_smk",
+                                page: "Применение СМК",
+                            },
+                            {
+                                link: "/events_smk",
+                                page: "Мероприятия по улучшению СМК",
+                            },
+                            {
+                                link: "/news",
+                                page: "Новости",
+                            },
+                            {
+                                link: "/contacts",
+                                page: "Контакты",
+                            },
+                        ],
+                    },
+                    ]
+            }
+        }
     }
 </script>
 
@@ -97,6 +174,21 @@
         width: 18.7%;
         margin: 0 0.5% 5% 0.55% !important;
     }
+    .flex-container > div:first-child{
+        div:nth-child(2) a{
+            color: white !important;
+        }
+    }
+    .flex-container > div{
+        div:first-child a{
+            color: white !important;
+        }
+    }
+    .flex-container > div:nth-child(4) {
+        div:nth-child(5) a,  div:nth-child(6) a{
+            color: white !important;
+        }
+    }
 
     #footer ul{
         text-align: left;
@@ -106,16 +198,13 @@
             font-family: "Open Sans",Arial,sans-serif;
             list-style-type: none;
         }
-
-        a{
-            color: rgba(255, 255, 255, 0.53);
+        li,a{
+            color: white !important;
         }
     }
 
     #footer {
-        a:first-child, #lab,#news_button,#contact{
-            color: white;
-        }
+
         a{
             color: rgba(255, 255, 255, 0.63);
             font-weight: 700 !important;
