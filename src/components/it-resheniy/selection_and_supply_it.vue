@@ -10,36 +10,16 @@
             </p>
             <h3>Наши преимущества</h3>
             <div class="place_for_benefits">
-                <div class="row important_row">
-                    <div class="col" v-for="(advantage, index) in  Row_advantages_part_1" :key="index">
+                <div class="row important_row" v-for="(advantage,index) in  Row_advantages" :key="index">
+                    <div class="col" v-for="(value, index) in  advantage.advantages" :key="index">
                         <b-row>
                             <b-col cols="2">
-                                <component :is="advantage.svg"/>
+                                <component :is="value.svg"/>
                             </b-col>
-                            <b-col cols="9" class="text">{{advantage.name_advantages}}</b-col>
+                            <b-col cols="9" class="text">{{value.name_advantages}}</b-col>
                         </b-row>
                     </div>
                 </div>
-               <div class="row important_row">
-                    <div class="col" v-for="(advantage, index) in  Row_advantages_part_2" :key="index">
-                        <b-row>
-                            <b-col cols="2">
-                                <component :is="advantage.svg"/>
-                            </b-col>
-                            <b-col cols="9" class="text">{{advantage.name_advantages}}</b-col>
-                        </b-row>
-                    </div>
-               </div>
-               <div class="row important_row">
-                    <div class="col" v-for="(advantage, index) in  Row_advantages_part_3" :key="index">
-                        <b-row>
-                            <b-col cols="2">
-                                <component :is="advantage.svg"/>
-                            </b-col>
-                            <b-col cols="9" class="text">{{advantage.name_advantages}}</b-col>
-                        </b-row>
-                    </div>
-               </div>
             </div>
         </b-container>
     </div>
@@ -57,6 +37,44 @@
         components: {PricePolicySVG,AccreditationSVG,WideChooseSVG,IntegrationSVG,ElectronicPlatformSVG,WarrantySupportSVG},
         data(){
             return{
+                Row_advantages:[
+                    {
+                        advantages:[
+                            {
+                                svg:PricePolicySVG,
+                                name_advantages:" Гибкая ценовая политика. Сотрудничаем с коммерческими и государственными предприятиями. Выделяем НДС.",
+                            },
+                            {
+                                svg:AccreditationSVG,
+                                name_advantages:"У нас есть необходимые аккредитации и возможность вести торги по ФЗ № 44 и № 223.",
+                            },
+                        ]
+                    },
+                    {
+                        advantages:[
+                            {
+                                svg:WideChooseSVG,
+                                name_advantages:"Широкий выбор. Часть позиций хранится на нашем складе в оперативном доступе.",
+                            },
+                            {
+                                svg:IntegrationSVG,
+                                name_advantages:"Возможна интеграция поставляемого оборудования в уже имеющуюся IT-систему.",
+                            },
+                        ]
+                    },
+                    {
+                        advantages:[
+                            {
+                                svg:ElectronicPlatformSVG,
+                                name_advantages:"Работаем на Электронной площадке АСТ ГОЗ.",
+                            },
+                            {
+                                svg:WarrantySupportSVG,
+                                name_advantages:" Гарантийное и постгарантийное сопровождение.",
+                            },
+                        ]
+                    },
+                ],
                 Row_advantages_part_1:[
                     {
                      svg:PricePolicySVG,
