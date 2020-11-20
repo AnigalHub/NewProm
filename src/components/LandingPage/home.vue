@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <video autoplay muted loop playsinline webkit-playingline width="100%" poster="video/video.png" data-object-fit="fill">
+        <video autoplay muted loop playsinline webkit-playingline width="100%"  data-object-fit="fill">
             <source src="video/important_video.mp4" type="video/mp4" >
         </video>
         <div class="inscription" >
@@ -63,7 +63,7 @@
             padding: 8% 8% 8% 5%;
         }
         video {
-            height: 245px !important;
+            height: 270px !important;
         }
         .slogan{
             font-size: 1rem;
