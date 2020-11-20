@@ -9,9 +9,9 @@
                 <b-col>
                     <div class="accordion" role="tablist">
                         <b-card no-body>
-                   <trials_stages  v-for="stage in  Stages_trials" :index="stage.index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
-                   </trials_stages>
-                 </b-card>
+                           <trials_stages  v-for="stage in  Stages_trials" :index="stage.index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
+                           </trials_stages>
+                        </b-card>
                     </div>
                 </b-col>
                 <b-col cols="5">
@@ -30,68 +30,6 @@
                    <trials_stages  v-for="stage in  Stages_trials_double" :index="stage.index" :stage_name="stage.stage_name" :stage_descr="stage.stage_descr">
                    </trials_stages>
                </b-card>
-                <!--
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1" role="tab"  v-b-toggle.accordion-6 >
-                        Испытание на воздействие пониженного давления (до 5 мм.рт. ст)
-                    </b-card-header>
-                    <b-collapse id="accordion-6"  accordion1="my-accordion" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text6 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-7 variant="info">
-                        Испытание на воздействие повышенного давления (до 2400 мм. рт. ст.)
-                    </b-card-header>
-                    <b-collapse id="accordion-7" accordion1="my-accordion" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text7 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-8 variant="info">
-                        Испытание на воздействие изменения давления воздуха от 5 мм.рт.ст. до 2400 мм.рт.ст. воздуха.
-                    </b-card-header>
-                    <b-collapse id="accordion-8" accordion1="my-accordion" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text8 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-9 variant="info">
-                        Испытания по подтверждению требований надежности(сохраняемость и безотказность)
-                    </b-card-header>
-                    <b-collapse id="accordion-9" accordion1="my-accordion" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text9 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-10 variant="info">
-                        Испытание на воздействие статической и динамической пыли
-                    </b-card-header>
-                    <b-collapse id="accordion-10" accordion1="my-accordion" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text10 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                <b-card no-body>
-                    <b-card-header header-tag="header" class="p-1"role="tab"  v-b-toggle.accordion-11 variant="info">
-                        Испытание на воздействие соляного (морского) тумана
-                    </b-card-header>
-                    <b-collapse id="accordion-11" accordion1="my-accordion1" role="tabpanel">
-                        <b-card-body>
-                            <b-card-text>{{ text11 }}</b-card-text>
-                        </b-card-body>
-                    </b-collapse>
-                </b-card>
-                -->
             </div>
         </b-container>
     </div>
