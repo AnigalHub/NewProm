@@ -15,11 +15,9 @@
                         </b-col>
                     </b-row>
                 </b-col>
-                <b-col>
+                <b-col class="text">
                     <img src="../../../public/images/smk/smk.jpg" class="certificate">
-                    <a class="link">
-                        Посмотреть "Сертификат Соответствия"
-                    </a>
+                    <a class="link">Посмотреть "Сертификат Соответствия"</a>
                 </b-col>
             </b-row>
         </b-container>
@@ -35,21 +33,20 @@
                 smk:smk,
                 guests:[
                     {
-                        src: "./images/smk/iso17025.png",
-                        alt: "ГОСТ_Р_ИСО_9001-2015",
-                        name:'ГОСТ Р ИСО 9001-2015',
-                    },
-                    {
                         src: "./images/smk/vvt.png",
                         alt: "ГОСТ_РВ_0015-002-2012",
                         name:'ГОСТ РВ 0015-002-2012',
+                    },
+                    {
+                        src: "./images/smk/iso17025.png",
+                        alt: "ГОСТ_Р_ИСО_9001-2015",
+                        name:'ГОСТ Р ИСО 9001-2015',
                     },
                     {
                         src: "./images/smk/es.png",
                         alt: "СДС_Электронсерт",
                         name:'СДС «ЭС»',
                     },
-
                 ]
             }
         }
@@ -98,12 +95,14 @@
         font-weight: 600;
     }
 
-
     @media screen and (max-width: 992px) {
         .row_smk{
              flex-direction: column;
             .col-7{
                  max-width: 100% !important;
+            }
+            .col{
+                padding: 0 !important;
             }
         }
         .certificate{
