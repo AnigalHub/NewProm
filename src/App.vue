@@ -38,29 +38,8 @@ export default {
     margin-block-start: 0 !important;
     padding-inline-start: 5px !important;
   }
-  .table th, .table td {
-    padding: 0.1% !important;
-    border: 1px solid rgba(18, 23, 37, 0.71) !important;
-    text-align: center !important;
-    background: rgba(255, 255, 255, 0.72);
-  }
-  .table thead th {
-    vertical-align: middle !important;
-    max-width: 20% !important;
-    background: rgb(91, 114, 131) !important;
-  }
-  th {
-    color: white !important;
-    text-shadow: 1.5px 1.5px 2px rgba(18, 23, 37, 0.71);
-  }
-  td{
-    text-shadow: 0.25px 0.25px .5px rgba(18, 23, 37, 0.71);
-  }
   .b-table-sticky-header {
     max-height: 70vh !important;
-  }
-  tr:hover{
-    background: rgb(91, 114, 131) !important;
   }
   .tab-content {
     border: 1.5px solid #183018  !important;
@@ -83,7 +62,7 @@ export default {
     max-height: 65vh !important;
   }
 </style>
-<style lang="scss">
+<style  lang="scss">
   @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1400px !important;
@@ -113,7 +92,9 @@ export default {
   .row {
     margin: 0 !important;
   }
-
+  .navbar-light .navbar-toggler {
+    color: white !important;
+  }
   h2{
     font-family: "Open Sans",Arial,sans-serif;
     color: rgba(5, 35, 71, 0.75);
@@ -165,6 +146,35 @@ export default {
       color: rgba(5, 35, 71, 0.85);
       font-size: 1rem !important;
   }
+  #equipment,#program{
+    .table th, .table td {
+      padding: 0.1% !important;
+      font-weight: 400 !important;
+    }
+  }
+  #smk{
+    .table th, .table td {
+      text-align: left !important;
+    }
+  }
+
+  .table th, .table td {
+    border: 1px solid rgba(18, 23, 37, 0.71) !important;
+    background: rgba(255, 255, 255, 0.72);
+    text-align: center !important;
+  }
+  .table thead th {
+    vertical-align: middle !important;
+    max-width: 20% !important;
+    background: rgb(91, 114, 131) !important;
+  }
+  th {
+    color: white !important;
+    text-shadow: 1.5px 1.5px 2px rgba(18, 23, 37, 0.71);
+  }
+  td{
+    text-shadow: 0.25px 0.25px .5px rgba(18, 23, 37, 0.71);
+  }
   tr,th{
       font-family: "Open Sans",Arial,sans-serif;
       font-size: 1rem !important;
@@ -173,6 +183,9 @@ export default {
   }
   tr{
     color: #161640 !important;
+  }
+  tr:hover{
+    background: rgb(91, 114, 131) !important;
   }
   h6{
       font-weight: 700 !important;
@@ -202,11 +215,10 @@ export default {
   }
 
 
-
   @media screen and (max-width: 500px) {
     h2{
       padding: 3% 0 0.2% 0;
-      font-size: 1.2rem !important;
+      font-size: 1.1rem !important;
     }
     h5{
       font-size: 0.8rem !important;
@@ -224,11 +236,25 @@ export default {
       font-size: 0.95rem !important;
       line-height: 1rem;
     }
-    a{
+    .card-body{
+      padding: 0.25rem !important;
+    }
+    a,.dropdown-toggle,.nav-link{
        font-size: 0.9rem !important;
     }
+    .row_step{
+      flex-direction: column-reverse;
+      padding: 0 !important;
+      .col-5{
+        max-width: 100% !important;
+        padding-bottom: 1%;
+      }
+      .col{
+        padding: 0 !important;
+      }
+    }
   }
-  @media screen and (min-width: 500px)and (max-width: 768px) {
+  @media screen and (min-width: 500px) and (max-width: 768px) {
     h2{
       padding: 0.5% 0 0.5% 0;
       font-size: 1.2rem !important;
@@ -249,14 +275,17 @@ export default {
       font-size: 0.95rem !important;
       line-height: 1rem;
     }
-    a{
+    .card-body{
+      padding: 0.5rem !important;
+    }
+    a,.dropdown-toggle,.nav-link{
        font-size: 0.82rem !important;
     }
     .row_step{
       flex-direction: column-reverse;
       padding: 0 !important;
       .col-5{
-        max-width: 45% !important;
+        max-width: 56% !important;
         padding-bottom: 1%;
         display: block;
         margin-left: auto;
@@ -267,7 +296,7 @@ export default {
       }
     }
   }
-  @media screen and (min-width: 768px)and (max-width: 992px) {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     h5{
       font-size: 0.95rem !important;
     }
@@ -288,7 +317,10 @@ export default {
       font-size: 0.9rem !important;
       line-height: 1.1rem;
     }
-    a{
+    .card-body{
+      padding: 0.7rem !important;
+    }
+    a,.dropdown-toggle,.nav-link{
       font-size: 1rem !important;
     }
     .row_step{
@@ -306,7 +338,7 @@ export default {
       }
     }
   }
-  @media screen and (min-width: 992px)and (max-width: 1200px) {
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
     h6{
       font-size: 0.9rem !important;
     }
@@ -326,8 +358,11 @@ export default {
       font-size: 0.9rem !important;
       line-height: 1.4rem;
     }
-      a{
-          font-size: 1rem !important;
+    .card-body{
+      padding: 0.9rem !important;
+    }
+    a,.dropdown-toggle,.nav-link{
+          font-size: 0.95rem !important;
       }
   }
 </style>
