@@ -169,6 +169,7 @@
         }
         h6 {
             height: 1rem;
+            letter-spacing: -0.5px;
         }
         .row_list{
             flex-direction: column;
