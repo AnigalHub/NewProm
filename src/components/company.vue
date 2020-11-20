@@ -31,8 +31,8 @@
             <b-row class="row_activity">
                 <b-col cols="4">
                     <b-carousel v-model="slide" ref="myCarousel" :interval="4000" background="transparent">
-                        <b-carousel-slide  v-for="item in myArray" :key="item.id"  img-blank>
-                            <img :src="item.src" :alt="item.alt"/>
+                        <b-carousel-slide  v-for="test in tests" :key="test.id"  img-blank>
+                            <img :src="test.src" :alt="test.alt"/>
                         </b-carousel-slide>
                     </b-carousel>
                 </b-col>
@@ -106,20 +106,24 @@
                     'Оказание услуг по проведению технической экспертизы обоснованности выбора и правильности применения ЭКБ и КИ иностранного производства при разработке(модернизации) вооружения, военной и специальной техники и их составных частей.',
                 ],
                 slide: 0,
-                myArray: [
-                    {id:1,
+                tests: [
+                    {
+                        id:1,
                         src: "./images/company/test1.jpg",
                         alt: "Тест_номер_1",
                         style: false},
-                    {id:2,
+                    {
+                        id:2,
                         src: "./images/company/test2.jpg",
                         alt: "Тест_номер_2",
                         style: false},
-                    {id:3,
+                    {
+                        id:3,
                         src: "./images/company/test3.jpg",
                         alt: "Тест_номер_3",
                         style: false},
-                    {id:4,
+                    {
+                        id:4,
                         src: "./images/company/test4.jpg",
                         alt: "Тест_номер_4",
                         style: true},
@@ -199,45 +203,29 @@
 </script>
 
 <style>
-    .carousel-caption{
+    #company .carousel-caption{
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
         bottom: auto;
         padding: 0 !important;
     }
-    .w-50 {
+    #company .w-50 {
         width: 52% !important;
     }
     @media screen and (max-width: 992px) {
-        .w-50{
+        #company .w-50{
             width: 100% !important;
         }
     }
-
-    .tab-content{
-        /*background-color: rgba(36, 94, 38, 0.25) !important; */
-    }
-    .tabs{
+    #company .tabs{
         border: none !important;
     }
-    .w-50 .nav-link {
-        color: #183018 !important;
+    #company .w-50 .nav-link {
         padding: 0.1rem 0.15rem !important;
-        border: 0.25px solid #183018;
     }
-    .card-header {
-        background-color: rgba(36, 94, 38, 0.25);
+    #company .card-header {
         padding: 0!important;
-        color: black;
-    }
-    .nav-pills .nav-link.active{
-        background-color: #265d28;
-        color: white !important;
-    }
-    ul{
-        margin-block-start: 0 !important;
-        padding-inline-start: 5px !important;
     }
 </style>
 <style scoped lang="scss">
@@ -252,6 +240,9 @@
         background: rgba(255, 255, 255, 0.26) !important;
         box-shadow: 2px 2px 5px rgba(5, 35, 71, 0.28),0 0 1.5em rgba(5, 35, 71, 0.28),0 0 0.9em rgba(5, 35, 71, 0.27) !important;
     }
+   p{
+       margin-bottom: 0.5rem !important;
+   }
     .col-2 {
         flex: 0 0 14% !important;
         max-width: 14% !important;
@@ -284,8 +275,7 @@
         padding: 0 !important;
     }
     .col-10{
-        padding-right: 0 !important;
-        padding-left: 0 !important;
+        padding: 0 !important;
     }
     .yaer_number{
         font-weight: 400 !important;
@@ -319,7 +309,14 @@
             padding-bottom: 0.95% !important;
         }
     }
-
+    @media screen and (max-width: 300px) {
+        .yaer_number{
+            font-size: 1rem !important;
+        }
+        .year{
+            font-size: 0.7rem !important;
+        }
+    }
     @media screen and (max-width: 500px) {
         .row_history{
             .row p{
@@ -336,7 +333,7 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                max-width: 45%;
+                max-width: 55%;
                 margin-bottom: 1%;
             }
         }
