@@ -6,16 +6,10 @@
                 В целях улучшения результативности системы менеджмента качества, повышения удовлетворенности потребителей, путем выполнения их требований, при разработке и внедрении системы менеджмента качества в организации был применен «процессный подход», что позволило:
             </p>
             <b-row>
-                <b-col>
+                <b-col v-for="(doing,index) in permission" :key="index">
                     <ul>
-                        <li> Рассматривать процессы с точки зрения добавления им ценности;</li>
-                        <li> Понимать и постоянно выполнять требования;</li>
-                    </ul>
-                </b-col>
-                <b-col>
-                    <ul>
-                        <li> Достигнуть результативного функционирования процессов;</li>
-                        <li> Улучшить процессы на основе оценивания данных и информации.</li>
+                        <li v-for="(value, index) in doing.doings" :key="index">
+                            {{value.paragraph}}</li>
                     </ul>
                 </b-col>
             </b-row>
@@ -25,17 +19,17 @@
                         <div class="chart-container">
                             <div class="chart">
                                 <div class="circle fill sanity">
-                                    <div class="circle spacer">
-                                        <div class="circle fill balls">
+                                    <div class="circle four">
+                                        <div class="circle fill one">
                                             <span class="line vert"></span>
                                             <span class="line iso"></span>
                                             <span class="line iso rev"></span>
-                                            <div class="circle spacer">
-                                                <div class="circle fill tees remain">
+                                            <div class="circle four">
+                                                <div class="circle fill two remain">
                                                     <span class="line vert"></span>
-                                                    <div class="circle spacer">
-                                                        <div class="circle fill glove">
-                                                            <div class="circle spacer center">
+                                                    <div class="circle four">
+                                                        <div class="circle fill three">
+                                                            <div class="circle four center">
                                                                 <span class="text">Преимущества организации от применения СМК</span>
                                                             </div>
                                                         </div>
@@ -51,9 +45,9 @@
                     <div class="options-contain">
                         <div class="valign">
                             <ul class="list-options">
-                                <li class="glove text"><span class="number one">1</span> Способность стабильно предоставлять продукцию и услуги, удовлетворяющие требованиям потребителей</li>
-                                <li class="tees text"><span class="number two">2</span> Создание возможностей для повышения удовлетворенности потребителей</li>
-                                <li class="balls text"><span class="number three">3</span> Направление усилий на риски и возможности, связанные со средой и целями организации</li>
+                                <li class="three text"><span class="number one">1</span> Способность стабильно предоставлять продукцию и услуги, удовлетворяющие требованиям потребителей</li>
+                                <li class="two text"><span class="number two">2</span> Создание возможностей для повышения удовлетворенности потребителей</li>
+                                <li class="one text"><span class="number three">3</span> Направление усилий на риски и возможности, связанные со средой и целями организации</li>
                                 <li class="sanity text"><span class="number four">4</span> Возможность продемонстрировать соответствие установленным требованиям системы менеджмента качества</li>
                             </ul>
                         </div>
@@ -67,6 +61,32 @@
 <script>
     export default {
         name: "use_smk",
+        data(){
+            return{
+                permission:[
+                    {
+                        doings:[
+                            {
+                                paragraph:"Рассматривать процессы с точки зрения добавления им ценности;",
+                            },
+                            {
+                                paragraph:"Понимать и постоянно выполнять требования;",
+                            },
+                        ]
+                    },
+                    {
+                        doings:[
+                            {
+                                paragraph:"Достигнуть результативного функционирования процессов;",
+                            },
+                            {
+                                paragraph:"Улучшить процессы на основе оценивания данных и информации.",
+                            },
+                        ]
+                    }
+                ]
+            }
+        }
     }
 </script>
 
@@ -115,19 +135,19 @@
         -moz-transition: background-color 1s ease;
         transition: background-color 1s ease;
     }
-    .circle.fill.balls {
+    .circle.fill.one {
         padding: 7%;
         background: rgba(61, 158, 191, 0.6);
     }
-    .circle.fill.tees {
+    .circle.fill.two {
         padding: 9%;
         background: rgba(71, 180, 215, 0.76);
     }
-    .circle.fill.glove {
+    .circle.fill.three {
         padding: 12%;
         background: rgba(127, 220, 255, 0.8);
     }
-    .circle.spacer {
+    .circle.four {
         background: rgba(39, 43, 52, 0.3);
         padding: 3.4%;
     }
@@ -142,11 +162,11 @@
     .list-options li:hover:before {
         border-top: 1.2px solid #2826ff;
     }
-    .list-options li.tees:before {
+    .list-options li.two:before {
         width: 240px;
         left: -240px;
     }
-    .list-options li.balls:before {
+    .list-options li.one:before {
         left: -170px;
         width: 170px;
     }
@@ -168,10 +188,10 @@
         display: block;
         top: calc(50% - 4px);
     }
-    .list-options li.tees:after {
+    .list-options li.two:after {
         left: -240px;
     }
-    .list-options li.balls:after {
+    .list-options li.one:after {
         left: -170px;
     }
     .list-options li.sanity:after {
@@ -210,6 +230,9 @@
         color: #000000;
         line-height: 25px !important;
         font-weight: 600 !important;
+    }
+    .options-contain{
+        margin-left: 3%;
     }
     .text-contain, .options-contain {
         padding: 1em;
