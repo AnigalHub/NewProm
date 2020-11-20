@@ -19,7 +19,7 @@
     export default {
         name: "trials_video",
         props:{
-            trials_video: Object,
+            trials_video: String,
             trials_description: String,
         },
     }
