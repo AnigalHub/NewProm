@@ -141,10 +141,10 @@
     }
     .flex-container > div {
         width: 22%;
-        margin: 0 10px 20px 10px !important;
+        margin: 0 15px 20px 15px !important;
         background: #171131;
         padding: 10px !important;
-        box-shadow: 7px 7px 7px #3e3e3e;
+        box-shadow: 5px 5px 5px #3e3e3e;
 
         .text{
             color: white;
@@ -155,6 +155,9 @@
             margin-left: auto;
             padding-bottom: 15px;
         }
+    }
+    .flex-container > div:hover{
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.78);
     }
 
     .text{
@@ -201,9 +204,10 @@
         align-items: center;
         justify-content: center;
     }
-    @media screen and  (max-width: 300px) {
+    @media screen and  (max-width: 350px) {
         svg{
             width:45px !important;
+            margin-left: -85%;
         }
         .principales{
             .col-9{
@@ -214,7 +218,7 @@
             }
         }
     }
-    @media screen and (min-width: 300px) and  (max-width: 450px) {
+    @media screen and (min-width: 350px) and  (max-width: 450px) {
         .col:nth-child(4){
             margin-left: 10% !important;
         }
@@ -242,8 +246,7 @@
             }
         }
         svg{
-            width:60px;
-            margin-left: -30% !important;
+            width:50px;
         }
         .principales{
             margin: 0 !important;
