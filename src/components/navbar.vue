@@ -83,12 +83,11 @@
     .dropdown-item {
         color: #ffffff !important;
         font-weight: 600 !important;
-        font-size: 1.1rem;
-        border: 0.5px solid rgba(0, 0, 0, 0.66) !important;
-        background:linear-gradient( to right, #22414e, #1f4e21);
+        border: 0.5px solid rgba(0, 0, 0, 0.36) !important;
+        background: linear-gradient( to right, #22414e,#22414e, #1f4e21);
     }
     .dropdown-item:hover{
-        background:linear-gradient( to right, #29606f, #256f27);
+        background:linear-gradient( to right, #255765, #206321);
     }
     .btn {
         padding: 0 !important;
@@ -97,43 +96,32 @@
         background-color:white !important;
         padding: 0 !important;
     }
-    @media screen and (min-width: 992px)and (max-width: 1200px) {
-        #navbar-toggle-collapse{
-            padding-bottom: 2%;
+
+    @media screen and  (max-width: 1200px) {
+        .btn-group {
+            display: block !important;
         }
-        .nav-link,.dropdown-item{
+        .btn-group {
+            display: block !important;
+        }
+        .dropdown-item {
+            border: 0.5px solid rgba(28, 63, 76, 0.93) !important;
+        }
+    }
+    @media screen and (min-width: 1200px)and (max-width: 1350px) {
+       .dropdown-toggle{
             font-size: 1rem !important;
         }
+        .dropdown-item {
+            padding: 0.15rem 0.5rem !important;
+        }
+    }
+    @media screen and (min-width: 1350px)and (max-width: 1400px) {
         .dropdown-toggle{
             font-size: 1.1rem !important;
         }
-        .nav-link,.dropdown-item,.dropdown-toggle{
-            white-space:  normal !important;
-        }
-        #navbar-toggle-collapse  .nav-link {
-            background: radial-gradient(90% 70%, #ffffff, rgb(241, 237, 242));
-            border: 0.9px solid rgba(75, 105, 119, 0.66) !important;
-        }
-        .nav-link,.dropdown-item{
-            border-radius: 4px !important;
-        }
-        .dropdown-menu{
-            border: none !important;
-            margin: 0.3rem 0 0 !important;
-        }
-        .navbar-toggler {
-            background: radial-gradient(90% 70%, #ffffff, rgb(241, 237, 242));
-            border: 0.9px solid rgba(75, 105, 119, 0.66) !important;
-        }
-        .dropdown-item{
-            background: radial-gradient(90% 70%, #ffffff, rgb(235, 231, 236)) !important;
-            border: 0.4px solid rgba(75, 105, 119, 0.66) !important;
-        }
-        .btn-group {
-            display: block !important;
-        }
-        .btn-group {
-            display: block !important;
+        .dropdown-item {
+            padding: 0.2rem 1rem !important;
         }
     }
 </style>
@@ -165,9 +153,7 @@
         font-family: "Open Sans",Arial,sans-serif;
         text-shadow: 0.4px 0.4px #eeeeee;
     }
-    .navbar-nav{
-        margin-left: -10%;
-    }
+
     .navbar-brand {
         padding-right: 5% !important;
         padding-bottom: 0.25% !important;
@@ -176,24 +162,63 @@
     .nav-link:hover{
         font-weight: 700;
     }
-
-
     img{
         width: 175px !important;
         margin-right: 4px;
         border-radius: 7px;
-        margin-top: 0.25%;
+        margin-top: -5%;
     }
 
     @media screen and (max-width: 500px) {
         img{
-            width: 165px !important;
+            width: 155px !important;
             margin-top: -1.8%;
         }
     }
     @media screen and (min-width: 500px)and (max-width: 992px) {
         img{
+            width: 155px !important;
             margin-top: -3%;
+        }
+    }
+    @media screen and  (max-width: 1200px) {
+        .nav-link {
+            padding: 0.25rem 0.25rem !important;
+        }
+    }
+    @media screen and (min-width: 1200px)and (max-width: 1250px) {
+        .navbar-nav{
+            margin-left: -12%;
+        }
+        a,li,.nav-link {
+            font-size: 1rem !important;
+        }
+        .nav-link{
+            padding: 0.35rem 0.35rem !important;
+        }
+    }
+    @media screen and (min-width: 1250px)and (max-width: 1350px) {
+        .navbar-nav{
+            margin-left: -12%;
+        }
+        li,.nav-link {
+            font-size: 1rem !important;
+        }
+        .nav-link{
+            padding: 0.45rem 0.45rem !important;
+        }
+    }
+    @media screen and (min-width: 1350px)and (max-width: 1400px) {
+        .navbar-nav{
+            margin-left: -7%;
+        }
+        li,.nav-link {
+            font-size: 1rem !important;
+        }
+    }
+    @media screen and (min-width: 1400px)and (max-width: 1600px) {
+        .navbar-nav{
+            margin-left: -3%;
         }
     }
 </style>
