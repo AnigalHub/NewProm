@@ -11,9 +11,9 @@
                 <div>
                     <ul>
                         <li><a :href="'mailto:'+ mail" >{{mail}}</a></li>
-                        <li>{{opening_hours}}</li>
+                        <li><a>{{opening_hours}}</a></li>
                         <li><a :href="'tel:'+telephone">{{telephone}}</a></li>
-                        <li>{{company_address}}</li>
+                        <li><a>{{company_address}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -164,6 +164,7 @@
     }
     li{
         line-height: 1.45rem !important;
+        cursor: default;
     }
 
     .flex-container {
