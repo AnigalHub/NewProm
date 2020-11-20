@@ -200,7 +200,7 @@
             margin: 0 1% 2% 1% !important;
         }
         h6 {
-            height: 1.5rem;
+            height: 1.7rem;
         }
 
     }
