@@ -145,7 +145,7 @@
         max-width: 30% !important;
     }
     .col{
-        padding-left: 0 !important;
+        padding: 0 !important;
     }
     @media screen and (max-width: 500px) {
         .tab-pane .row{
