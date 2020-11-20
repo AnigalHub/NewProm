@@ -16,8 +16,6 @@
                     </div>
                 </b-col>
             </b-row>
-
-
         </b-container>
     </div>
 </template>
@@ -118,6 +116,9 @@
             flex-direction: column-reverse;
             .col-4{
                 display: none;
+            }
+            .col{
+                padding: 0 !important;
             }
         }
     }
