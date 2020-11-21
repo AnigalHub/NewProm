@@ -7,9 +7,7 @@
                 </video>
             </b-col>
             <b-col>
-                <p class="text descr">
-                    {{trials_description}}
-                </p>
+                <p class="text descr" v-html="trials_description"></p>
             </b-col>
         </b-row>
     </div>
