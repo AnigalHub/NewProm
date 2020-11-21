@@ -160,13 +160,12 @@
         background: black;
         max-height: 100%;
         height: auto;
-        padding: 1% 2% 1% 2%;
+        padding: 1.5% 2% 1.5% 2%;
     }
     li{
         line-height: 1.45rem !important;
         cursor: default;
     }
-
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -195,8 +194,6 @@
         text-align: left;
         padding-left: 0 !important;
         li{
-            font-size: 1rem !important;
-            font-family: "Open Sans",Arial,sans-serif;
             list-style-type: none;
         }
         li,a{
@@ -205,7 +202,6 @@
     }
 
     #footer {
-
         a{
             color: rgba(255, 255, 255, 0.63);
             font-weight: 700 !important;
