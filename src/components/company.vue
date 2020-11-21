@@ -3,7 +3,7 @@
         <b-container>
             <h2>О компании</h2>
             <p class="text">
-                На сегодняшний день ООО «Компания Промэлектронсервис» - это динамично развивающаяся компания, которая хорошо зарекомендовала себя на рынке сертификационных испытаний ЭКБ и комплексных поставок ЭКБ и КИ.
+                На сегодняшний день <b>ООО «Компания Промэлектронсервис»</b> - это динамично развивающаяся компания, которая хорошо зарекомендовала себя на рынке сертификационных испытаний ЭКБ и комплексных поставок ЭКБ и КИ.
                 Работы проводятся в соответствии с Федеральным законом от 29.12.2012 года № 275-ФЗ «О государственном оборонном заказе».
             </p>
             <div class="row_history">
@@ -17,9 +17,7 @@
                                     <div class="year">год</div>
                                 </div>
                             </b-col>
-                            <b-col cols="10">
-                                <p class="text">{{year.descr_year}}</p>
-                            </b-col>
+                            <b-col cols="10"><p class="text">{{year.descr_year}}</p></b-col>
                         </b-row>
                     </b-col>
                     <b-col cols="3">
@@ -37,9 +35,7 @@
                     </b-carousel>
                 </b-col>
                 <b-col>
-                    <ul>
-                        <li class="text" v-for="(direction,index) in list_activity" :key="index">{{direction}}</li>
-                    </ul>
+                    <ul><li class="text" v-for="(direction,index) in list_activity" :key="index">{{direction}}</li></ul>
                 </b-col>
             </b-row>
             <h3>Репутация:</h3>
