@@ -183,7 +183,7 @@
     }
     @media screen and  (max-width: 1200px) {
         .nav-link {
-            padding: 0.25rem 0.25rem !important;
+            padding: 0.45rem 0.25rem !important;
         }
     }
     @media screen and (min-width: 1200px)and (max-width: 1250px) {
