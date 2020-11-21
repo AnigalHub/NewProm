@@ -1,7 +1,7 @@
 <template>
     <b-navbar class="navbar-expand-xl sticky-top " toggleable>
         <b-container>
-            <b-navbar-brand to="/" @click="GoToLanding()">
+            <b-navbar-brand to="/">
                 <img src="../../public/images/brand.png">
                 <div class="name_company">Промэлекстронсервис</div>
                 <div class="name_company_2">COMPANY</div>
