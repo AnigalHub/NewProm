@@ -6,8 +6,10 @@
                 <b-carousel-slide  v-for="item in myArray" :key="item.id"  img-blank>
                    <b-row>
                        <b-col cols="3">
-                           <h3>{{item.name}}</h3>
-                           <div class="text">{{item.descr}}</div>
+                           <div class="name_it">
+                               <h3>{{item.name}}</h3>
+                               <div class="text">{{item.descr}}</div>
+                           </div>
                        </b-col>
                        <b-col>
                            <img :src="item.src" :alt="item.alt"/>
@@ -125,6 +127,13 @@
     .carousel-caption{
         text-align: left !important;
     }
+    @media screen and (max-width: 992px) {
+        .d-block {
+            display: none !important;
+        }  .carousel-caption {
+               display: contents !important;
+           }
+    }
 </style>
 <style scoped lang="scss">
     .col-3 {
@@ -133,5 +142,58 @@
 
     img{
         width: 100%;
+    }
+    
+    @media screen and (max-width: 400px) {
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-top: -50% !important;
+        }
+        .row{
+            flex-direction: column;
+            .col-3,.col{
+                padding: 0 !important;
+                max-width: 100%;
+            }
+            .name_it{
+                height: 190px;
+            }
+        }
+    }
+    @media screen and (min-width: 400px) and (max-width: 768px) {
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-top: -450% !important;
+        }
+        .row{
+            flex-direction: column;
+            .col-3,.col{
+                padding: 0 !important;
+                max-width: 100%;
+            }
+            .name_it{
+                height: 80px;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and  (max-width: 992px) {
+
+        .row{
+            flex-direction: column;
+            .col-3,.col{
+                padding: 0 !important;
+                max-width: 100%;
+            }
+            .name_it{
+                height: 90px;
+            }
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-top: -180% !important;
+        }
+
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-top: -200% !important;
+        }
     }
 </style>
