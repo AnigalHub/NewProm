@@ -18,20 +18,12 @@
             </b-row>
             <h2>Основные принципы организации</h2>
             <b-row class="principales">
-                <b-col>
-                    <b-row v-for="( principales_1, index) in  principales_part_1" :key="index">
+                <b-col v-for="(principle,index) in catalog_principales" :key="index">
+                    <b-row v-for="(value, index) in  principle.principales" :key="index">
                         <b-col cols="2">
-                            <component :is="principales_1.svg"/>
+                            <component :is="value.svg"/>
                         </b-col>
-                        <b-col cols="9" class="text">{{principales_1.text_svg}}</b-col>
-                    </b-row>
-                </b-col>
-                <b-col>
-                    <b-row v-for="( principales_2, index) in  principales_part_2" :key="index">
-                        <b-col cols="2">
-                            <component :is="principales_2.svg"/>
-                        </b-col>
-                        <b-col cols="9" class="text">{{principales_2.text_svg}}</b-col>
+                        <b-col cols="9" class="text">{{value.text_svg}}</b-col>
                     </b-row>
                 </b-col>
             </b-row>
@@ -98,24 +90,30 @@
                         descr_number: "Сотрудников",
                     },
                 ],
-                principales_part_1:[
+                catalog_principales:[
                     {
-                        svg:PeopleSVG,
-                        text_svg:"   Ориентация каждого сотрудника на удовлетворение требований Потребителя;",
+                        principales:[
+                            {
+                                svg:PeopleSVG,
+                                text_svg:"   Ориентация каждого сотрудника на удовлетворение требований Потребителя;",
+                            },
+                            {
+                                svg:LeaderSVG,
+                                text_svg:"Личное участие Высшего руководства компании в повышении эффективности системы менеджмента качества;",
+                            }
+                        ],
                     },
                     {
-                        svg:LeaderSVG,
-                        text_svg:"Личное участие Высшего руководства компании в повышении эффективности системы менеджмента качества;",
-                    }
-                ],
-                principales_part_2:[
-                    {
-                        svg:StabilitySVG,
-                        text_svg:"Обеспечение стабильности качества выполняемых работ и производимых услуг;",
-                    },
-                    {
-                        svg:GrowthSVG,
-                        text_svg:"Устойчивое развитие, под которым понимается динамический экономический рост за счет правильной стратегии маркетинга и объемов поставок.",
+                        principales:[
+                            {
+                                svg:StabilitySVG,
+                                text_svg:"Обеспечение стабильности качества выполняемых работ и производимых услуг;",
+                            },
+                            {
+                                svg:GrowthSVG,
+                                text_svg:"Устойчивое развитие, под которым понимается динамический экономический рост за счет правильной стратегии маркетинга и объемов поставок.",
+                            }
+                        ],
                     }
                 ],
             }
