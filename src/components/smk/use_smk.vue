@@ -101,6 +101,7 @@
         display: flex;
         flex-flow: row wrap;
         overflow: hidden;
+        margin-top: 2% !important;
     }
     .chart-wrap {
         min-width: 300px;
