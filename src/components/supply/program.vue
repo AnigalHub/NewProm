@@ -5,6 +5,7 @@
             <b-tabs  pills fill>
                 <b-tab v-for="(table, index) in Row_tables" :key="index" :title=table.name_table>
                     <b-table sticky-header hover :items="table.table_itself"></b-table>
+                    <pdf_and_xlsx></pdf_and_xlsx>
                 </b-tab>
             </b-tabs>
         </b-container>
@@ -16,8 +17,10 @@
     import  passive_components from '../../../public/documents/passive_components';
     import  connectors from '../../../public/documents/connectors';
     import  displays from '../../../public/documents/displays';
+    import Pdf_and_xlsx from "../pdf_and_xlsx";
     export default {
         name: "program",
+        components: {Pdf_and_xlsx},
         data() {
             return {
                 active_components:active_components,
