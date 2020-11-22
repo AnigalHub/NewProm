@@ -143,7 +143,7 @@
     img{
         width: 100%;
     }
-    
+
     @media screen and (max-width: 400px) {
         .carousel-control-prev-icon, .carousel-control-next-icon {
             margin-top: -50% !important;
