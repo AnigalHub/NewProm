@@ -5,7 +5,7 @@
                 <div class="icon_file xls">XLS</div>
             </b-col>
             <b-col>
-                <p class="text"><a>Скачать таблицу в формате .xlsx</a></p>
+                <p class="text"><a :href="xlsx">Скачать таблицу в формате .xlsx</a></p>
             </b-col>
         </b-row>
         <b-row>
@@ -13,7 +13,7 @@
                 <div class="icon_file pdf">PDF</div>
             </b-col>
             <b-col>
-                <p class="text"> <a>Скачать таблицу в формате .pdf</a></p>
+                <p class="text"><a :href="pdf">Скачать таблицу в формате .pdf</a></p>
             </b-col>
         </b-row>
         </div>
@@ -21,7 +21,11 @@
 
 <script>
     export default {
-        name: "pdf_and_xlsx"
+        name: "pdf_and_xlsx",
+        props:{
+            xlsx:String,
+            pdf:String,
+        }
     }
 </script>
 
