@@ -37,6 +37,7 @@ export default {
   ul{
     margin-block-start: 0 !important;
     padding-inline-start: 5px !important;
+    margin-bottom: 0 !important;
   }
   .b-table-sticky-header {
     max-height: 70vh !important;
@@ -63,6 +64,7 @@ export default {
   }
 </style>
 <style  lang="scss">
+
   @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1400px !important;
@@ -89,6 +91,7 @@ export default {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+
   .row {
     margin: 0 !important;
   }
@@ -119,13 +122,16 @@ export default {
   #mehanic_trials h3{
     color: #161640 !important;
   }
+  #company  .card-header{
+    background: transparent !important;
+  }
   .card-header,h5{
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1.15rem !important;
     color: #161640 !important;
     font-weight: 700 !important;
     padding: .25rem 0.5rem !important;
-    background: rgba(42, 74, 89, 0.27) !important;
+    background: rgba(62, 82, 98, 0.15) !important;
     border: 2px solid rgba(5, 35, 71, 0.49) !important;
     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0 !important;
   }
@@ -218,7 +224,7 @@ export default {
   @media screen and (max-width: 500px) {
     h2{
       padding: 3% 0 0.2% 0;
-      font-size: 1.1rem !important;
+      font-size: 1rem !important;
     }
     h5{
       font-size: 0.8rem !important;
@@ -252,6 +258,9 @@ export default {
       .col{
         padding: 0 !important;
       }
+    }
+    #equipment table, #program table{
+      display: none;
     }
   }
   @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -295,6 +304,9 @@ export default {
         padding: 0 !important;
       }
     }
+    #equipment table, #program table{
+      display: none;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 992px) {
     h5{
@@ -337,6 +349,9 @@ export default {
         padding: 0 !important;
       }
     }
+    #equipment table, #program table{
+      display: none;
+    }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     h6{
@@ -363,6 +378,9 @@ export default {
     }
     a,.dropdown-toggle,.nav-link{
           font-size: 0.95rem !important;
-      }
+    }
+    #equipment table, #program table{
+      display: none;
+    }
   }
 </style>
