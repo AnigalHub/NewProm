@@ -87,12 +87,15 @@
         }
     }
     img{
-        padding: 0 2.5% 0 2.5%;
+        padding: 0 5% 0 5%;
     }
     .link{
-        //display: none;
+        display: none;
         color: #161640 !important;
         font-weight: 600;
+    }
+    .link:hover{
+        text-decoration: underline !important;
     }
 
     @media screen and (max-width: 992px) {
@@ -112,8 +115,10 @@
             display: block;
         }
     }
-    @media screen and (min-width: 992px)and (max-width: 1200px) {
-
+    @media screen and (max-width: 1200px) {
+        .link{
+            display:block;
+        }
     }
 
 </style>
