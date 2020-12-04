@@ -25,7 +25,7 @@
             <b-row class="row_list">
                 <b-col class="text">
                     <ul>
-                            <li v-for="( test, index) in  list_tests" :key="index">{{test}}</li>
+                        <li v-for="( test, index) in  list_tests" :key="index">{{test}}</li>
                     </ul>
                 </b-col>
                 <b-col class="text">
