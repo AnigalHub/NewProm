@@ -1,15 +1,15 @@
 <template>
     <div id="address">
-        <div><component :is="landSVG"/>{{company_address}}</div>
-        <div><component :is="metroSVG"/>{{metro}}</div>
-        <div><component :is="opening_hoursSVG"/>{{opening_hours}}</div>
+        <div><component :is="landSVG"/>{{address.address}}</div>
+        <div><component :is="metroSVG"/>{{address.metro}}</div>
+        <div><component :is="opening_hoursSVG"/>{{address.working_hours}}</div>
         <div>
-            <component :is="telephoneSVG"/><a :href="'tel:'+telephone">{{telephone}}</a>,<br>
-            <component :is="faxSVG"/><a :href="'tel:'+fax">{{fax}}(факс)</a>,<br>
-            <component :is="receptionSVG"/><a :href="'tel:'+reception">{{reception}}(приемная секретаря)</a>
+            <component :is="telephoneSVG"/><a :href="'tel:'+address.phone">{{address.phone}}</a>,<br>
+            <component :is="faxSVG"/><a :href="'tel:'+address.fax">{{address.fax}}(факс)</a>,<br>
+            <component :is="receptionSVG"/><a :href="'tel:'+address.reception">{{address.reception}}(приемная секретаря)</a>
         </div>
         <div>
-            <a :href="'mailto:'+mail"><component :is="mailSVG"/>{{mail}}</a>
+            <a :href="'mailto:'+mail"><component :is="mailSVG"/>{{address.mail}}</a>
         </div>
     </div>
 </template>
@@ -22,13 +22,7 @@
     import FaxSVG from './address_svg/fax_svg';
     import ReceptionSVG from './address_svg/reception_svg';
     import MailSVG from './address_svg/mail_svg';
-    import company_address from './../../public/documents/address/company_address.json';
-    import metro from './../../public/documents/address/metro.json';
-    import opening_hours from './../../public/documents/address/opening_hours.json';
-    import telephone from './../../public/documents/address/telephone.json';
-    import fax from './../../public/documents/address/fax.json';
-    import reception from './../../public/documents/address/reception.json';
-    import mail from './../../public/documents/address/mail.json';
+    import address from './../../public/documents/address.json';
     export default {
         components: {LandSVG,MetroSVG,OpeningHoursSVG,TelephoneSVG,FaxSVG,ReceptionSVG,MailSVG},
         name: "company_address",
@@ -41,13 +35,7 @@
                 faxSVG:FaxSVG,
                 receptionSVG:ReceptionSVG,
                 mailSVG:MailSVG,
-                company_address:company_address,
-                metro:metro,
-                opening_hours:opening_hours,
-                telephone:telephone,
-                fax:fax,
-                reception:reception,
-                mail:mail,
+                address:address,
             }
         }
     }
