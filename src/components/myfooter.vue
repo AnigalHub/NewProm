@@ -10,10 +10,10 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a :href="'mailto:'+ mail" >{{mail}}</a></li>
-                        <li><a>{{opening_hours}}</a></li>
-                        <li><a :href="'tel:'+telephone">{{telephone}}</a></li>
-                        <li><a>{{company_address}}</a></li>
+                        <li><a :href="'mailto:'+ address.mail" >{{address.mail}}</a></li>
+                        <li><a>{{address.working_hours}}</a></li>
+                        <li><a :href="'tel:'+ address.phone">{{address.phone}}</a></li>
+                        <li><a>{{address.address}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -22,20 +22,12 @@
 </template>
 
 <script>
-    import company_address from './../../public/documents/address/company_address.json';
-    import metro from './../../public/documents/address/metro.json';
-    import opening_hours from './../../public/documents/address/opening_hours.json';
-    import telephone from './../../public/documents/address/telephone.json';
-    import mail from './../../public/documents/address/mail.json';
+    import address from './../../public/documents/address.json';
     export default {
         name: "myfooter",
         data(){
             return{
-                company_address:company_address,
-                metro:metro,
-                opening_hours:opening_hours,
-                telephone:telephone,
-                mail:mail,
+                address:address,
                 catalog_pages:[
                     {
                         pages:[
