@@ -9,7 +9,7 @@
                 <b-col>
                     <div id="mymap">
                         <div class="feature map" id="map-wrap">
-                            <iframe :src="map"></iframe>
+                            <iframe :src="address.map"></iframe>
                         </div>
                     </div>
                 </b-col>
@@ -21,13 +21,13 @@
 <script>
 
     import CompanyAddress from "../company_address";
-    import map from "../../../public/documents/address/map.json";
+    import address from "../../../public/documents/address.json";
     export default {
         name: "mycontact",
         components: {CompanyAddress},
         data(){
             return{
-                map:map,
+                address:address,
             }
         }
     }
