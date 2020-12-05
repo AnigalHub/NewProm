@@ -13,36 +13,30 @@
 </template>
 
 <script>
-    import  active_components from '../../../public/documents/active_components';
-    import  passive_components from '../../../public/documents/passive_components';
-    import  connectors from '../../../public/documents/connectors';
-    import  displays from '../../../public/documents/displays';
+    import  program from '../../../public/documents/program.json';
     import Pdf_and_xlsx from "../pdf_and_xlsx";
     export default {
         name: "program",
         components: {Pdf_and_xlsx},
         data() {
             return {
-                active_components:active_components,
-                passive_components:passive_components,
-                connectors:connectors,
-                displays:displays,
+               program:program,
                 Row_tables:[
                     {
                         name_table:"Активные компоненты",
-                        table_itself:active_components,
+                        table_itself:program.active_components,
                     },
                     {
                         name_table:"Пассивные компоненты",
-                        table_itself: passive_components,
+                        table_itself: program.passive_components,
                     },
                     {
                         name_table:"Соединители и Разъемы",
-                        table_itself: connectors,
+                        table_itself: program.connectors,
                     },
                     {
                         name_table:"Дисплеи и Светодиоды",
-                        table_itself:displays,
+                        table_itself:program.displays,
                     },
                 ]
             }
